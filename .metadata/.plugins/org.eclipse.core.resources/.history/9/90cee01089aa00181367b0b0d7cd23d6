@@ -1,0 +1,22 @@
+package com.peron.springboot;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@EnableAsync //开启异步配置
+public class SpringBootAsyncApplicationTests {
+	
+	@Autowired
+	private TaskWithSync taskWithSync;
+
+	@Test
+	public void testSync() {
+	}
+
+}

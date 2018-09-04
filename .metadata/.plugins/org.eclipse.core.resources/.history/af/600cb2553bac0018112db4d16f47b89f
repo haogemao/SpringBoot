@@ -1,0 +1,13 @@
+package com.person.springboot;
+
+import org.springframework.context.ApplicationListener;
+
+public class MyApplicationListener implements ApplicationListener<MyApplicationContextEvent> {
+
+	@Override
+	public void onApplicationEvent(MyApplicationContextEvent event) {
+		// TODO Auto-generated method stub
+		System.out.println("接收到事件：" + event.toString());
+	}
+
+}

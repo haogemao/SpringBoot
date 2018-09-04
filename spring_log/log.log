@@ -1,0 +1,818 @@
+2018-08-08 16:56:52.762 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'logging.register-shutdown-hook' in any property source
+2018-08-08 16:56:52.766 DEBUG 236 --- [main] .c.l.ClasspathLoggingApplicationListener : Application started with classpath: [file:/E:/Document/code/SpringBoot/spring_log/target/classes/, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/boot/spring-boot-starter/2.0.5.BUILD-SNAPSHOT/spring-boot-starter-2.0.5.BUILD-SNAPSHOT.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/boot/spring-boot/2.0.5.BUILD-SNAPSHOT/spring-boot-2.0.5.BUILD-SNAPSHOT.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/spring-expression/5.0.8.RELEASE/spring-expression-5.0.8.RELEASE.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.5.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.0.5.BUILD-SNAPSHOT.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/boot/spring-boot-starter-logging/2.0.5.BUILD-SNAPSHOT/spring-boot-starter-logging-2.0.5.BUILD-SNAPSHOT.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/spring-core/5.0.8.RELEASE/spring-core-5.0.8.RELEASE.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/springframework/spring-jcl/5.0.8.RELEASE/spring-jcl-5.0.8.RELEASE.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar, file:/D:/softwareInstall/apache-maven-3.5.3/apache-maven-3.5.3-bin/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar]
+2018-08-08 16:56:52.767 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'context.listener.classes' in any property source
+2018-08-08 16:56:52.772 DEBUG 236 --- [main] o.s.core.env.StandardEnvironment         : Adding PropertySource 'configurationProperties' with highest search precedence
+2018-08-08 16:56:52.774 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.beaninfo.ignore' in any property source
+2018-08-08 16:56:52.775 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.banner.image.location' in any property source
+2018-08-08 16:56:52.777 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.banner.location' in any property source
+2018-08-08 16:56:52.794 DEBUG 236 --- [main] o.s.core.env.StandardEnvironment         : Adding PropertySource 'systemProperties' with lowest search precedence
+2018-08-08 16:56:52.794 DEBUG 236 --- [main] o.s.core.env.StandardEnvironment         : Adding PropertySource 'systemEnvironment' with lowest search precedence
+2018-08-08 16:56:52.795 DEBUG 236 --- [main] o.s.core.env.StandardEnvironment         : Initialized StandardEnvironment with PropertySources [MapPropertySource@550402284 {name='systemProperties', properties={com.sun.management.jmxremote.authenticate=false, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=D:\softwareInstall\JDK\jdk1.8.0_66\jre\bin, java.vm.version=25.66-b17, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, java.rmi.server.randomIDs=true, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=CN, user.script=, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, PID=236, com.sun.management.jmxremote.port=13640, java.vm.specification.name=Java Virtual Machine Specification, user.dir=E:\Document\code\SpringBoot\spring_log, java.runtime.version=1.8.0_66-b17, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\HS\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 10, sun.jnu.encoding=GBK, spring.beaninfo.ignore=true, java.library.path=D:\softwareInstall\JDK\jdk1.8.0_66\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/bin/server;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/bin;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/lib/amd64;D:\softwareInstall\app\product\11.2.0\dbhome_1\bin;D:\softwareInstall\JDK\jdk1.8.0_66\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\softwareInstall\TortoiseSVN\bin;D:\softwareInstall\nodejs\;D:\softwareInstall\MongoDb\mongodb-win32-x86_64-2.4.3\mongodb-win32-x86_64-2.4.3\bin;D:\softwareInstall\Redis\;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\HS\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\HS\AppData\Local\Programs\Python\Python36\;C:\Program Files\Bandizip\;F:\softwareInstall\Bandizip\;D:\softwareInstall\Bandizip\;C:\Users\HS\AppData\Local\Microsoft\WindowsApps;C:\Users\HS\AppData\Roaming\npm;;D:\softwareInstall\Fiddler2;D:\softwareInstall\spring-tool-suite-3.9.0.RELEASE-e4.7.0-win32-x86_64\sts-bundle\sts-3.9.0.RELEASE;;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, spring.liveBeansView.mbeanDomain=, os.version=10.0, LOG_FILE=log.log, user.home=C:\Users\HS, user.timezone=Asia/Singapore, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=E:\Document\code\SpringBoot\spring_log\target\classes;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\boot\spring-boot-starter\2.0.5.BUILD-SNAPSHOT\spring-boot-starter-2.0.5.BUILD-SNAPSHOT.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\boot\spring-boot\2.0.5.BUILD-SNAPSHOT\spring-boot-2.0.5.BUILD-SNAPSHOT.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-context\5.0.8.RELEASE\spring-context-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-aop\5.0.8.RELEASE\spring-aop-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-beans\5.0.8.RELEASE\spring-beans-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-expression\5.0.8.RELEASE\spring-expression-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.BUILD-SNAPSHOT\spring-boot-autoconfigure-2.0.5.BUILD-SNAPSHOT.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\boot\spring-boot-starter-logging\2.0.5.BUILD-SNAPSHOT\spring-boot-starter-logging-2.0.5.BUILD-SNAPSHOT.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-core\5.0.8.RELEASE\spring-core-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-jcl\5.0.8.RELEASE\spring-jcl-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar, user.name=HS, com.sun.management.jmxremote=, java.vm.specification.version=1.8, sun.java.command=com.peron.springboot.SpringLogApplication --spring.output.ansi.enabled=always, java.home=D:\softwareInstall\JDK\jdk1.8.0_66\jre, sun.arch.data.model=64, user.language=zh, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, com.sun.management.jmxremote.ssl=false, java.vm.info=mixed mode, java.version=1.8.0_66, java.ext.dirs=D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\resources.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\rt.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\sunrsasign.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\jsse.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\jce.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\charsets.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\jfr.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\classes, java.awt.headless=true, java.vendor=Oracle Corporation, spring.application.admin.enabled=true, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, java.rmi.server.hostname=localhost, LOG_PATH=/, sun.desktop=windows, sun.cpu.isalist=amd64}}, SystemEnvironmentPropertySource@959869407 {name='systemEnvironment', properties={USERDOMAIN_ROAMINGPROFILE=DESKTOP-5S193TJ, LOCALAPPDATA=C:\Users\HS\AppData\Local, PROCESSOR_LEVEL=6, USERDOMAIN=DESKTOP-5S193TJ, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\DESKTOP-5S193TJ, JAVA_HOME=D:\softwareInstall\JDK\jdk1.8.0_66, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\, SystemDrive=C:, MAVEN_HOME=D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\apache-maven-3.5.3, OneDrive=C:\Users\HS\OneDrive, APPDATA=C:\Users\HS\AppData\Roaming, USERNAME=HS, ProgramFiles(x86)=C:\Program Files (x86), CommonProgramFiles=C:\Program Files\Common Files, Path=D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/bin/server;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/bin;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/lib/amd64;D:\softwareInstall\app\product\11.2.0\dbhome_1\bin;D:\softwareInstall\JDK\jdk1.8.0_66\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\softwareInstall\TortoiseSVN\bin;D:\softwareInstall\nodejs\;D:\softwareInstall\MongoDb\mongodb-win32-x86_64-2.4.3\mongodb-win32-x86_64-2.4.3\bin;D:\softwareInstall\Redis\;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\HS\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\HS\AppData\Local\Programs\Python\Python36\;C:\Program Files\Bandizip\;F:\softwareInstall\Bandizip\;D:\softwareInstall\Bandizip\;C:\Users\HS\AppData\Local\Microsoft\WindowsApps;C:\Users\HS\AppData\Roaming\npm;;D:\softwareInstall\Fiddler2;D:\softwareInstall\spring-tool-suite-3.9.0.RELEASE-e4.7.0-win32-x86_64\sts-bundle\sts-3.9.0.RELEASE;, FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, OS=Windows_NT, COMPUTERNAME=DESKTOP-5S193TJ, PROCESSOR_REVISION=8e09, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\WINDOWS\system32\cmd.exe, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\HS, SystemRoot=C:\WINDOWS, TEMP=C:\Users\HS\AppData\Local\Temp, HOMEDRIVE=C:, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel, USERPROFILE=C:\Users\HS, TMP=C:\Users\HS\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, NUMBER_OF_PROCESSORS=4, windir=C:\WINDOWS, DM_HOME=D:\softwareInstall\dmdbms, =::=::\}}]
+2018-08-08 16:56:52.812 DEBUG 236 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-08-08 16:56:52.828 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'context.initializer.classes' in any property source
+2018-08-08 16:56:52.829 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.application.name' in any property source
+2018-08-08 16:56:52.833 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:52.837  INFO 236 --- [main] c.peron.springboot.SpringLogApplication  : Starting SpringLogApplication on DESKTOP-5S193TJ with PID 236 (E:\Document\code\SpringBoot\spring_log\target\classes started by HS in E:\Document\code\SpringBoot\spring_log)
+2018-08-08 16:56:52.838 DEBUG 236 --- [main] c.peron.springboot.SpringLogApplication  : Running with Spring Boot v2.0.5.BUILD-SNAPSHOT, Spring v5.0.8.RELEASE
+2018-08-08 16:56:52.839 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.profiles.active' in any property source
+2018-08-08 16:56:52.839 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.profiles.default' in any property source
+2018-08-08 16:56:52.839  INFO 236 --- [main] c.peron.springboot.SpringLogApplication  : No active profile set, falling back to default profiles: default
+2018-08-08 16:56:52.839 DEBUG 236 --- [main] o.s.boot.SpringApplication               : Loading source class com.peron.springboot.SpringLogApplication
+2018-08-08 16:56:52.846 DEBUG 236 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-08-08 16:56:52.881 DEBUG 236 --- [main] o.s.b.c.c.ConfigFileApplicationListener  : Loaded config file 'file:/E:/Document/code/SpringBoot/spring_log/target/classes/application.yml' (classpath:/application.yml)
+2018-08-08 16:56:52.882  INFO 236 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ed7259e: startup date [Wed Aug 08 16:56:52 SGT 2018]; root of context hierarchy
+2018-08-08 16:56:52.883 DEBUG 236 --- [main] s.c.a.AnnotationConfigApplicationContext : Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@7ed7259e: org.springframework.beans.factory.support.DefaultListableBeanFactory@2de23121: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,springLogApplication]; root of factory hierarchy
+2018-08-08 16:56:52.896 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-08-08 16:56:52.897 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-08-08 16:56:52.900 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2018-08-08 16:56:52.910 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-08-08 16:56:52.910 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-08-08 16:56:52.911 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' to allow for resolving potential circular references
+2018-08-08 16:56:52.913 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-08-08 16:56:52.928 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-08-08 16:56:52.940 DEBUG 236 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-08-08 16:56:52.942 DEBUG 236 --- [main] .i.s.PathMatchingResourcePatternResolver : Resolved classpath location [com/peron/springboot/] to resources [URL [file:/E:/Document/code/SpringBoot/spring_log/target/classes/com/peron/springboot/]]
+2018-08-08 16:56:52.942 DEBUG 236 --- [main] .i.s.PathMatchingResourcePatternResolver : Looking for matching resources in directory tree [E:\Document\code\SpringBoot\spring_log\target\classes\com\peron\springboot]
+2018-08-08 16:56:52.943 DEBUG 236 --- [main] .i.s.PathMatchingResourcePatternResolver : Searching directory [E:\Document\code\SpringBoot\spring_log\target\classes\com\peron\springboot] for files matching pattern [E:/Document/code/SpringBoot/spring_log/target/classes/com/peron/springboot/**/*.class]
+2018-08-08 16:56:52.945 DEBUG 236 --- [main] .i.s.PathMatchingResourcePatternResolver : Resolved location pattern [classpath*:com/peron/springboot/**/*.class] to resources [file [E:\Document\code\SpringBoot\spring_log\target\classes\com\peron\springboot\SpringLogApplication.class]]
+2018-08-08 16:56:52.961 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.boot.enableautoconfiguration' in any property source
+2018-08-08 16:56:52.971 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:52.989 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:52.994 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-08-08 16:56:53.008 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.messages.basename' in any property source
+2018-08-08 16:56:53.009 DEBUG 236 --- [main] .i.s.PathMatchingResourcePatternResolver : Resolved classpath location [messages.properties] to resources []
+2018-08-08 16:56:53.009 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.019 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.022 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.026 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+2018-08-08 16:56:53.027 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.031 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.034 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.058 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.062 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.063 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.065 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.066 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.069 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.070 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.071 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.072 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.073 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.080 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.083 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.086 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.086 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.087 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.091 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2018-08-08 16:56:53.098 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-08-08 16:56:53.098 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-08-08 16:56:53.103 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry' to allow for resolving potential circular references
+2018-08-08 16:56:53.103 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-08-08 16:56:53.105 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.106 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer()
+2018-08-08 16:56:53.107 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.107 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.107 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-08-08 16:56:53.107 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-08-08 16:56:53.112 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.112 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.mbeanExporter()
+2018-08-08 16:56:53.113 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-08-08 16:56:53.115 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.115 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.objectNamingStrategy()
+2018-08-08 16:56:53.115 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-08-08 16:56:53.116 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.116 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.mbeanServer()
+2018-08-08 16:56:53.116 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+2018-08-08 16:56:53.117 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.117 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+2018-08-08 16:56:53.118 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-08-08 16:56:53.119 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.119 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration.springApplicationAdminRegistrar()
+2018-08-08 16:56:53.119 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.121 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-08-08 16:56:53.121 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.122 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2018-08-08 16:56:53.125 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2018-08-08 16:56:53.128 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.info.git.location' in any property source
+2018-08-08 16:56:53.129 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.129 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.info.build.location:classpath:META-INF/build-info.properties' in any property source
+2018-08-08 16:56:53.130 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.info.build.location' in any property source
+2018-08-08 16:56:53.131 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-08-08 16:56:53.134 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration'
+2018-08-08 16:56:53.135 DEBUG 236 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2018-08-08 16:56:53.214 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced com.peron.springboot.SpringLogApplication; enhanced class name is: com.peron.springboot.SpringLogApplication$$EnhancerBySpringCGLIB$$daf5b207
+2018-08-08 16:56:53.215 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'springLogApplication' existing class 'com.peron.springboot.SpringLogApplication' with enhanced class 'com.peron.springboot.SpringLogApplication$$EnhancerBySpringCGLIB$$daf5b207'
+2018-08-08 16:56:53.217 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$bb073e92
+2018-08-08 16:56:53.217 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$bb073e92'
+2018-08-08 16:56:53.220 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$39bc3b75
+2018-08-08 16:56:53.220 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$39bc3b75'
+2018-08-08 16:56:53.222 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration$$EnhancerBySpringCGLIB$$4cfd6d27
+2018-08-08 16:56:53.222 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration$$EnhancerBySpringCGLIB$$4cfd6d27'
+2018-08-08 16:56:53.224 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration$$EnhancerBySpringCGLIB$$a9da57a7
+2018-08-08 16:56:53.225 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration$$EnhancerBySpringCGLIB$$a9da57a7'
+2018-08-08 16:56:53.231 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$f64ad972
+2018-08-08 16:56:53.231 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$f64ad972'
+2018-08-08 16:56:53.233 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration$$EnhancerBySpringCGLIB$$1caeaad9
+2018-08-08 16:56:53.234 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration$$EnhancerBySpringCGLIB$$1caeaad9'
+2018-08-08 16:56:53.235 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$$EnhancerBySpringCGLIB$$cfb8cc3b
+2018-08-08 16:56:53.236 DEBUG 236 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$$EnhancerBySpringCGLIB$$cfb8cc3b'
+2018-08-08 16:56:53.238 DEBUG 236 --- [main] o.s.core.env.StandardEnvironment         : Removing PropertySource 'defaultProperties'
+2018-08-08 16:56:53.239 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2018-08-08 16:56:53.239 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'propertySourcesPlaceholderConfigurer'
+2018-08-08 16:56:53.245 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'propertySourcesPlaceholderConfigurer' to allow for resolving potential circular references
+2018-08-08 16:56:53.258 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'propertySourcesPlaceholderConfigurer'
+2018-08-08 16:56:53.259 DEBUG 236 --- [main] o.s.core.env.MutablePropertySources      : Adding PropertySource 'environmentProperties' with lowest search precedence
+2018-08-08 16:56:53.261 DEBUG 236 --- [main] o.s.core.env.MutablePropertySources      : Adding PropertySource 'localProperties' with lowest search precedence
+2018-08-08 16:56:53.263 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-08-08 16:56:53.263 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-08-08 16:56:53.263 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata' to allow for resolving potential circular references
+2018-08-08 16:56:53.266 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-08-08 16:56:53.269 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-08-08 16:56:53.269 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-08-08 16:56:53.270 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2018-08-08 16:56:53.277 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-08-08 16:56:53.277 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-08-08 16:56:53.277 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-08-08 16:56:53.278 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2018-08-08 16:56:53.283 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-08-08 16:56:53.283 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-08-08 16:56:53.283 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-08-08 16:56:53.286 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2018-08-08 16:56:53.292 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-08-08 16:56:53.292 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-08-08 16:56:53.292 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-08-08 16:56:53.293 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' to allow for resolving potential circular references
+2018-08-08 16:56:53.296 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Invoking afterPropertiesSet() on bean with name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-08-08 16:56:53.296 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-08-08 16:56:53.299 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2018-08-08 16:56:53.301 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-08-08 16:56:53.303 DEBUG 236 --- [main] s.c.a.AnnotationConfigApplicationContext : Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@748741cb]
+2018-08-08 16:56:53.303 DEBUG 236 --- [main] s.c.a.AnnotationConfigApplicationContext : Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3e44f2a5]
+2018-08-08 16:56:53.308 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2de23121: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,springLogApplication,org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory,org.springframework.boot.autoconfigure.AutoConfigurationPackages,org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration,org.springframework.boot.autoconfigure.condition.BeanTypeRegistry,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration,mbeanExporter,objectNamingStrategy,mbeanServer,org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration,springApplicationAdminRegistrar,org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration,org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor,org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata,org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration,spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties,org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration,spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties,org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration,server-org.springframework.boot.autoconfigure.web.ServerProperties]; root of factory hierarchy
+2018-08-08 16:56:53.308 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-08-08 16:56:53.308 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-08-08 16:56:53.309 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-08-08 16:56:53.309 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-08-08 16:56:53.309 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-08-08 16:56:53.309 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-08-08 16:56:53.319 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2018-08-08 16:56:53.322 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-08-08 16:56:53.322 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-08-08 16:56:53.322 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-08-08 16:56:53.322 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2018-08-08 16:56:53.324 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-08-08 16:56:53.325 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'springLogApplication'
+2018-08-08 16:56:53.325 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'springLogApplication'
+2018-08-08 16:56:53.325 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'springLogApplication' to allow for resolving potential circular references
+2018-08-08 16:56:53.327 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'springLogApplication'
+2018-08-08 16:56:53.328 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-08-08 16:56:53.328 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2018-08-08 16:56:53.328 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2018-08-08 16:56:53.329 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages' to allow for resolving potential circular references
+2018-08-08 16:56:53.330 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2018-08-08 16:56:53.331 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2018-08-08 16:56:53.331 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2018-08-08 16:56:53.331 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' to allow for resolving potential circular references
+2018-08-08 16:56:53.334 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2018-08-08 16:56:53.334 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-08-08 16:56:53.334 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2018-08-08 16:56:53.334 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-08-08 16:56:53.334 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-08-08 16:56:53.335 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' to allow for resolving potential circular references
+2018-08-08 16:56:53.348 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-08-08 16:56:53.348 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mbeanExporter'
+2018-08-08 16:56:53.348 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'mbeanExporter'
+2018-08-08 16:56:53.348 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-08-08 16:56:53.352 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'objectNamingStrategy'
+2018-08-08 16:56:53.352 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'objectNamingStrategy'
+2018-08-08 16:56:53.352 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-08-08 16:56:53.354 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.jmx.default-domain' in any property source
+2018-08-08 16:56:53.355 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'objectNamingStrategy' to allow for resolving potential circular references
+2018-08-08 16:56:53.358 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Invoking afterPropertiesSet() on bean with name 'objectNamingStrategy'
+2018-08-08 16:56:53.359 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'objectNamingStrategy'
+2018-08-08 16:56:53.360 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+2018-08-08 16:56:53.363 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.jmx.server' in any property source
+2018-08-08 16:56:53.364 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mbeanServer'
+2018-08-08 16:56:53.364 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'mbeanServer'
+2018-08-08 16:56:53.364 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-08-08 16:56:53.366 DEBUG 236 --- [main] o.springframework.jmx.support.JmxUtils   : Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+2018-08-08 16:56:53.368 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'mbeanServer' to allow for resolving potential circular references
+2018-08-08 16:56:53.370 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'mbeanServer'
+2018-08-08 16:56:53.373 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'mbeanExporter' to allow for resolving potential circular references
+2018-08-08 16:56:53.381 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Invoking afterPropertiesSet() on bean with name 'mbeanExporter'
+2018-08-08 16:56:53.381 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'mbeanExporter'
+2018-08-08 16:56:53.381 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'objectNamingStrategy'
+2018-08-08 16:56:53.381 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'mbeanServer'
+2018-08-08 16:56:53.381 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+2018-08-08 16:56:53.381 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+2018-08-08 16:56:53.381 DEBUG 236 --- [main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration$$EnhancerBySpringCGLIB$$4cfd6d27] - unable to determine constructor/method parameter names
+2018-08-08 16:56:53.382 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'environment'
+2018-08-08 16:56:53.383 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration' via constructor to bean named 'environment'
+2018-08-08 16:56:53.384 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'mbeanExporter'
+2018-08-08 16:56:53.386 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration' to allow for resolving potential circular references
+2018-08-08 16:56:53.388 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+2018-08-08 16:56:53.388 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
+2018-08-08 16:56:53.388 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'springApplicationAdminRegistrar'
+2018-08-08 16:56:53.388 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+2018-08-08 16:56:53.392 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.application.admin.jmx-name' in any property source
+2018-08-08 16:56:53.393 DEBUG 236 --- [main] o.s.core.env.StandardEnvironment         : Adding PropertySource 'systemProperties' with lowest search precedence
+2018-08-08 16:56:53.393 DEBUG 236 --- [main] o.s.core.env.StandardEnvironment         : Adding PropertySource 'systemEnvironment' with lowest search precedence
+2018-08-08 16:56:53.394 DEBUG 236 --- [main] o.s.core.env.StandardEnvironment         : Initialized StandardEnvironment with PropertySources [MapPropertySource@1541708640 {name='systemProperties', properties={com.sun.management.jmxremote.authenticate=false, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=D:\softwareInstall\JDK\jdk1.8.0_66\jre\bin, java.vm.version=25.66-b17, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, java.rmi.server.randomIDs=true, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=CN, user.script=, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, PID=236, com.sun.management.jmxremote.port=13640, java.vm.specification.name=Java Virtual Machine Specification, user.dir=E:\Document\code\SpringBoot\spring_log, java.runtime.version=1.8.0_66-b17, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\HS\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 10, sun.jnu.encoding=GBK, spring.beaninfo.ignore=true, java.library.path=D:\softwareInstall\JDK\jdk1.8.0_66\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/bin/server;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/bin;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/lib/amd64;D:\softwareInstall\app\product\11.2.0\dbhome_1\bin;D:\softwareInstall\JDK\jdk1.8.0_66\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\softwareInstall\TortoiseSVN\bin;D:\softwareInstall\nodejs\;D:\softwareInstall\MongoDb\mongodb-win32-x86_64-2.4.3\mongodb-win32-x86_64-2.4.3\bin;D:\softwareInstall\Redis\;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\HS\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\HS\AppData\Local\Programs\Python\Python36\;C:\Program Files\Bandizip\;F:\softwareInstall\Bandizip\;D:\softwareInstall\Bandizip\;C:\Users\HS\AppData\Local\Microsoft\WindowsApps;C:\Users\HS\AppData\Roaming\npm;;D:\softwareInstall\Fiddler2;D:\softwareInstall\spring-tool-suite-3.9.0.RELEASE-e4.7.0-win32-x86_64\sts-bundle\sts-3.9.0.RELEASE;;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, spring.liveBeansView.mbeanDomain=, os.version=10.0, LOG_FILE=log.log, user.home=C:\Users\HS, user.timezone=Asia/Singapore, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=E:\Document\code\SpringBoot\spring_log\target\classes;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\boot\spring-boot-starter\2.0.5.BUILD-SNAPSHOT\spring-boot-starter-2.0.5.BUILD-SNAPSHOT.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\boot\spring-boot\2.0.5.BUILD-SNAPSHOT\spring-boot-2.0.5.BUILD-SNAPSHOT.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-context\5.0.8.RELEASE\spring-context-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-aop\5.0.8.RELEASE\spring-aop-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-beans\5.0.8.RELEASE\spring-beans-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-expression\5.0.8.RELEASE\spring-expression-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.5.BUILD-SNAPSHOT\spring-boot-autoconfigure-2.0.5.BUILD-SNAPSHOT.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\boot\spring-boot-starter-logging\2.0.5.BUILD-SNAPSHOT\spring-boot-starter-logging-2.0.5.BUILD-SNAPSHOT.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-core\5.0.8.RELEASE\spring-core-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\springframework\spring-jcl\5.0.8.RELEASE\spring-jcl-5.0.8.RELEASE.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar, user.name=HS, com.sun.management.jmxremote=, java.vm.specification.version=1.8, sun.java.command=com.peron.springboot.SpringLogApplication --spring.output.ansi.enabled=always, java.home=D:\softwareInstall\JDK\jdk1.8.0_66\jre, sun.arch.data.model=64, user.language=zh, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, com.sun.management.jmxremote.ssl=false, java.vm.info=mixed mode, java.version=1.8.0_66, java.ext.dirs=D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\resources.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\rt.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\sunrsasign.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\jsse.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\jce.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\charsets.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\lib\jfr.jar;D:\softwareInstall\JDK\jdk1.8.0_66\jre\classes, java.awt.headless=true, java.vendor=Oracle Corporation, spring.application.admin.enabled=true, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, java.rmi.server.hostname=localhost, LOG_PATH=/, sun.desktop=windows, sun.cpu.isalist=amd64}}, SystemEnvironmentPropertySource@691098155 {name='systemEnvironment', properties={USERDOMAIN_ROAMINGPROFILE=DESKTOP-5S193TJ, LOCALAPPDATA=C:\Users\HS\AppData\Local, PROCESSOR_LEVEL=6, USERDOMAIN=DESKTOP-5S193TJ, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\DESKTOP-5S193TJ, JAVA_HOME=D:\softwareInstall\JDK\jdk1.8.0_66, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\, SystemDrive=C:, MAVEN_HOME=D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\apache-maven-3.5.3, OneDrive=C:\Users\HS\OneDrive, APPDATA=C:\Users\HS\AppData\Roaming, USERNAME=HS, ProgramFiles(x86)=C:\Program Files (x86), CommonProgramFiles=C:\Program Files\Common Files, Path=D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/bin/server;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/bin;D:/softwareInstall/JDK/jdk1.8.0_66/bin/../jre/lib/amd64;D:\softwareInstall\app\product\11.2.0\dbhome_1\bin;D:\softwareInstall\JDK\jdk1.8.0_66\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\softwareInstall\TortoiseSVN\bin;D:\softwareInstall\nodejs\;D:\softwareInstall\MongoDb\mongodb-win32-x86_64-2.4.3\mongodb-win32-x86_64-2.4.3\bin;D:\softwareInstall\Redis\;D:\softwareInstall\apache-maven-3.5.3\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\HS\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\HS\AppData\Local\Programs\Python\Python36\;C:\Program Files\Bandizip\;F:\softwareInstall\Bandizip\;D:\softwareInstall\Bandizip\;C:\Users\HS\AppData\Local\Microsoft\WindowsApps;C:\Users\HS\AppData\Roaming\npm;;D:\softwareInstall\Fiddler2;D:\softwareInstall\spring-tool-suite-3.9.0.RELEASE-e4.7.0-win32-x86_64\sts-bundle\sts-3.9.0.RELEASE;, FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, OS=Windows_NT, COMPUTERNAME=DESKTOP-5S193TJ, PROCESSOR_REVISION=8e09, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\WINDOWS\system32\cmd.exe, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\HS, SystemRoot=C:\WINDOWS, TEMP=C:\Users\HS\AppData\Local\Temp, HOMEDRIVE=C:, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel, USERPROFILE=C:\Users\HS, TMP=C:\Users\HS\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, NUMBER_OF_PROCESSORS=4, windir=C:\WINDOWS, DM_HOME=D:\softwareInstall\dmdbms, =::=::\}}]
+2018-08-08 16:56:53.395 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'springApplicationAdminRegistrar' to allow for resolving potential circular references
+2018-08-08 16:56:53.397 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Invoking afterPropertiesSet() on bean with name 'springApplicationAdminRegistrar'
+2018-08-08 16:56:53.398 DEBUG 236 --- [main] inMXBeanRegistrar$SpringApplicationAdmin : Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+2018-08-08 16:56:53.398 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'springApplicationAdminRegistrar'
+2018-08-08 16:56:53.398 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2018-08-08 16:56:53.399 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2018-08-08 16:56:53.399 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' to allow for resolving potential circular references
+2018-08-08 16:56:53.401 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2018-08-08 16:56:53.401 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-08-08 16:56:53.401 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-08-08 16:56:53.401 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2018-08-08 16:56:53.401 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2018-08-08 16:56:53.402 DEBUG 236 --- [main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$f64ad972] - unable to determine constructor/method parameter names
+2018-08-08 16:56:53.402 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-08-08 16:56:53.402 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-08-08 16:56:53.402 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties' to allow for resolving potential circular references
+2018-08-08 16:56:53.406 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory'
+2018-08-08 16:56:53.410 DEBUG 236 --- [main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory]: AutowiredMethodElement for public void org.springframework.boot.context.properties.ConversionServiceDeducer$Factory.setGenericConverters(java.util.List)
+2018-08-08 16:56:53.410 DEBUG 236 --- [main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory]: AutowiredMethodElement for public void org.springframework.boot.context.properties.ConversionServiceDeducer$Factory.setConverters(java.util.List)
+2018-08-08 16:56:53.410 DEBUG 236 --- [main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory': AutowiredMethodElement for public void org.springframework.boot.context.properties.ConversionServiceDeducer$Factory.setGenericConverters(java.util.List)
+2018-08-08 16:56:53.412 DEBUG 236 --- [main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory': AutowiredMethodElement for public void org.springframework.boot.context.properties.ConversionServiceDeducer$Factory.setConverters(java.util.List)
+2018-08-08 16:56:53.414 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory'
+2018-08-08 16:56:53.416 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-08-08 16:56:53.416 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-08-08 16:56:53.416 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' to allow for resolving potential circular references
+2018-08-08 16:56:53.418 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2018-08-08 16:56:53.418 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-08-08 16:56:53.418 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration'
+2018-08-08 16:56:53.418 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration'
+2018-08-08 16:56:53.419 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration' to allow for resolving potential circular references
+2018-08-08 16:56:53.421 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration'
+2018-08-08 16:56:53.421 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2018-08-08 16:56:53.421 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2018-08-08 16:56:53.422 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties' to allow for resolving potential circular references
+2018-08-08 16:56:53.424 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2018-08-08 16:56:53.424 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2018-08-08 16:56:53.424 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2018-08-08 16:56:53.424 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration' to allow for resolving potential circular references
+2018-08-08 16:56:53.426 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2018-08-08 16:56:53.426 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2018-08-08 16:56:53.426 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2018-08-08 16:56:53.430 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' to allow for resolving potential circular references
+2018-08-08 16:56:53.442 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2018-08-08 16:56:53.443 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-08-08 16:56:53.452 DEBUG 236 --- [main] o.s.c.e.EventListenerMethodProcessor     : 2 @EventListener methods processed on bean 'springApplicationAdminRegistrar': {public void org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.onApplicationReadyEvent(org.springframework.boot.context.event.ApplicationReadyEvent)=@org.springframework.context.event.EventListener(value=[], classes=[], condition=), public void org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.onWebServerInitializedEvent(org.springframework.boot.web.context.WebServerInitializedEvent)=@org.springframework.context.event.EventListener(value=[], classes=[], condition=)}
+2018-08-08 16:56:53.462  INFO 236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-08 16:56:53.462 DEBUG 236 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Autodetecting user-defined JMX MBeans
+2018-08-08 16:56:53.464 DEBUG 236 --- [main] s.c.a.AnnotationConfigApplicationContext : Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@35645047]
+2018-08-08 16:56:53.465 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-08-08 16:56:53.467 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-08-08 16:56:53.483 DEBUG 236 --- [main] ConditionEvaluationReportLoggingListener : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   JmxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxAutoConfiguration#mbeanExporter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.MBeanExporter; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#mbeanServer matched:
+      - @ConditionalOnMissingBean (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#objectNamingStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.naming.ObjectNamingStrategy; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.application.admin.enabled=true) matched (OnPropertyCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration#springApplicationAdminRegistrar matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.jms.ConnectionFactory', 'org.apache.activemq.ActiveMQConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.aspectj.lang.annotation.Aspect', 'org.aspectj.lang.reflect.Advice', 'org.aspectj.weaver.AnnotatedElement' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.jms.ConnectionFactory', 'org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory' (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.batch.core.launch.JobLauncher', 'org.springframework.jdbc.core.JdbcOperations' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerJpaDependencyConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.github.benmanes.caffeine.cache.Caffeine', 'org.springframework.cache.caffeine.CaffeineCacheManager' (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Cluster' (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.datastax.driver.core.Cluster', 'org.springframework.data.cassandra.core.CassandraAdminOperations' (OnClassCondition)
+
+   CassandraReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.datastax.driver.core.Cluster', 'org.springframework.data.cassandra.core.ReactiveCassandraTemplate', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   CassandraReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.data.cassandra.ReactiveSession', 'org.springframework.data.cassandra.repository.ReactiveCassandraRepository' (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.datastax.driver.core.Session', 'org.springframework.data.cassandra.repository.CassandraRepository' (OnClassCondition)
+
+   CloudAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cloud.config.java.CloudScanConfiguration' (OnClassCondition)
+
+   CodecsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.codec.CodecConfigurer' (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.CouchbaseBucket', 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'com.couchbase.client.spring.cache.CouchbaseCacheManager' (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.CouchbaseRepository' (OnClassCondition)
+
+   CouchbaseReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.ReactiveCouchbaseRepository', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   CouchbaseReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.ReactiveCouchbaseRepository', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.CouchbaseRepository' (OnClassCondition)
+
+   DataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   DispatcherServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   EhCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'net.sf.ehcache.Cache', 'org.springframework.cache.ehcache.EhCacheCacheManager' (OnClassCondition)
+
+   ElasticsearchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.client.TransportClientFactoryBean' (OnClassCondition)
+
+   ElasticsearchDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.repository.ElasticsearchRepository' (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+   EmbeddedMongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.MongoClient', 'de.flapdoodle.embed.mongo.MongodStarter' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.JettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.webapp.WebAppContext' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.UndertowWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   ErrorMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'freemarker.template.Configuration', 'org.springframework.ui.freemarker.FreeMarkerConfigurationFactory' (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.WebServlet' (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.hazelcast.core.HazelcastInstance', 'com.hazelcast.spring.cache.HazelcastCacheManager' (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.hazelcast.core.HazelcastInstance', 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+
+   HibernateJpaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean', 'javax.persistence.EntityManager' (OnClassCondition)
+
+   HttpEncodingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+
+   HttpHandlerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.web.reactive.DispatcherHandler', 'org.springframework.http.server.reactive.HttpHandler' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.hateoas.Resource', 'org.springframework.web.bind.annotation.RequestMapping', 'org.springframework.plugin.core.Plugin' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   InfluxDbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.influxdb.InfluxDB' (OnClassCondition)
+
+   IntegrationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.cache.Caching', 'org.springframework.cache.jcache.JCacheCacheManager' (OnClassCondition)
+
+   JacksonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JdbcTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.glassfish.jersey.server.spring.SpringComponentProvider', 'javax.servlet.ServletRegistration' (OnClassCondition)
+
+   JestAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.searchbox.client.JestClient' (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.jms.Message', 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.json.bind.Jsonb' (OnClassCondition)
+
+   JtaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.transaction.Transaction' (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+   LdapDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'liquibase.integration.spring.SpringLiquibase', 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.mail.internet.MimeMessage', 'org.springframework.mail.MailSender' (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.mail.test-connection) did not find property 'test-connection' (OnPropertyCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClient' (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.MongoClient', 'org.springframework.data.mongodb.core.MongoTemplate' (OnClassCondition)
+
+   MongoReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.reactivestreams.client.MongoClient', 'org.springframework.data.mongodb.core.ReactiveMongoTemplate' (OnClassCondition)
+
+   MongoReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.reactivestreams.client.MongoClient', 'org.springframework.data.mongodb.repository.ReactiveMongoRepository' (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.MongoClient', 'org.springframework.data.mongodb.repository.MongoRepository' (OnClassCondition)
+
+   MultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'javax.servlet.MultipartConfigElement' (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.neo4j.ogm.session.SessionFactory', 'org.springframework.data.neo4j.transaction.Neo4jTransactionManager', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.neo4j.ogm.session.Neo4jSession', 'org.springframework.data.neo4j.repository.Neo4jRepository' (OnClassCondition)
+
+   OAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity', 'org.springframework.security.oauth2.client.registration.ClientRegistration' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   QuartzAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.quartz.Scheduler', 'org.springframework.scheduling.quartz.SchedulerFactoryBean', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   RabbitAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.amqp.rabbit.core.RabbitTemplate', 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+
+   ReactiveWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.ReactiveHttpInputMessage' (OnClassCondition)
+
+   ReactorCoreAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'reactor.core.publisher.Mono', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RedisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.core.RedisOperations' (OnClassCondition)
+
+   RedisCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+
+   RedisReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.data.redis.connection.ReactiveRedisConnectionFactory', 'org.springframework.data.redis.core.ReactiveRedisTemplate', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RedisRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+   RestTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+
+   SecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer', 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+   ServletWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.servlet.ServletRequest' (OnClassCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SolrAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.apache.solr.client.solrj.impl.HttpSolrClient', 'org.apache.solr.client.solrj.impl.CloudSolrClient' (OnClassCondition)
+
+   SolrRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.apache.solr.client.solrj.SolrClient', 'org.springframework.data.solr.repository.SolrRepository' (OnClassCondition)
+
+   SpringDataWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.templatemode.TemplateMode' (OnClassCondition)
+
+   TransactionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+   ValidationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.validation.executable.ExecutableValidator' (OnClassCondition)
+
+   WebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   WebFluxSecurityConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity', 'org.springframework.security.web.server.WebFilterChainProxy' (OnClassCondition)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+
+   WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+   WebSocketReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'javax.websocket.server.ServerContainer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'javax.websocket.server.ServerContainer' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.transaction.TransactionManager', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2018-08-08 16:56:53.485 DEBUG 236 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2018-08-08 16:56:53.488  INFO 236 --- [main] c.peron.springboot.SpringLogApplication  : Started SpringLogApplication in 0.958 seconds (JVM running for 1.702)
+2018-08-08 16:56:53.489 DEBUG 236 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'springApplicationAdminRegistrar'
+2018-08-08 16:56:53.490  INFO 236 --- [Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ed7259e: startup date [Wed Aug 08 16:56:52 SGT 2018]; root of context hierarchy
+2018-08-08 16:56:53.491 DEBUG 236 --- [Thread-2] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2018-08-08 16:56:53.492 DEBUG 236 --- [Thread-2] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-08-08 16:56:53.492 DEBUG 236 --- [Thread-2] o.s.b.f.s.DefaultListableBeanFactory     : Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2de23121: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,springLogApplication,org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory,org.springframework.boot.autoconfigure.AutoConfigurationPackages,org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration,org.springframework.boot.autoconfigure.condition.BeanTypeRegistry,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration,mbeanExporter,objectNamingStrategy,mbeanServer,org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration,springApplicationAdminRegistrar,org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration,org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor,org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata,org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration,spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties,org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration,spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties,org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration,server-org.springframework.boot.autoconfigure.web.ServerProperties]; root of factory hierarchy
+2018-08-08 16:56:53.492 DEBUG 236 --- [Thread-2] o.s.b.f.support.DisposableBeanAdapter    : Invoking destroy() on bean with name 'springApplicationAdminRegistrar'
+2018-08-08 16:56:53.493 DEBUG 236 --- [Thread-2] o.s.b.f.support.DisposableBeanAdapter    : Invoking destroy() on bean with name 'mbeanExporter'
+2018-08-08 16:56:53.493  INFO 236 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-08 16:56:53.493 DEBUG 236 --- [Thread-2] o.s.b.f.s.DefaultListableBeanFactory     : Retrieved dependent beans for bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': [org.springframework.context.annotation.internalConfigurationAnnotationProcessor]

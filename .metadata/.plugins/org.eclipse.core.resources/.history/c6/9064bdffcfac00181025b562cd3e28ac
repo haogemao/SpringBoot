@@ -1,0 +1,9 @@
+package com.person.springboot.mapper;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.person.springboot.entities.Girl;
+
+public interface GirlRespository extends JpaRepository<Girl, Integer> {
+
+}

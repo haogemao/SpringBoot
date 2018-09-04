@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  
+spring:
+  output:
+    ansi:
+      enabled: detect #会检查终端是否支持ANSI，是的话就采用彩色输出
+
+#日志级别
+logging:
+  level: 
+    root: DEBUG
+  file: log.log
+  path: /
+    

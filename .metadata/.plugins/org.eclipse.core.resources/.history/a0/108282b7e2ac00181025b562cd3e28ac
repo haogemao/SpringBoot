@@ -1,0 +1,6 @@
+package com.person.springboot.mapper;
+
+public enum ResultEnum {
+
+	UNKONW_ERROR(-1,"未知错误")
+}

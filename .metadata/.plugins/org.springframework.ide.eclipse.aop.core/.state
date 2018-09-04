@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring_data_jpa"/>
+<aop-project name="spring_security-1"/>
+<aop-project name="spring_boot-Async"/>
+<aop-project name="spring_boot-Async-Thread"/>
+<aop-project name="spring_boot-aop"/>
+<aop-project name="spring_boot-HTML"/>
+<aop-project name="spring_boot_event_listener"/>
+<aop-project name="spring_boot_web_jingjie_1"/>
+<aop-project name="spring_security"/>
+<aop-project name="HelloWorld"/>
+<aop-project name="spring_boot-cache"/>
+<aop-project name="JdbcTemplate"/>
+<aop-project name="spring_boot-Flyway"/>
+<aop-project name="spring_log"/>
+<aop-project name="spring_boot-redis"/>
+<aop-project name="spring_boot_mybatis"/>
+<aop-project name="spring_security-2"/>
+<aop-project name="spring_boot_swagger2"/>
+<aop-project name="spring_boot-mail"/>
+<aop-project name="spring_transaction"/>
+<aop-project name="spring_log4j"/>
+<aop-project name="spring_boot-Scheduled"/>
+</aop-reference-model>

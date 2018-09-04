@@ -1,0 +1,10 @@
+package com.person.springboot.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Girl {
+
+	@Id
+	private Integer Id;
+}

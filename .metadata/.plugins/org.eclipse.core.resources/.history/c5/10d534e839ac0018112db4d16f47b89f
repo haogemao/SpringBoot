@@ -1,0 +1,13 @@
+package com.person.springboot;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.event.ApplicationContextEvent;
+
+public class MyApplicationContextEvent extends ApplicationContextEvent {
+
+	public MyApplicationContextEvent(ApplicationContext source) {
+		super(source);
+		// TODO Auto-generated constructor stub
+	}
+
+}

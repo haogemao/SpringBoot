@@ -1,0 +1,14 @@
+package com.person.springboot.utils;
+
+import com.person.springboot.entities.Result;
+
+public class ResultUtils {
+	
+	public static Result<T> success(){
+		Result result = new Result();
+		
+		result.setCode(1);
+		result.setMsg("成功");
+	}
+
+}

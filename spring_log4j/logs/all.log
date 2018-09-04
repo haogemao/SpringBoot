@@ -1,0 +1,14 @@
+2018-08-08 17:05:54,576  INFO SpringLog4jApplication:50 - Starting SpringLog4jApplication on DESKTOP-5S193TJ with PID 14848 (E:\Document\code\SpringBoot\spring_log4j\target\classes started by HS in E:\Document\code\SpringBoot\spring_log4j)
+2018-08-08 17:05:54,578  INFO SpringLog4jApplication:662 - No active profile set, falling back to default profiles: default
+2018-08-08 17:05:54,616  INFO AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@32cf48b7: startup date [Wed Aug 08 17:05:54 SGT 2018]; root of context hierarchy
+2018-08-08 17:05:54,988  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-08-08 17:05:54,999  INFO SpringLog4jApplication:59 - Started SpringLog4jApplication in 0.653 seconds (JVM running for 1.375)
+2018-08-08 17:05:55,002  INFO AnnotationConfigApplicationContext:993 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@32cf48b7: startup date [Wed Aug 08 17:05:54 SGT 2018]; root of context hierarchy
+2018-08-08 17:05:55,003  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2018-08-08 17:06:57,103  INFO SpringLog4jApplication:50 - Starting SpringLog4jApplication on DESKTOP-5S193TJ with PID 13816 (E:\Document\code\SpringBoot\spring_log4j\target\classes started by HS in E:\Document\code\SpringBoot\spring_log4j)
+2018-08-08 17:06:57,105  INFO SpringLog4jApplication:662 - No active profile set, falling back to default profiles: default
+2018-08-08 17:06:57,136  INFO AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5cdd8682: startup date [Wed Aug 08 17:06:57 SGT 2018]; root of context hierarchy
+2018-08-08 17:06:57,537  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2018-08-08 17:06:57,548  INFO SpringLog4jApplication:59 - Started SpringLog4jApplication in 0.676 seconds (JVM running for 1.502)
+2018-08-08 17:06:57,550  INFO AnnotationConfigApplicationContext:993 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5cdd8682: startup date [Wed Aug 08 17:06:57 SGT 2018]; root of context hierarchy
+2018-08-08 17:06:57,552  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown

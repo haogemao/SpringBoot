@@ -1,0 +1,11 @@
+server:
+  port: 8082
+  
+  servlet:
+    context-path: redis
+    
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: true

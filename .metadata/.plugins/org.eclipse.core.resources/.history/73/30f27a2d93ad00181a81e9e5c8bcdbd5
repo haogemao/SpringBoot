@@ -1,0 +1,20 @@
+package com.person.springboot.exceptions;
+
+import static org.hamcrest.CoreMatchers.instanceOf;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.person.springboot.entities.Result;
+import com.person.springboot.enums.ResultEnum;
+
+@ControllerAdvice
+public class ExceptionHandle {
+
+	@ExceptionHandler(value=Exception.class)
+	@ResponseBody
+	public Result handle(Exception e) {
+		if(e instanceof GirlException)
+	}
+}

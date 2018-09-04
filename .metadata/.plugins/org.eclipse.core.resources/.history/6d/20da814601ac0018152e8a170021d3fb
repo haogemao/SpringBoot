@@ -1,0 +1,30 @@
+package com.person.springboot.mapper;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.person.springboot.entities.UserInfo;
+
+public interface UserInfoRepository extends JpaRepository<UserInfo, Integer> {
+
+	public List<UserInfo> findAll();
+
+	public S save(UserInfo userInfo);
+
+	public Optional<UserInfo> findById(Integer id);
+
+	public long count();
+
+	public void deleteById(Integer id);
+
+	public void delete(Integer id);
+
+	public void deleteAll();
+
+}

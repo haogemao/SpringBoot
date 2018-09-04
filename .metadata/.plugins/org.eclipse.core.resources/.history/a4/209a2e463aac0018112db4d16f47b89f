@@ -1,0 +1,14 @@
+package com.person.springboot;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationEvent;
+
+public class MyApplicationContextEvent extends ApplicationEvent {
+
+	public MyApplicationContextEvent(Object source) {
+		super(source);
+		System.out.println("接收到事件：" + source.toString());
+	}
+
+
+}

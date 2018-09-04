@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.person.springboot.dao.UserDao">
+	
+	<resultMap type="com.person.springboot.entity.User" id="BaseResultMap">
+		<id column="id" property="id" jdbcType="INTEGER"/>
+		<result column="user_name" property="userName" jdbcType="VARCHAR"/>
+		<result column="password" property="password" jdbcType="VARCHAR"/>
+		<result column="age" property="age" jdbcType="INTEGER"/>
+	</resultMap>
+	
+	<sql id="Base_Column_List">
+		id, user_name, password, age
+	</sql>
+	
+	<select id="findAll" resultMap="BaseResultMap">
+		select 
+		<include refid="Base_Column_List"></include>
+		  from user_t
+	</select>
+	
+	<insert id="addUser" parameterType="com.person.springboot.entity.User">
+		insert into user_t(user_name, password, age) values (#{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER})
+	</insert>
+	
+	<update id="updUser" parameterType="com.person.springboot.entity.User">
+		 update user_t 
+			set user_name = #{userName,jdbcType=VARCHAR},
+				password = #{password,jdbcType=VARCHAR},
+				age = #{age,jdbcType=INTEGER}
+		  where id = #{id,jdbcType=INTEGER}
+	</update>
+	
+	<delete id="delUser" parameterType="java.lang.Integer">
+		delete from user_t where id = #{id,jdbcType=INTEGER}
+	</delete>
+</mapper>

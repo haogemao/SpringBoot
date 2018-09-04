@@ -1,0 +1,16 @@
+package com.person.springboot.exceptions;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.person.springboot.entities.Result;
+import com.person.springboot.enums.ResultEnum;
+
+@ControllerAdvice
+public class ExceptionHandle {
+
+	@ResponseBody
+	public Result handle(ResultEnum resultEnum) {
+		
+	}
+}

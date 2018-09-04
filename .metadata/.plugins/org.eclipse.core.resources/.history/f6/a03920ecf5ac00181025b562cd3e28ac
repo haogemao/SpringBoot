@@ -1,0 +1,10 @@
+package com.person.springboot.entities;
+
+public class Result<T> {
+
+	private Integer code;
+	
+	private String msg;
+	
+	private T data;
+}

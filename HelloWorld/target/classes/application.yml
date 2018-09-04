@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+    
+
+com:
+  person:
+    springboot:
+      name: 苦逼的程序猿
+      title: Spring Boot Demo

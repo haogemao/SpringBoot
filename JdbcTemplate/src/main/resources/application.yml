@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+  
+  #热部署生效
+  devtools:
+    restart:
+      enabled: true
+      
+      #设置重启目录
+      additional-paths: src/main/java
+      #classpath目录下的web-inf文件夹内容修改不重启
+      exclude: WEB-INF/**
+  #页面不使用缓存 
+  thymeleaf:
+    cache: false
+    
+server:
+  port: 8081

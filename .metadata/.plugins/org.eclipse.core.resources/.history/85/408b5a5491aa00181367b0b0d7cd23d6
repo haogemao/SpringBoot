@@ -1,0 +1,14 @@
+package com.peron.springboot;
+
+public class Snippet {
+	@Async("taskExecutor")
+		//taskExecutor为线程池的名称
+		public void doTaskOne() throws Exception {
+			System.out.println("开始做任务一");
+	        long start = System.currentTimeMillis();
+	        Thread.sleep(random.nextInt(10000));
+	        long end = System.currentTimeMillis();
+	        System.out.println("完成任务一，耗时：" + (end - start) + "毫秒");
+		}
+}
+

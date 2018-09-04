@@ -1,0 +1,40 @@
+package com.person.springboot;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.cache.CacheManager;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.person.springboot.entities.UserInfo;
+import com.person.springboot.mapper.UserInfoRepository;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class SpringBootRedisApplicationTests {
+	
+	@Autowired
+	private UserInfoRepository userInfoRepository;
+	
+	@Autowired
+	private CacheManager cacheManger;
+
+	@Before
+	public void before() {
+		userInfoRepository.save(new UserInfo("AAA", "123456"));
+	}
+	
+	@Test
+	public void test() throws Exception {
+		List u1 = new ArrayList<>();
+	}
+
+}

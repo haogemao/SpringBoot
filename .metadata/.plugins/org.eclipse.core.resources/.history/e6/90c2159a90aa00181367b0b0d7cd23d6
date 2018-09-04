@@ -1,0 +1,40 @@
+package com.peron.springboot;
+
+import java.util.concurrent.Executor;
+import java.util.concurrent.ThreadPoolExecutor;
+
+import org.omg.CORBA.PRIVATE_MEMBER;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+
+@SpringBootApplication
+public class SpringBootAsyncThreadApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootAsyncThreadApplication.class, args);
+	}
+	
+	@Configuration
+	@EnableAsync
+	class TaskPoolConfig {
+		
+		@Bean("taskExecutor")
+		public Executor taskExecutor() {
+			ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+			//核心线程数
+			executor.setCorePoolSize(10);
+			//最大线程数
+			executor.setMaxPoolSize(20);
+			//允许线程的空闲时间
+			executor.setKeepAliveSeconds(60);
+			executor.setQueueCapacity(200);
+			executor.setThreadNamePrefix("taskExecutor-");
+			executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
+			return executor;
+		}
+	}
+}

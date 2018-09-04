@@ -1,0 +1,20 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 507297824@qq.com
+    password: gjgtuzibdokpcabj
+    properties:
+      mail: 
+        smtp: 
+          auth: true
+        starttls: 
+          enable: true
+          required: true
+
+  thymeleaf:
+    mode: HTML5
+    prefix: classpath:/templates/
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    check-template-location: true

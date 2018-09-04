@@ -1,0 +1,28 @@
+package com.person.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+/**
+ * 1.自定义监听事件，一般是继承ApplicationEvent抽象类
+ * 2.自定义监听事件，一般是实现ApplicationListener接口
+ * 3.启动的时候，需要把监听器加入到spring容器中
+ * 4.发布事件，使用ConfigurableApplicationContext。publishEvent发布事件
+ * @author HS
+ *
+ */
+@SpringBootApplication
+public class SpringBootEventListenerApplication {
+
+	public static void main(String[] args) {
+		//SpringApplication.run(SpringBootEventListenerApplication.class, args);
+		SpringApplication application = new SpringApplication(SpringBootEventListenerApplication.class);
+		//监听事件
+		application.addListeners(new MyApplicationListener());
+		ConfigurableApplicationContext context = application.run(args);
+		//发布事件
+		context.publishEvent(new MyApplicationContextEvent(new Object()));
+		context.close();
+	}
+}

@@ -1,0 +1,8 @@
+spring:
+  thymeleaf:
+    cache: false
+    
+  #热部署生效 
+  devtools:
+    restart:
+      enabled: true

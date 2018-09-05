@@ -239,6 +239,68 @@ curl http://localhost:8080/greeting&#xD;
 &lt;/div&gt;</content>
   </entry>
   <entry>
+    <title>Spring Batch 4.1.0.M3 Released!</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/08/31/spring-batch-4-1-0-m3-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mahmoud Ben Hassine</name>
+    </author>
+    <id>tag:spring.io,2018-08-31:3381</id>
+    <updated>2018-08-31T14:58:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that Spring Batch 4.1.0.M3 is now available on Github and the Pivotal download repository. What&amp;rsquo;s new in this milestone? Here is a list of new features and enhancements:&lt;/p&gt;&lt;h1&gt;&lt;a href="#jsr-305-support" class="anchor" name="jsr-305-support"&gt;&lt;/a&gt;JSR-305 support&lt;/h1&gt;
+&lt;p&gt;The main theme of this milestone is adding support for JSR-305 annotations. We leveraged Spring Framework&amp;rsquo;s &lt;a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#null-safety"&gt;Null-safety&lt;/a&gt; annotations and added them where appropriate in all public APIs of Spring Batch.&lt;/p&gt;
+&lt;p&gt;These annotations will not only enforce null-safety when using Spring Batch APIs, but also can be used by IDEs to provide useful information related to nullability. For example, if a user wants to implement the &lt;code&gt;ItemReader&lt;/code&gt; interface, any IDE supporting JSR-305 annotations will generate something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;public class MyItemReader implements ItemReader&amp;lt;String&amp;gt; {&#xD;
+&#xD;
+	@Nullable&#xD;
+	public String read() throws Exception {&#xD;
+		return null;&#xD;
+	}&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;@Nullable&lt;/code&gt; annotation present on the &lt;code&gt;read&lt;/code&gt; method makes it clear that the contract of this method says it may return &lt;code&gt;null&lt;/code&gt;. This enforces what is said in its Javadoc, that the &lt;code&gt;read&lt;/code&gt; method should return &lt;code&gt;null&lt;/code&gt; when the data source is exhausted.&lt;/p&gt;&lt;h1&gt;&lt;a href="#flatfileitemwriter-builder-enhancements" class="anchor" name="flatfileitemwriter-builder-enhancements"&gt;&lt;/a&gt;FlatFileItemWriter Builder enhancements&lt;/h1&gt;
+&lt;p&gt;Another small feature added in this release is a simplification of the configuration for the writing of a flat file. Specifically, these updates simplify the configuration of both a delimited and fixed width file. Below is an example of before and after the change.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;// Before&#xD;
+@Bean&#xD;
+public FlatFileItemWriter&amp;lt;Item&amp;gt; itemWriter(Resource resource) {&#xD;
+	BeanWrapperFieldExtractor&amp;lt;Item&amp;gt; fieldExtractor = &#xD;
+            new BeanWrapperFieldExtractor&amp;lt;Item&amp;gt;();&#xD;
+	fieldExtractor.setNames(new String[] {&amp;quot;field1&amp;quot;, &amp;quot;field2&amp;quot;, &amp;quot;field3&amp;quot;});&#xD;
+	fieldExtractor.afterPropertiesSet();&#xD;
+	&#xD;
+	DelimitedLineAggregator aggregator = new DelimitedLineAggregator();&#xD;
+	aggregator.setFieldExtractor(fieldExtractor);&#xD;
+	aggregator.setDelimiter(&amp;quot;;&amp;quot;);&#xD;
+&#xD;
+	return new FlatFileItemWriterBuilder&amp;lt;Item&amp;gt;()&#xD;
+			.name(&amp;quot;itemWriter&amp;quot;)&#xD;
+			.resource(resource)&#xD;
+			.lineAggregator(aggregator)&#xD;
+			.build();&#xD;
+}&#xD;
+&#xD;
+// After&#xD;
+@Bean&#xD;
+public FlatFileItemWriter&amp;lt;Item&amp;gt; itemWriter(Resource resource) {&#xD;
+	return new FlatFileItemWriterBuilder&amp;lt;Item&amp;gt;()&#xD;
+			.name(&amp;quot;itemWriter&amp;quot;)&#xD;
+			.resource(resource)&#xD;
+			.delimited()&#xD;
+			.delimiter(&amp;quot;;&amp;quot;)&#xD;
+			.names(new String[] {&amp;quot;field1&amp;quot;, &amp;quot;field2&amp;quot;, &amp;quot;field3&amp;quot;})&#xD;
+			.build();&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;&lt;a href="#other-improvements" class="anchor" name="other-improvements"&gt;&lt;/a&gt;Other improvements&lt;/h1&gt;
+&lt;p&gt;This milestone also includes other improvements like:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adding the ability to provide a custom transaction manager by subclassing &lt;code&gt;DefaultBatchConfigurer&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Fixing minor inconsistencies in some method names&lt;/li&gt;
+&lt;/ul&gt;&lt;h1&gt;&lt;a href="#feedback" class="anchor" name="feedback"&gt;&lt;/a&gt;Feedback&lt;/h1&gt;
+&lt;p&gt;For a complete list of changes, please check the &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10090&amp;version=16889"&gt;change log&lt;/a&gt;. This is the last milestone before the first RC! So we really look forward to hearing your feedback on this milestone! Please feel free to ping &lt;a href="https://www.twitter.com/michaelminella"&gt;@michaelminella&lt;/a&gt; or &lt;a href="https://www.twitter.com/_benas_"&gt;@_benas_&lt;/a&gt; on Twitter or ask your question on &lt;a href="https://stackoverflow.com/questions/tagged/spring-batch"&gt;StackOverflow&lt;/a&gt; or &lt;a href="https://gitter.im/spring-batch/Lobby"&gt;Gitter&lt;/a&gt;. If you find any issue, please open a ticket on &lt;a href="https://jira.spring.io/projects/BATCH/summary"&gt;Jira&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-batch/4.1.x/reference/html/index.html"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
     <title>Spring Session for Apache Geode/Pivotal GemFire 2.0.5.RELEASE and 2.1.0.M1 Released!</title>
     <link rel="alternate" href="https://spring.io/blog/2018/08/30/spring-session-for-apache-geode-pivotal-gemfire-2-0-5-release-and-2-1-0-m1-released" />
     <category term="engineering" label="Engineering" />
@@ -1817,37 +1879,6 @@ dependencies {
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;Spring Cloud Open Service Broker is a framework for building Spring Boot applications that implement the Open Service Broker API. The &lt;a href="https://www.openservicebrokerapi.org"&gt;Open Service Broker API&lt;/a&gt; project allows developers to deliver services to applications running within cloud native platforms such as Cloud Foundry, Kubernetes, and OpenShift.&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Skipper 1.1.0.M1</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/08/09/spring-cloud-skipper-1-1-0-m1" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Ilayaperumal Gopinathan</name>
-    </author>
-    <id>tag:spring.io,2018-08-09:3358</id>
-    <updated>2018-08-09T18:22:38Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;We are pleased to announce the release of Spring Cloud Skipper 1.1.0.M1&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Cloud Skipper is a lightweight tool that allows you to discover Spring Boot applications and manage their lifecycle on multiple Cloud Platforms. You can use Skipper standalone or integrate it with Continuous Integration pipelines to help implement the practice of Continuous Deployment.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The &lt;a href="https://docs.spring.io/spring-cloud-skipper/docs/1.1.0.M1/reference/htmlsingle/#getting-started"&gt;getting started section&lt;/a&gt; in the reference guide is the best place to start kicking the tires.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Focus on Cloud Foundry manifest:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This milestone release adds a new feature to perform the lifecycle operations to install, upgrade, rollback and delete on any applications that can be deployed into Cloud Foundry using the Cloud Foundry &lt;code&gt;manifest&lt;/code&gt; format.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;To do this, we are introducing a new "kind" with the name &lt;code&gt;CloudFoundryApplication&lt;/code&gt; as a specification, which can include Cloud Foundry manifest entries as mentioned &lt;a href="https://docs.spring.io/spring-cloud-skipper/docs/1.1.0.M1/reference/htmlsingle/#package-templates-cf"&gt;here&lt;/a&gt;. These manifest entries can be overridden during install/upgrade operations. Check out these &lt;a href="https://docs.spring.io/spring-cloud-skipper/docs/1.1.0.M1/reference/htmlsingle/#tour-cf-manifest"&gt;examples&lt;/a&gt; to learn more about how Cloud Foundry manifest based packages are managed in Skipper.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Please reach out on &lt;a href="https://github.com/spring-cloud/spring-cloud-skipper/issues"&gt;GitHub Issues&lt;/a&gt;, &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-skipper"&gt;Stack Overflow&lt;/a&gt;, and the &lt;a href="https://gitter.im/spring-cloud/spring-cloud-skipper"&gt;Gitter channel&lt;/a&gt; with questions, feedback or contributions.&lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
 </feed>

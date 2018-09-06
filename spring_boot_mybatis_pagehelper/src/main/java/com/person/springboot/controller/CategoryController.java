@@ -14,7 +14,6 @@ import com.person.springboot.entities.Category;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 @Controller
 public class CategoryController {
 	

@@ -1,9 +1,0 @@
-package com.person.springboot.mapper;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.person.springboot.entities.UserInfo;
-
-public class UserInfoRepository implements JpaRepository<UserInfo, ID> {
-
-}

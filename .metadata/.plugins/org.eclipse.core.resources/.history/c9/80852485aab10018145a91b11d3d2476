@@ -1,0 +1,11 @@
+package com.person.springboot.entities;
+
+import javax.persistence.Entity;
+
+@Entity(name="category_pagehelper")
+public class Category {
+
+	private int id;
+	
+	private String name;
+}

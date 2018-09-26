@@ -1,0 +1,5 @@
+package com.person.springboot.exception;
+
+public class GlobalExceptionHandler {
+
+}

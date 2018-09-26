@@ -1,7 +1,0 @@
-package com.person.springboot;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public class UserInfoRepository implements JpaRepository<T, ID> {
-
-}

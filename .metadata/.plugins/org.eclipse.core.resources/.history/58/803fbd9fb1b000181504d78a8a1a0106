@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Spring Boot文件上传状态</h1>
+	<div th:if="${message}">
+		<h2 th:text="${message}"></h2>
+	</div>
+	<div th:if="${message}">
+    	<h2 th:text="${message}"/>
+	</div>
+</body>
+</html>

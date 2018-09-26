@@ -1,0 +1,11 @@
+package com.person.springboot.controller;
+
+import org.assertj.core.internal.bytebuddy.implementation.bind.annotation.RuntimeType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class CategoryController {
+
+	@RequestMapping("/listCategory")
+}

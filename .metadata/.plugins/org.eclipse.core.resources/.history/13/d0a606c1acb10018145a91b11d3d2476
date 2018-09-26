@@ -1,0 +1,19 @@
+package com.person.springboot.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class CategoryController {
+
+	@RequestMapping("/listCategory")
+	public String listCategory(Model m, @RequestParam(value = "start", defaultValue = "0") int start, @RequestParam(value = "size", defaultValue = "2") int size) throws Exception{
+		start = start < 0 ? 0 : start;
+		
+		
+		
+		return "listCategory";
+	}
+}

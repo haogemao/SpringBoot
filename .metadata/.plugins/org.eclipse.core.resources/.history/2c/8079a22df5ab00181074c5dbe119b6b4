@@ -1,8 +1,0 @@
-server:
-  port: 8081
-  
-spring:
-  jpa:
-    properties:
-      hibernate:
-        show_sql: true

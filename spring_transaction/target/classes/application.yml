@@ -3,7 +3,7 @@ server:
   connection-timeout: 3000
   servlet:
     context-path: /spring_transaction
-    
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -13,11 +13,11 @@ spring:
   devtools:
     restart:
       enabled: true
-    
+
   jpa:
-   hibernate:
+    hibernate:
       ddl-auto: update
-   show-sql: true
+    show-sql: true
 
   mvc:
     view:

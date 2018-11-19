@@ -12,19 +12,19 @@ import com.peron.springboot.service.UserService;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringTransactionApplicationTests {
-	
-	@Autowired
-	private UserService userService;
 
-	@Test
-	public void contextLoads() {
-	}
-	
-	@Test
-	public void TestSave() {
-		Users user = new Users(1,"张三", "123456");
-		UserService userService = new UserService();
-		userService.saveUser(user);
-	}
+    @Autowired
+    private UserService userService;
+
+    @Test
+    public void contextLoads() {
+    }
+
+    @Test
+    public void TestSave() {
+        Users user = new Users(1, "张三", "123456");
+        UserService userService = new UserService();
+        userService.saveUser(user);
+    }
 
 }

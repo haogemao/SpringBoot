@@ -9,17 +9,17 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringBootAsyncThreadApplicationTests {
-	
-	@Autowired
-	private Task task;
 
-	@Test
-	public void test() throws Exception {
-		task.doTaskOne();
-		task.doTaskTwo();
-		task.doTaskThree();
-		
-		Thread.currentThread().join();
-	}
+    @Autowired
+    private Task task;
+
+    @Test
+    public void test() throws Exception {
+        task.doTaskOne();
+        task.doTaskTwo();
+        task.doTaskThree();
+
+        Thread.currentThread().join();
+    }
 
 }

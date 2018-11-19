@@ -12,17 +12,18 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 @Configuration
 public class SpringBootSwagger2Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootSwagger2Application.class, args);
-	}
-	
-	/**
-	 * 自定义消息装换器
-	 * @return
-	 */
-	@Bean
-	public StringHttpMessageConverter stringBttpMessageConverter() {
-	 StringHttpMessageConverter converter = new StringHttpMessageConverter(Charset.forName("UTF-8"));
-	 return converter;
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootSwagger2Application.class, args);
+    }
+
+    /**
+     * 自定义消息装换器
+     *
+     * @return
+     */
+    @Bean
+    public StringHttpMessageConverter stringBttpMessageConverter() {
+        StringHttpMessageConverter converter = new StringHttpMessageConverter(Charset.forName("UTF-8"));
+        return converter;
+    }
 }

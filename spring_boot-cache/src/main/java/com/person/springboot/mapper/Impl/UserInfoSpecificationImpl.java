@@ -14,16 +14,16 @@ import com.person.springboot.pojo.UserInfo;
 
 public class UserInfoSpecificationImpl implements UserInfoSpecification {
 
-	@Override
-	public Predicate toPredicate(Root<UserInfo> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public Predicate toPredicate(Root<UserInfo> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	@Override
-	public List<UserInfo> findByName(String userName) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public List<UserInfo> findByName(String userName) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
 }

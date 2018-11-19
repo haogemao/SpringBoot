@@ -18,16 +18,17 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @Aspect
 @Component
 public class WebLogAspect {
-	
-	private Logger logger = Logger.getLogger(getClass());
-	
-	ThreadLocal<Long> startTime = new ThreadLocal<Long>();
 
-	@Pointcut("execution(public * com.peron.springboot.**.*.*(..) ) ")
-	public void webLog(){}
-	
-	@Before("webLog()")
-	public void doBefore(JoinPoint joinPoint) throws Throwable {
+    private Logger logger = Logger.getLogger(getClass());
+
+    ThreadLocal<Long> startTime = new ThreadLocal<Long>();
+
+    @Pointcut("execution(public * com.peron.springboot.**.*.*(..) ) ")
+    public void webLog() {
+    }
+
+    @Before("webLog()")
+    public void doBefore(JoinPoint joinPoint) throws Throwable {
         // 接收到请求，记录请求内容
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
@@ -40,8 +41,8 @@ public class WebLogAspect {
         logger.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
         startTime.set(System.currentTimeMillis());
     }
-	
-	@AfterReturning(returning = "ret", pointcut = "webLog()")
+
+    @AfterReturning(returning = "ret", pointcut = "webLog()")
     public void doAfterReturning(Object ret) throws Throwable {
         // 处理完请求，返回内容
         logger.info("RESPONSE : " + ret);

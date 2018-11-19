@@ -1,0 +1,17 @@
+server:
+  port: 8085
+  
+spring:
+  application:
+    name: spring-cloud-producer
+    
+eureka:
+  instance: 
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://peer1:8081/eureka #,http://peer2:8083/eureka,http://peer3:8084/eureka
+      

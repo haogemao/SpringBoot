@@ -22,32 +22,32 @@ import lombok.extern.slf4j.Slf4j;
 @SpringBootTest
 @EnableCaching
 public class SpringBootRedisApplicationTests {
-	
-	@Autowired
-	private UserInfoRepository userInfoRepository;
-	
-	@Autowired
-	private CacheManager cacheManger;
 
-	@Before
-	public void before() {
-		userInfoRepository.save(new UserInfo("AAA", "123456"));
-	}
-	
-	@Test
-	public void test() throws Exception {
-		List u1 = new ArrayList();
-		u1 = userInfoRepository.findByUsername("AAA");
-		log.info("第一次查询： " + ((UserInfo)u1.get(0)).getPassword());
-		
-		List u2 = userInfoRepository.findByUsername("AAA");
-		log.info("第二次查询： " + ((UserInfo)u2.get(0)).getPassword());
-		
-		((UserInfo)u1.get(0)).setPassword("12345");
-		userInfoRepository.save((UserInfo)u1.get(0));
+    @Autowired
+    private UserInfoRepository userInfoRepository;
 
-		List u3 = userInfoRepository.findByUsername("AAA");
-		log.info("第三次查询： " + ((UserInfo)u3.get(0)).getPassword());
-	}
+    @Autowired
+    private CacheManager cacheManger;
+
+    @Before
+    public void before() {
+        userInfoRepository.save(new UserInfo("AAA", "123456"));
+    }
+
+    @Test
+    public void test() throws Exception {
+        List u1 = new ArrayList();
+        u1 = userInfoRepository.findByUsername("AAA");
+        log.info("第一次查询： " + ((UserInfo) u1.get(0)).getPassword());
+
+        List u2 = userInfoRepository.findByUsername("AAA");
+        log.info("第二次查询： " + ((UserInfo) u2.get(0)).getPassword());
+
+        ((UserInfo) u1.get(0)).setPassword("12345");
+        userInfoRepository.save((UserInfo) u1.get(0));
+
+        List u3 = userInfoRepository.findByUsername("AAA");
+        log.info("第三次查询： " + ((UserInfo) u3.get(0)).getPassword());
+    }
 
 }

@@ -9,9 +9,9 @@ import com.person.springboot.entities.Girl;
 
 public interface GirlRespository extends JpaRepository<Girl, Integer> {
 
-	//通过年龄来查询
+    //通过年龄来查询
     public List<Girl> findByAge(Integer age);
-    
+
     //通过Id来查询
     public Optional<Girl> findById(Integer id);
 }

@@ -26,7 +26,7 @@ public class OrderMasterRspositoryTest {
     private final String OPENID = "110112";
 
     @Test
-    public void saveTest(){
+    public void saveTest() {
         OrderMaster orderMaster = new OrderMaster();
         orderMaster.setOrderId("123458");
         orderMaster.setBuyerName("师兄");
@@ -40,8 +40,8 @@ public class OrderMasterRspositoryTest {
 
     @Test
     public void findByBuyerOpenid() {
-        PageRequest pageRequest = PageRequest.of(0,1);
-        Page<OrderMaster> result = orderMasterRspository.findByBuyerOpenid(OPENID,pageRequest);
-        Assert.assertNotEquals(0,result.getContent().size());
+        PageRequest pageRequest = PageRequest.of(0, 1);
+        Page<OrderMaster> result = orderMasterRspository.findByBuyerOpenid(OPENID, pageRequest);
+        Assert.assertNotEquals(0, result.getContent().size());
     }
 }

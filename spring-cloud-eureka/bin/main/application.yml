@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: peer1
+
+# 安全认证的配置
+security:
+  basic:
+    enabled: true
+  user:
+    name: chhliu  # 用户名
+    password: chhliu123456   # 用户密码
+    

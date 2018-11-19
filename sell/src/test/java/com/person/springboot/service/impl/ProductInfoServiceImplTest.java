@@ -28,14 +28,14 @@ public class ProductInfoServiceImplTest {
     @Test
     public void findUpAll() {
         List<ProductInfo> productInfoList = productInfoService.findUpAll();
-        Assert.assertNotEquals(null,productInfoList);
+        Assert.assertNotEquals(null, productInfoList);
     }
 
     @Test
     public void findAll() {
         PageRequest pageRequest = PageRequest.of(0, 2);
         Page<ProductInfo> productInfoList = productInfoService.findAll(pageRequest);
-        Assert.assertNotEquals(null,productInfoList);
+        Assert.assertNotEquals(null, productInfoList);
     }
 
     @Test

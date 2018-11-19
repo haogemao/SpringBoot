@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringBootFlywayApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootFlywayApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootFlywayApplication.class, args);
+    }
 }

@@ -94,29 +94,28 @@ public class SessionFilter implements Filter {
         HttpServletResponse httpServletResponse = (HttpServletResponse) response;
         System.out.println(httpServletRequest.getContextPath());
         String url = httpServletRequest.getRequestURI().substring(httpServletRequest.getContextPath().length());
-        if (isInclude(url)){
-            chain.doFilter(httpServletRequest,httpServletResponse);
+        if (isInclude(url)) {
+            chain.doFilter(httpServletRequest, httpServletResponse);
             return;
-        }
-        else{
+        } else {
             Cookie cookie = CookieUtil.get(httpServletRequest, CookieConstant.TOKEN);
-            if (cookie == null){
+            if (cookie == null) {
                 httpServletResponse.sendRedirect("/sell/seller/");
                 return;
             }
 //            StringRedisTemplate stringRedisTemplate = new StringRedisTemplate();
             String value;
             try {
-                log.info(String.format(RedisConstans.TOKEN_PREFIX,cookie.getValue()));
-                value = stringRedisTemplate.opsForValue().get(String.format(RedisConstans.TOKEN_PREFIX,cookie.getValue()));
-            }catch (Exception e){
-                throw new SellAuthorizeException("session已过期",1001);
+                log.info(String.format(RedisConstans.TOKEN_PREFIX, cookie.getValue()));
+                value = stringRedisTemplate.opsForValue().get(String.format(RedisConstans.TOKEN_PREFIX, cookie.getValue()));
+            } catch (Exception e) {
+                throw new SellAuthorizeException("session已过期", 1001);
             }
-            if (StringUtils.isEmpty(value)){
+            if (StringUtils.isEmpty(value)) {
                 httpServletResponse.sendRedirect("/sell/seller/");
                 return;
             }
-            chain.doFilter(httpServletRequest,httpServletResponse);
+            chain.doFilter(httpServletRequest, httpServletResponse);
         }
     }
 
@@ -138,10 +137,10 @@ public class SessionFilter implements Filter {
 
     }
 
-    public boolean isInclude(String url){
-        for (Pattern pattern : patterns){
+    public boolean isInclude(String url) {
+        for (Pattern pattern : patterns) {
             Matcher matcher = pattern.matcher(url);
-            if (matcher.matches()){
+            if (matcher.matches()) {
                 return true;
             }
         }

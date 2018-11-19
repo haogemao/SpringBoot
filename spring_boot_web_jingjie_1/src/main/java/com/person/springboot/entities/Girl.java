@@ -11,76 +11,76 @@ import javax.validation.constraints.NotNull;
 @Entity
 public class Girl {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Integer id;
-	
-	@NotBlank(message="资格字段必传")
-	private String cupSize;
-	
-	@Min(value = 18, message="未成年少女禁止入内")
-	private Integer age;
-	
-	@NotNull(message="金额必传")
-	private Double money;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
 
-	public Girl() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    @NotBlank(message = "资格字段必传")
+    private String cupSize;
 
-	public Girl(@NotBlank(message = "资格字段必传") String cupSize, @Min(value = 18, message = "未成年少女禁止入内") Integer age) {
-		super();
-		this.cupSize = cupSize;
-		this.age = age;
-	}
+    @Min(value = 18, message = "未成年少女禁止入内")
+    private Integer age;
 
-	public Girl(@NotBlank(message = "资格字段必传") String cupSize, @Min(value = 18, message = "未成年少女禁止入内") Integer age,
-			@NotNull(message = "金额必传") Double money) {
-		super();
-		this.cupSize = cupSize;
-		this.age = age;
-		this.money = money;
-	}
+    @NotNull(message = "金额必传")
+    private Double money;
 
-	public Girl(Integer id, @NotBlank(message = "资格字段必传") String cupSize,
-			@Min(value = 18, message = "未成年少女禁止入内") Integer age, @NotNull(message = "金额必传") Double money) {
-		super();
-		this.id = id;
-		this.cupSize = cupSize;
-		this.age = age;
-		this.money = money;
-	}
+    public Girl() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
-	public Integer getId() {
-		return id;
-	}
+    public Girl(@NotBlank(message = "资格字段必传") String cupSize, @Min(value = 18, message = "未成年少女禁止入内") Integer age) {
+        super();
+        this.cupSize = cupSize;
+        this.age = age;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public Girl(@NotBlank(message = "资格字段必传") String cupSize, @Min(value = 18, message = "未成年少女禁止入内") Integer age,
+                @NotNull(message = "金额必传") Double money) {
+        super();
+        this.cupSize = cupSize;
+        this.age = age;
+        this.money = money;
+    }
 
-	public String getCupSize() {
-		return cupSize;
-	}
+    public Girl(Integer id, @NotBlank(message = "资格字段必传") String cupSize,
+                @Min(value = 18, message = "未成年少女禁止入内") Integer age, @NotNull(message = "金额必传") Double money) {
+        super();
+        this.id = id;
+        this.cupSize = cupSize;
+        this.age = age;
+        this.money = money;
+    }
 
-	public void setCupSize(String cupSize) {
-		this.cupSize = cupSize;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public Integer getAge() {
-		return age;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setAge(Integer age) {
-		this.age = age;
-	}
+    public String getCupSize() {
+        return cupSize;
+    }
 
-	public Double getMoney() {
-		return money;
-	}
+    public void setCupSize(String cupSize) {
+        this.cupSize = cupSize;
+    }
 
-	public void setMoney(Double money) {
-		this.money = money;
-	}
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public Double getMoney() {
+        return money;
+    }
+
+    public void setMoney(Double money) {
+        this.money = money;
+    }
 }

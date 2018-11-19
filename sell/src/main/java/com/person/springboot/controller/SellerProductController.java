@@ -39,82 +39,81 @@ public class SellerProductController {
     @GetMapping("/list")
     public ModelAndView list(@RequestParam(value = "page", defaultValue = "1") Integer page,
                              @RequestParam(value = "size", defaultValue = "5") Integer size,
-                             Map<String,Object> map){
-        PageRequest pageRequest = PageRequest.of(page - 1,size);
+                             Map<String, Object> map) {
+        PageRequest pageRequest = PageRequest.of(page - 1, size);
         Page<ProductInfo> productInfos = productInfoService.findAll(pageRequest);
-        map.put("productInfoPage",productInfos);
-        map.put("currentPage",page);//当前页
-        map.put("size",size);//一页有多少数据
-        return new ModelAndView("product/list",map);
+        map.put("productInfoPage", productInfos);
+        map.put("currentPage", page);//当前页
+        map.put("size", size);//一页有多少数据
+        return new ModelAndView("product/list", map);
     }
 
     @GetMapping("/onSale")
     public ModelAndView onSale(@RequestParam(value = "productId") String productId,
-                               Map<String, Object> map){
+                               Map<String, Object> map) {
         ProductInfo productInfo;
         try {
             productInfo = productInfoService.onSale(productId);
-        }catch (SellException e){
-            map.put("msg",e.getMessage());
-            map.put("url","/sell/seller/product/list");
-            return new ModelAndView("common/error",map);
+        } catch (SellException e) {
+            map.put("msg", e.getMessage());
+            map.put("url", "/sell/seller/product/list");
+            return new ModelAndView("common/error", map);
         }
         map.put("msg", ResultEnum.PRODUCT_ONSALE_SUCCESS.getMessage());
-        map.put("url","/sell/seller/product/list");
-        return new ModelAndView("common/success",map);
+        map.put("url", "/sell/seller/product/list");
+        return new ModelAndView("common/success", map);
     }
 
     @GetMapping("/offSale")
     public ModelAndView offSale(@RequestParam(value = "productId") String productId,
-                               Map<String, Object> map){
+                                Map<String, Object> map) {
         ProductInfo productInfo;
         try {
             productInfo = productInfoService.offSale(productId);
-        }catch (SellException e){
-            map.put("msg",e.getMessage());
-            map.put("url","/sell/seller/product/list");
-            return new ModelAndView("common/error",map);
+        } catch (SellException e) {
+            map.put("msg", e.getMessage());
+            map.put("url", "/sell/seller/product/list");
+            return new ModelAndView("common/error", map);
         }
         map.put("msg", ResultEnum.PRODUCT_OFFSALE_SUCCESS.getMessage());
-        map.put("url","/sell/seller/product/list");
-        return new ModelAndView("common/success",map);
+        map.put("url", "/sell/seller/product/list");
+        return new ModelAndView("common/success", map);
     }
 
     @GetMapping("/index")
-    public ModelAndView index(@RequestParam(value = "productId", required = false) String productId, Map<String, Object> map){
-        if (!StringUtils.isEmpty(productId)){
+    public ModelAndView index(@RequestParam(value = "productId", required = false) String productId, Map<String, Object> map) {
+        if (!StringUtils.isEmpty(productId)) {
             ProductInfo productInfo = productInfoService.findOne(productId);
-            map.put("productInfo",productInfo);
+            map.put("productInfo", productInfo);
         }
         List<ProductCategory> productCategoryList = productCategoryService.findAll();
-        map.put("productCategoryList",productCategoryList);
-        return new ModelAndView("product/index",map);
+        map.put("productCategoryList", productCategoryList);
+        return new ModelAndView("product/index", map);
     }
 
     @PostMapping("/save")
-    public ModelAndView save(@Valid ProductInfoForm productInfoForm, BindingResult bindingResult, Map<String,Object> map){
-        if (bindingResult.hasErrors()){
-            map.put("msg",bindingResult.getFieldError().getDefaultMessage());
-            map.put("url","/sell/seller/product/index");
-            return new ModelAndView("common/error",map);
+    public ModelAndView save(@Valid ProductInfoForm productInfoForm, BindingResult bindingResult, Map<String, Object> map) {
+        if (bindingResult.hasErrors()) {
+            map.put("msg", bindingResult.getFieldError().getDefaultMessage());
+            map.put("url", "/sell/seller/product/index");
+            return new ModelAndView("common/error", map);
         }
 
         ProductInfo productInfo = new ProductInfo();
         try {
-            if (!StringUtils.isEmpty(productInfoForm.getProductId())){
+            if (!StringUtils.isEmpty(productInfoForm.getProductId())) {
                 productInfo = productInfoService.findOne(productInfoForm.getProductId());
-            }
-            else{
+            } else {
                 productInfoForm.setProductId(KeyUtil.generateUniqueKey());
             }
-            BeanUtils.copyProperties(productInfoForm,productInfo);
+            BeanUtils.copyProperties(productInfoForm, productInfo);
             productInfoService.save(productInfo);
-        }catch (SellException e){
-            map.put("msg",e.getMessage());
-            map.put("url","/sell/seller/product/index");
-            return new ModelAndView("common/error",map);
+        } catch (SellException e) {
+            map.put("msg", e.getMessage());
+            map.put("url", "/sell/seller/product/index");
+            return new ModelAndView("common/error", map);
         }
-        map.put("url","/sell/seller/product/list");
-        return new ModelAndView("common/success",map);
+        map.put("url", "/sell/seller/product/list");
+        return new ModelAndView("common/success", map);
     }
 }

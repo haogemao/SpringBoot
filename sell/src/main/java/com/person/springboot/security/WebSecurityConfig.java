@@ -20,7 +20,7 @@ import java.util.Arrays;
 public class WebSecurityConfig implements WebMvcConfigurer {
 
     @Bean
-    public SecurityInterceptor getSecurityInterceptor(){
+    public SecurityInterceptor getSecurityInterceptor() {
         return new SecurityInterceptor();
     }
 
@@ -28,7 +28,7 @@ public class WebSecurityConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         InterceptorRegistration interceptorRegistration = registry.addInterceptor(getSecurityInterceptor());
         // 排除配置
-        interceptorRegistration.excludePathPatterns(Arrays.asList("/sell/seller/","/sell/seller/login","/sell/seller/logout"));
+        interceptorRegistration.excludePathPatterns(Arrays.asList("/sell/seller/", "/sell/seller/login", "/sell/seller/logout"));
 
         //拦截配置
         interceptorRegistration.addPathPatterns("/sell/**");
@@ -46,24 +46,25 @@ public class WebSecurityConfig implements WebMvcConfigurer {
 //        interceptorRegistration.addPathPatterns("/sell/**");
 //    }
 }
-    class SecurityInterceptor extends HandlerInterceptorAdapter {
 
-        /**
-         * This implementation always returns {@code true}.
-         *
-         * @param request
-         * @param response
-         * @param handler
-         */
-        @Override
-        public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-            Cookie cookie = CookieUtil.get(request, CookieConstant.TOKEN);
-            if (cookie == null){
-                //跳转登录
-                String url = "/sell/seller/";
-                response.sendRedirect(url);
-                return false;
-            }
-            return true;
+class SecurityInterceptor extends HandlerInterceptorAdapter {
+
+    /**
+     * This implementation always returns {@code true}.
+     *
+     * @param request
+     * @param response
+     * @param handler
+     */
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        Cookie cookie = CookieUtil.get(request, CookieConstant.TOKEN);
+        if (cookie == null) {
+            //跳转登录
+            String url = "/sell/seller/";
+            response.sendRedirect(url);
+            return false;
         }
+        return true;
     }
+}

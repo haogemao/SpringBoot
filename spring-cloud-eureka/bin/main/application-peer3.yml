@@ -1,0 +1,23 @@
+
+server:
+  port: 8083
+  
+spring:
+  application:
+    name: spring-cloud-eureka
+  profiles: peer3
+   
+eureka:
+  client:
+    #鏄惁灏嗚嚜宸辨敞鍐屽埌Eureka Server锛岄粯璁や负true
+    #register-with-eureka: false
+    #鏄惁浠嶦ureka Server鑾峰彇娉ㄥ唽淇℃伅锛岄粯璁や负true
+    #fetch-registry: false
+    #璁剧疆涓嶦ureka Server浜や簰鐨勫湴鍧�锛屾煡璇㈡湇鍔″拰娉ㄥ唽鏈嶅姟閮介渶瑕佷緷璧栬繖涓湴鍧�銆傞粯璁ゆ槸http://localhost:8761/eureka 锛涘涓湴鍧�鍙娇鐢� , 鍒嗛殧
+    service-url:
+      defaultZone: http://peer2:8082/eureka/,http://peer1:8081/eureka/
+      
+  instance:
+    hostname: peer3
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}

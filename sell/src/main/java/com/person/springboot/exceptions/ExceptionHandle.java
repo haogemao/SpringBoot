@@ -16,16 +16,15 @@ public class ExceptionHandle {
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
 //    @ResponseStatus(HttpStatus.FORBIDDEN) //返回状态码
-    public ResultVO handle(Exception e){
+    public ResultVO handle(Exception e) {
         if (e instanceof SellException) {
-            log.error("发生错误，错误信息={}",e.getMessage());
+            log.error("发生错误，错误信息={}", e.getMessage());
             SellException sellException = (SellException) e;
             return ResultVOUtil.error(sellException.getCode(), sellException.getMessage());
-        }
-        else{
-            log.error("发生错误，错误信息={}",e.getMessage());
+        } else {
+            log.error("发生错误，错误信息={}", e.getMessage());
 //            return ResultVOUtil.error(1,"未知错误");
-            return ResultVOUtil.error(1,e.getMessage());
+            return ResultVOUtil.error(1, e.getMessage());
         }
     }
 }

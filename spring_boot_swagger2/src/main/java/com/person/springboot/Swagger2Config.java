@@ -16,17 +16,17 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class Swagger2Config {
 
-	@Bean
-	public Docket createRestApi() {
-		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select().apis(RequestHandlerSelectors.basePackage("com.person.springboot")).paths(PathSelectors.any()).build();
-	}
-	
-	public ApiInfo apiInfo() {
-		return new ApiInfoBuilder().title("Simple Swagger")
+    @Bean
+    public Docket createRestApi() {
+        return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select().apis(RequestHandlerSelectors.basePackage("com.person.springboot")).paths(PathSelectors.any()).build();
+    }
+
+    public ApiInfo apiInfo() {
+        return new ApiInfoBuilder().title("Simple Swagger")
                 .description("simple swagger")
                 .termsOfServiceUrl("http://www.baidu.com")
                 .contact(new Contact("人生几何", "http://www.baidu.com", "1246810048@qq.com"))
                 .version("1.0")
                 .build();
-	}
+    }
 }

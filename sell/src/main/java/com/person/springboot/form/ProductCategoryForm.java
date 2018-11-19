@@ -16,5 +16,5 @@ public class ProductCategoryForm {
 
     //类目编号
     @NotNull(message = "类目编号不能为空")
-    private  Integer categoryType;
+    private Integer categoryType;
 }

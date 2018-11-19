@@ -11,11 +11,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class User {
 
-	private Long id;
-	
-	private String name;
-	
-	private Integer age;
+    private Long id;
+
+    private String name;
+
+    private Integer age;
 
 //	public User() {
 //		super();

@@ -13,10 +13,14 @@
                 <div class="col-md-12 column">
                     <form role="form" method="post" action="/sell/seller/category/save">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">名字</label><input name="categoryName" type="text" class="form-control" value="${(productCategory.categoryName)!""}" />
+                            <label for="exampleInputEmail1">名字</label><input name="categoryName" type="text"
+                                                                             class="form-control"
+                                                                             value="${(productCategory.categoryName)!""}"/>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">type</label><input name="categoryType" type="text" class="form-control" value="${(productCategory.categoryType)!""}" />
+                            <label for="exampleInputPassword1">type</label><input name="categoryType" type="text"
+                                                                                  class="form-control"
+                                                                                  value="${(productCategory.categoryType)!""}"/>
                         </div>
                         <input hidden type="text" name="productId" value="${(productCategory.categoryId)!""}">
                         <button type="submit" class="btn btn-default">提交</button>

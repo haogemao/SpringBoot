@@ -1,0 +1,37 @@
+server:
+  port: 8086
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://144.34.134.100:3306/blog?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: hs
+    password: 123456
+
+  thymeleaf:
+    mode: HTML5
+    cache: false
+    encoding: UTF-8
+
+  #启用h2控制台
+  h2:
+    console:
+      enabled: true
+
+
+  # 内嵌 Elasticsearch 实例。默认存储位置是工作目录的 elastic 目录 (测试用)
+  #spring.data.elasticsearch.properties.path.home=target/elastic
+  # 远程服务
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9300
+      properties:
+        transport:
+          tcp:
+            connect_timeout: 120S
+  # 设置连接超时时间

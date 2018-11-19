@@ -1,0 +1,19 @@
+server:
+  port: 8084
+  
+spring:
+  application:
+    name: spring-cloud-producer
+    
+eureka:
+  instance:
+    #指定IP地址
+    #ip-address: 127.0.0.1 
+    #获取本机ip地址
+    prefer-ip-address: true                   # 设置微服务调用地址为IP优先（缺省为false）
+    lease-renewal-interval-in-seconds: 5      # 心跳时间，即服务续约间隔时间（缺省为30s）
+    lease-expiration-duration-in-seconds: 15  # 发呆时间，即服务续约到期时间（缺省为90s）
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://peer2:8082/eureka #,http://peer1:8081/eureka,http://peer2:8082/eureka #,http://peer3:8083/eureka

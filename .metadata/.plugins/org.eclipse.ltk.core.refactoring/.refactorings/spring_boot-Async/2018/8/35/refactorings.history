@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;Task.java&apos; to &apos;spring_boot-Async-Thread/src/main/java/com.peron.springboot&apos;&#x0D;&#x0A;- Original project: &apos;spring_boot-Async&apos;&#x0D;&#x0A;- Destination element: &apos;spring_boot-Async-Thread/src/main/java/com.peron.springboot&apos;&#x0D;&#x0A;- Original element: &apos;com.peron.springboot.Task.java&apos;" description="Copy compilation unit" destination="=spring_boot-Async-Thread/src\/main\/java&lt;com.peron.springboot" element1="/src\/test\/java&lt;com.peron.springboot{Task.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1535440176623" units="1" version="1.0"/>
-</session>

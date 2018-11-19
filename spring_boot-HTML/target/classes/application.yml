@@ -1,12 +1,12 @@
 server:
   port: 8082
-  
+
 spring:
   devtools:
     restart:
       enabled: true
-      
-      
+
+
   thymeleaf:
     cache: false
     mode: LEGACYHTML5

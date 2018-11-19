@@ -2,10 +2,10 @@ spring:
   thymeleaf:
     cache: false
     mode: LEGACYHTML5
-    
+
   devtools:
     restart:
       enabled: true
-      
+
 server:
   port: 8081

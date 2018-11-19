@@ -24,14 +24,14 @@ public class ProductCategoryRepositoryTest {
     private ProductCategoryRepository productCategoryRepository;
 
     @Test
-    public void test1(){
+    public void test1() {
         Optional<ProductCategory> productCategory = productCategoryRepository.findById(1);
 //        log.info(productCategoryRepository.getOne(1).toString());
         log.info(productCategory.toString());
     }
 
     @Test
-    public  void testSave(){
+    public void testSave() {
         ProductCategory productCategory = new ProductCategory();
         productCategory.setCategoryName("热销版");
         productCategory.setCategoryType(1);

@@ -1,0 +1,14 @@
+server:
+  port: 8092
+  
+spring:
+  application:
+    name: spring-cloud-consul-consumer
+    
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      #设置不需要注册到 consul 中(客户端可以设置注册到 Consul 中，也可以不注册到 Consul 注册中心中，根据我们的业务来选择，只需要在使用服务时通过 Consul 对外提供的接口获取服务信息即可。)
+      discovery:
+        register: false

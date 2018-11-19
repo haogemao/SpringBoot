@@ -1,0 +1,24 @@
+server:
+  port: 8085
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://144.34.134.100:3306/blog?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: hs
+    password: 123456
+
+  thymeleaf:
+    mode: HTML5
+    cache: false
+    encoding: UTF-8
+
+  #启用h2控制台
+  h2:
+    console:
+      enabled: true

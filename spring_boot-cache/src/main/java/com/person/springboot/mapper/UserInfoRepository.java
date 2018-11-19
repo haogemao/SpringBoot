@@ -8,9 +8,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.person.springboot.pojo.UserInfo;
 
-@CacheConfig(cacheNames="user")
+@CacheConfig(cacheNames = "user")
 public interface UserInfoRepository extends JpaRepository<UserInfo, Integer> {
-	
-	@Cacheable
-	public List<UserInfo> findByUsername(String username);
+
+    @Cacheable
+    public List<UserInfo> findByUsername(String username);
 }

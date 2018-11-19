@@ -1,0 +1,24 @@
+server:
+  port: 8086
+  
+spring:
+  application:
+    name: spring-cloud-zuul
+    
+#这里的配置表示，访问/it/**直接重定向到http://www.ityouknow.com/**
+zuul:
+  routes:
+    baidu: 
+      path: /it/**
+      #url: http://localhost:8087/consumer/
+      service-id: spring-cloud-consumer
+  retryable: true
+  
+      
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://peer1:8081/eureka #,http://peer2:8082/eureka,http://peer3:8083/eureka
+      

@@ -28,33 +28,35 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 public class GirlController {
 
-	@Autowired
-	private GirlRespository girlRepository;
-	
-	@Autowired
-	private GirlService girlService;
-	
-	/**
-	 * 查询所有女生列表
-	 * @return
-	 */
-	@GetMapping("/girls")
-	public List<Girl> girlList(){
-		log.info("girlList");
-		return girlRepository.findAll();
-	}
-	
-	@PostMapping("/girls")
-	public Result<Girl> girlAdd(@Valid Girl girl, BindingResult bindingResult) {
-		Result<Girl> result = new Result<Girl>();
-		if (bindingResult.hasErrors()) {
-			log.info(bindingResult.getFieldError().getDefaultMessage());
-			
-			return ResultUtils.error(1, bindingResult.getFieldError().getDefaultMessage());
-		}
-		return ResultUtils.success(girlRepository.save(girl));
-	}
-	//查询一个女生
+    @Autowired
+    private GirlRespository girlRepository;
+
+    @Autowired
+    private GirlService girlService;
+
+    /**
+     * 查询所有女生列表
+     *
+     * @return
+     */
+    @GetMapping("/girls")
+    public List<Girl> girlList() {
+        log.info("girlList");
+        return girlRepository.findAll();
+    }
+
+    @PostMapping("/girls")
+    public Result<Girl> girlAdd(@Valid Girl girl, BindingResult bindingResult) {
+        Result<Girl> result = new Result<Girl>();
+        if (bindingResult.hasErrors()) {
+            log.info(bindingResult.getFieldError().getDefaultMessage());
+
+            return ResultUtils.error(1, bindingResult.getFieldError().getDefaultMessage());
+        }
+        return ResultUtils.success(girlRepository.save(girl));
+    }
+
+    //查询一个女生
     @GetMapping(value = "/girls/{id}")
     public Optional<Girl> girlFindOne(@PathVariable("id") Integer id) {
         return girlRepository.findById(id);
@@ -76,18 +78,18 @@ public class GirlController {
     //删除
     @DeleteMapping(value = "/girls/{id}")
     public void girlDelete(@PathVariable("id") Integer id) {
-    	Girl girl = new Girl();
-    	girl.setId(id);
+        Girl girl = new Girl();
+        girl.setId(id);
         girlRepository.delete(girl);
     }
-    
+
     @PostMapping(value = "/girls/two")
     public void girlTwo() {
         girlService.insertTwo();
     }
 
     @GetMapping(value = "/girls/getAge/{id}")
-    public void getAge(@PathVariable("id") Integer id) throws Exception{
+    public void getAge(@PathVariable("id") Integer id) throws Exception {
         girlService.getAge(id);
     }
 }

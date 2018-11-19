@@ -14,36 +14,36 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 public class UploadController {
 
-	private static String UPLOADED_FOLDER = "D://temp//";
+    private static String UPLOADED_FOLDER = "D://temp//";
 
-	@GetMapping("/")
-	public String index() {
-		return "upload";
-	}
+    @GetMapping("/")
+    public String index() {
+        return "upload";
+    }
 
-	@PostMapping("/upload")
-	public String singleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
-		if (file.isEmpty()) {
-			redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
-			return "redirect:/uploadStatus";
-		}
+    @PostMapping("/upload")
+    public String singleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
+        if (file.isEmpty()) {
+            redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
+            return "redirect:/uploadStatus";
+        }
 
-		try {
-			byte[] bytes = file.getBytes();
-			Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());
-			Files.write(path, bytes);
-			
-			redirectAttributes.addFlashAttribute("message",
+        try {
+            byte[] bytes = file.getBytes();
+            Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());
+            Files.write(path, bytes);
+
+            redirectAttributes.addFlashAttribute("message",
                     "You successfully uploaded '" + file.getOriginalFilename() + "'");
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
-		return "redirect:/uploadStatus";
-	}
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+        return "redirect:/uploadStatus";
+    }
 
-	@GetMapping("/uploadStatus")
-	public String uploadStatus() {
-		return "uploadStatus";
-	}
+    @GetMapping("/uploadStatus")
+    public String uploadStatus() {
+        return "uploadStatus";
+    }
 }

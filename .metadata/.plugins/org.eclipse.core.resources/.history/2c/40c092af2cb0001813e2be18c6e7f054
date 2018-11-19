@@ -1,9 +1,0 @@
-package com.person.springboot.controller;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class UploadController {
-
-	private static String UPLOADED_FOLDER  = "D://temp//";
-}

@@ -6,13 +6,13 @@
     </properties>
     <appenders>
         <Console name="CONSOLE" target="system_out">
-            <PatternLayout pattern="${PATTERN}" />
+            <PatternLayout pattern="${PATTERN}"/>
         </Console>
     </appenders>
     <loggers>
-        <logger name="com.light.springboot" level="debug" />
+        <logger name="com.light.springboot" level="debug"/>
         <root level="info">
-            <appenderref ref="CONSOLE" />
+            <appenderref ref="CONSOLE"/>
         </root>
     </loggers>
 </configuration>

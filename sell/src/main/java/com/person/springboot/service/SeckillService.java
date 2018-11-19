@@ -4,6 +4,7 @@ public interface SeckillService {
 
     /**
      * 查询特价商品
+     *
      * @param productId
      * @return
      */
@@ -11,6 +12,7 @@ public interface SeckillService {
 
     /**
      * 秒杀的逻辑方法
+     *
      * @param productId
      */
     void orderProductMocckDiffUser(String productId);

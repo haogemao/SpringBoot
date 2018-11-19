@@ -21,30 +21,30 @@ public class WebSocket {
     private static CopyOnWriteArrayList<WebSocket> webSockets = new CopyOnWriteArrayList<>();
 
     @OnOpen
-    public void onOpen(Session session){
+    public void onOpen(Session session) {
         this.session = session;
         webSockets.add(this);
-        log.info("[websocket消息] 有新的连接，当前总数:{}",webSockets.size());
+        log.info("[websocket消息] 有新的连接，当前总数:{}", webSockets.size());
     }
 
     @OnClose
-    public void onColse(){
+    public void onColse() {
         webSockets.remove(this);
-        log.info("[websocket消息] 连接断开，当前总数:{}",webSockets.size());
+        log.info("[websocket消息] 连接断开，当前总数:{}", webSockets.size());
     }
 
     @OnMessage
-    public void onMessage(String message){
-        log.info("[websocket消息] 收到客户端发来的消息:{}",message);
+    public void onMessage(String message) {
+        log.info("[websocket消息] 收到客户端发来的消息:{}", message);
     }
 
-    public void sendMessage(String message){
-        for (WebSocket ws: webSockets) {
-            log.info("[websocket消息] 广播消息,message={}",message);
+    public void sendMessage(String message) {
+        for (WebSocket ws : webSockets) {
+            log.info("[websocket消息] 广播消息,message={}", message);
             try {
                 ws.session.getBasicRemote().sendText(message);
-            }catch (IOException e){
-                log.warn("[websocket消息] 发送消息失败,e={}",e);
+            } catch (IOException e) {
+                log.warn("[websocket消息] 发送消息失败,e={}", e);
             }
         }
     }

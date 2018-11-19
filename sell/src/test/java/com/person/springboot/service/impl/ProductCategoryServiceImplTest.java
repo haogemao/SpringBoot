@@ -36,7 +36,7 @@ public class ProductCategoryServiceImplTest {
 
     @Test
     public void findByCategoryTypeIn() {
-        List<ProductCategory> productCategoryList = productCategoryService.findByCategoryTypeIn(Arrays.asList(1,2,3,4));
+        List<ProductCategory> productCategoryList = productCategoryService.findByCategoryTypeIn(Arrays.asList(1, 2, 3, 4));
         Assert.assertNotEquals(0, productCategoryList.size());
     }
 

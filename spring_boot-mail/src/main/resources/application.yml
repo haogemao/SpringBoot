@@ -4,10 +4,10 @@ spring:
     username: 507297824@qq.com
     password: gjgtuzibdokpcabj
     properties:
-      mail: 
-        smtp: 
+      mail:
+        smtp:
           auth: true
-        starttls: 
+        starttls:
           enable: true
           required: true
 

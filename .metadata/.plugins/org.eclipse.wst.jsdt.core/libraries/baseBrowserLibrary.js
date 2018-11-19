@@ -12,202 +12,206 @@
 /**
  * Object DOMException()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Object
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Object
  */
-function DOMException(){};
+function DOMException() {
+};
 DOMException.prototype = new Object();
 /**
  * Constant DOMException.INDEX_SIZE_ERR=1
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.          
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.INDEX_SIZE_ERR=1;
+DOMException.INDEX_SIZE_ERR = 1;
 /**
  * Constant DOMException.DOMSTRING_SIZE_ERR=2
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.         
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.DOMSTRING_SIZE_ERR=2;
+DOMException.DOMSTRING_SIZE_ERR = 2;
 /**
  * Constant DOMException.HIERARCHY_REQUEST_ERR=3
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.           
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.HIERARCHY_REQUEST_ERR=3;
+DOMException.HIERARCHY_REQUEST_ERR = 3;
 /**
  * Constant DOMException.WRONG_DOCUMENT_ERR=4
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.         
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.WRONG_DOCUMENT_ERR=4;
+DOMException.WRONG_DOCUMENT_ERR = 4;
 /**
  * Constant DOMException.INVALID_CHARACTER_ERR=5
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.          
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.INVALID_CHARACTER_ERR=5;
+DOMException.INVALID_CHARACTER_ERR = 5;
 /**
  * Constant DOMException.NO_DATA_ALLOWED_ER=6
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.         
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.NO_DATA_ALLOWED_ER=6;
+DOMException.NO_DATA_ALLOWED_ER = 6;
 /**
  * Constant DOMException.NO_MODIFICATION_ALLOWED_ERR=7
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.         
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.NO_MODIFICATION_ALLOWED_ERR=7;
+DOMException.NO_MODIFICATION_ALLOWED_ERR = 7;
 /**
  * Constant DOMException.NOT_FOUND_ERR=8
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.          
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.NOT_FOUND_ERR=8;
+DOMException.NOT_FOUND_ERR = 8;
 /**
  * Constant DOMException.NOT_SUPPORTED_ERR=9
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.        
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.NOT_SUPPORTED_ERR=9;
+DOMException.NOT_SUPPORTED_ERR = 9;
 /**
  * Constant DOMException.INUSE_ATTRIBUTE_ERR=10
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.         
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.INUSE_ATTRIBUTE_ERR=10;
+DOMException.INUSE_ATTRIBUTE_ERR = 10;
 /**
  * Constant DOMException.INVALID_STATE_ERR=11
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.         
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.INVALID_STATE_ERR=11;
+DOMException.INVALID_STATE_ERR = 11;
 /**
  * Constant DOMException.SYNTAX_ERR=12
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.        
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.SYNTAX_ERR=12;
+DOMException.SYNTAX_ERR = 12;
 /**
  * Constant DOMException.INVALID_MODIFICATION_ER=13
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.           
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.INVALID_MODIFICATION_ER=13;
+DOMException.INVALID_MODIFICATION_ER = 13;
 /**
  * Constant DOMException.NAMESPACE_ERR=14
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.          
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.NAMESPACE_ERR=14;
+DOMException.NAMESPACE_ERR = 14;
 /**
  * Constant DOMException.NVALID_ACCESS_ERR=15
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.         
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DOMException.INVALID_ACCESS_ERR=15;
+DOMException.INVALID_ACCESS_ERR = 15;
 /**
-  * Property code
-  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
-  * 
-  * @type Number
-  * @since Standard ECMA-262 3rd. Edition 
-  * @since Level 2 Document Object Model Core Definition.   
-  */
-DOMException.prototype.code=0;
+ * Property code
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
+ * @type Number
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+DOMException.prototype.code = 0;
 
 /**
  * Object DOMImplementation()
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @augments Object
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see   Object     
+ * @see   Object
  */
-function DOMImplementation(){};
+function DOMImplementation() {
+};
 DOMImplementation.prototype = new Object();
 /**
  * function hasFeature(feature, version)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} feature
  * @param {String} version
  * @returns {Boolean}
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition. 
- */ 
-DOMImplementation.prototype.hasFeature = function(feature, version){return false;};
+ * @since Level 2 Document Object Model Core Definition.
+ */
+DOMImplementation.prototype.hasFeature = function (feature, version) {
+    return false;
+};
 /**
  * function createDocumentType(qualifiedName, publicId, systemId)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} qualifiedName
  * @param {String} publicId
  * @param {String} systemId
@@ -216,12 +220,14 @@ DOMImplementation.prototype.hasFeature = function(feature, version){return false
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see DocumentType
- */ 
-DOMImplementation.prototype.createDocumentType = function(qualifiedName, publicId, systemId){return new DocumentType();};
+ */
+DOMImplementation.prototype.createDocumentType = function (qualifiedName, publicId, systemId) {
+    return new DocumentType();
+};
 /**
  * function createDocument(namespaceURI, qualifiedName, doctype)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} namespaceURI
  * @param {String} qualifiedName
  * @param {DocumentType} doctype
@@ -230,1150 +236,1260 @@ DOMImplementation.prototype.createDocumentType = function(qualifiedName, publicI
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Document
- */ 
-DOMImplementation.prototype.createDocument = function(namespaceURI, qualifiedName, doctype){return new HTMLDocument();}; 
+ */
+DOMImplementation.prototype.createDocument = function (namespaceURI, qualifiedName, doctype) {
+    return new HTMLDocument();
+};
 
 /**
  * Object DocumentFragment()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see   Node    
+ * @see   Node
  */
-function DocumentFragment(){};
-DocumentFragment.prototype=new Node(); 
+function DocumentFragment() {
+};
+DocumentFragment.prototype = new Node();
 
 /**
  * Object Document()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node  
- */ 
-function Document(){};
+ * @see Node
+ */
+function Document() {
+};
 Document.prototype = new Node();
 /**
  * Property defaultView
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type  Window
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Window  
- */ 
-Document.prototype.defaultView = new Window(); 
+ * @see Window
+ */
+Document.prototype.defaultView = new Window();
 /**
  * Property doctype
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type  DocumentType
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see DocumentType   
- */ 
-Document.prototype.doctype = new DocumentType(); 
+ * @see DocumentType
+ */
+Document.prototype.doctype = new DocumentType();
 /**
  * Property implementation
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *  
+ *
  * @type   DOMImplementation
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see DOMImplementation
- */ 
+ */
 Document.prototype.implementation = new DOMImplementation();
 /**
- * Property documentElement 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * Property documentElement
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type   Element
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Level 2 Document Object Model Core Definition.
  * @see Element
- */ 
-Document.prototype.documentElement= new HTMLElement(); 
+ */
+Document.prototype.documentElement = new HTMLElement();
 /**
  * Property styleSheets
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type   Array
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-Document.prototype.styleSheets= new Array(); 
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Document.prototype.styleSheets = new Array();
 /**
- * function createElement(tagName)  
+ * function createElement(tagName)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} tagName
  * @returns {Element}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.  
- * @see Element  
- */  
-Document.prototype.createElement=function(tagName){return new HTMLElement();}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ * @see Element
+ */
+Document.prototype.createElement = function (tagName) {
+    return new HTMLElement();
+};
 /**
- * function createDocumentFragment()  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
- * @returns {DocumentFragment}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition. 
- * @see DocumentFragment 
- */ 
-Document.prototype.createDocumentFragment=function(){return new DocumentFragment();}; 
-/**
- * function createTextNode(data)  
+ * function createDocumentFragment()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
+ * @returns {DocumentFragment}
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ * @see DocumentFragment
+ */
+Document.prototype.createDocumentFragment = function () {
+    return new DocumentFragment();
+};
+/**
+ * function createTextNode(data)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} data
  * @returns {Text}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.  
- * @see Text 
- */ 
-Document.prototype.createTextNode=function(data){return new Text();}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ * @see Text
+ */
+Document.prototype.createTextNode = function (data) {
+    return new Text();
+};
 /**
- * function createComment(data)  
+ * function createComment(data)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} data
  * @returns {Comment}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition. 
- * @see Comment   
- */ 
-Document.prototype.createComment=function(data){return new Comment();}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ * @see Comment
+ */
+Document.prototype.createComment = function (data) {
+    return new Comment();
+};
 /**
- * function createCDATASection(data)  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * function createCDATASection(data)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} data
  * @returns {CDATASection}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see CDATASection     
+ * @see CDATASection
  */
-Document.prototype.createCDATASection=function(data){}; 
+Document.prototype.createCDATASection = function (data) {
+};
 /**
- * function createProcessingInstruction(target, data) 
+ * function createProcessingInstruction(target, data)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type ProcessingInstruction
  * @param {String} target
  * @param {String} data
  * @returns {ProcessingInstruction}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see ProcessingInstruction      
-*/
-Document.prototype.createProcessingInstruction=function(target, data){return new ProcessingInstruction();}; 
+ * @see ProcessingInstruction
+ */
+Document.prototype.createProcessingInstruction = function (target, data) {
+    return new ProcessingInstruction();
+};
 /**
- * function createAttribute(name) 
+ * function createAttribute(name)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *  
+ *
  * @param {String} name
  * @returns {Attr}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Attr   
+ * @see Attr
  */
-Document.prototype.createAttribute=function(name){return new Attr();}; 
+Document.prototype.createAttribute = function (name) {
+    return new Attr();
+};
 /**
- * function createEntityReference(name) 
+ * function createEntityReference(name)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
  * @param {String} name
  * @returns {EntityReference}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see EntityReference     
+ * @see EntityReference
  */
-Document.prototype.createEntityReference=function(name){return new EntityReference();}; 
+Document.prototype.createEntityReference = function (name) {
+    return new EntityReference();
+};
 /**
- * function getElementsByTagName(tagname)  
+ * function getElementsByTagName(tagname)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} tagname
  * @returns {NodeList}
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see NodeList     
+ * @see NodeList
  */
-Document.prototype.getElementsByTagName=function(tagname){return new NodeList();}; 
+Document.prototype.getElementsByTagName = function (tagname) {
+    return new NodeList();
+};
 /**
  * function importNode(importedNode, deep)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *  
+ *
  * @param {Node} importedNode
  * @param {Boolean} deep
  * @returns {Node}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node        
+ * @see Node
  */
-Document.prototype.importNode=function(importedNode, deep){return new Node();}; 
+Document.prototype.importNode = function (importedNode, deep) {
+    return new Node();
+};
 /**
- * function createElementNS(namespaceURI, qualifiedName) 
+ * function createElementNS(namespaceURI, qualifiedName)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} namespaceURI
  * @param {String} qualifiedName
  * @returns {Element}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Element        
+ * @see Element
  */
-Document.prototype.createElementNS=function(namespaceURI, qualifiedName){return new HTMLElement();}; 
+Document.prototype.createElementNS = function (namespaceURI, qualifiedName) {
+    return new HTMLElement();
+};
 /**
- * function createEvent(String eventType) 
+ * function createEvent(String eventType)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} eventType
  * @returns {Object}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Element        
+ * @see Element
  */
-Document.prototype.createEvent=function(eventType){return new Object();}; 
+Document.prototype.createEvent = function (eventType) {
+    return new Object();
+};
 /**
  * function createAttributeNS(namespaceURI, qualifiedName)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} namespaceURI
  * @param {String} qualifiedName
  * @returns {Attr}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see  Attr       
+ * @see  Attr
  */
-Document.prototype.createAttributeNS=function(namespaceURI, qualifiedName){return new Attr();}; 
+Document.prototype.createAttributeNS = function (namespaceURI, qualifiedName) {
+    return new Attr();
+};
 /**
  * function getElementsByTagNameNS(namespaceURI, localName)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} namespaceURI
  * @param {String} localName
  * @returns {NodeList}
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see  NodeList       
+ * @see  NodeList
  */
-Document.prototype.getElementsByTagNameNS=function(namespaceURI, localName){return new NodeList();}; 
+Document.prototype.getElementsByTagNameNS = function (namespaceURI, localName) {
+    return new NodeList();
+};
 /**
  * function getElementById(elementId)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} elementId
  * @returns {Element}
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Element         
- */ 
-Document.prototype.getElementById=function(elementId){return new HTMLElement();};
+ * @see Element
+ */
+Document.prototype.getElementById = function (elementId) {
+    return new HTMLElement();
+};
 
 /**
  * Object Node()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Object
  * @constructor
  * @memberOf Node
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see EventTarget    
+ * @see EventTarget
  */
-function Node(){};
-Node.prototype=new EventTarget(); 
+function Node() {
+};
+Node.prototype = new EventTarget();
 /**
  * Constant Node.ELEMENT_NODE=1
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.ELEMENT_NODE=1; 
+Node.ELEMENT_NODE = 1;
 /**
  * Constant Node.ATTRIBUTE_NODE=2
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.ATTRIBUTE_NODE=2;
+Node.ATTRIBUTE_NODE = 2;
 /**
  * Constant Node.TEXT_NODE=3
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.TEXT_NODE=3;
+Node.TEXT_NODE = 3;
 /**
  * Constant Node.CDATA_SECTION_NODE=4
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.CDATA_SECTION_NODE=4; 
+Node.CDATA_SECTION_NODE = 4;
 /**
  * Constant Node.ENTITY_REFERENCE_NODE=5
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.ENTITY_REFERENCE_NODE=5; 
+Node.ENTITY_REFERENCE_NODE = 5;
 /**
  * Constant Node.ENTITY_NODE=6
  * @type Number
  * @memberOf Node
- * @see Node 
- * @since Standard ECMA-262 3rd. Edition 
+ * @see Node
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
 
- * @see    http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html     
-*/
-Node.ENTITY_NODE=6;
+ * @see    http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ */
+Node.ENTITY_NODE = 6;
 /**
  * Constant Node.PROCESSING_INSTRUCTION_NODE=7
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.PROCESSING_INSTRUCTION_NODE=7; 
+Node.PROCESSING_INSTRUCTION_NODE = 7;
 /**
  * Constant Node.COMMENT_NODE=8
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.COMMENT_NODE=8;
+Node.COMMENT_NODE = 8;
 /**
  * Constant Node.DOCUMENT_NODE=9
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.DOCUMENT_NODE=9;
+Node.DOCUMENT_NODE = 9;
 /**
  * Constant Node.DOCUMENT_TYPE_NODE=10
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.DOCUMENT_TYPE_NODE=10; 
+Node.DOCUMENT_TYPE_NODE = 10;
 /**
  * Constant Node.DOCUMENT_FRAGMENT_NODE=11
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.DOCUMENT_FRAGMENT_NODE=11; 
+Node.DOCUMENT_FRAGMENT_NODE = 11;
 /**
  * Constant Node.NOTATION_NODE=12
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @constant
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Node.NOTATION_NODE=12;
+Node.NOTATION_NODE = 12;
 /**
  * Property nodeName
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type String
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.  
- */ 
-Node.prototype.nodeName = ""; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Node.prototype.nodeName = "";
 /**
  * Property nodeValue
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type String
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-Node.prototype.nodeValue = ""; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Node.prototype.nodeValue = "";
 /**
  * Property nodeType
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */  
-Node.prototype.nodeType = 0; 
-/**
- * Property parentNode 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
- * @type Node
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */  
-Node.prototype.parentNode=new Node(); 
+ */
+Node.prototype.nodeType = 0;
 /**
- * Property childNodes 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html  
- *  
+ * Property parentNode
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
+ * @type Node
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ * @see Node
+ */
+Node.prototype.parentNode = new Node();
+/**
+ * Property childNodes
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type NodeList
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see NodeList    
-*/ 
-Node.prototype.childNodes=new NodeList(); 
+ * @see NodeList
+ */
+Node.prototype.childNodes = new NodeList();
 /**
- * Property firstChild 
+ * Property firstChild
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type Node
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */  
-Node.prototype.firstChild=new Node(); 
+ * @see Node
+ */
+Node.prototype.firstChild = new Node();
 /**
- * Property lastChild 
+ * Property lastChild
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type Node
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */  
-Node.prototype.lastChild=new Node();  
+ * @see Node
+ */
+Node.prototype.lastChild = new Node();
 /**
- * Property previousSibling 
+ * Property previousSibling
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type Node
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */  
-Node.prototype.previousSibling=new Node(); 
+ * @see Node
+ */
+Node.prototype.previousSibling = new Node();
 /**
- * Property nextSibling  
+ * Property nextSibling
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type Node
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */  
-Node.prototype.nextSibling=new Node(); 
+ * @see Node
+ */
+Node.prototype.nextSibling = new Node();
 /**
- * Property attributes  
+ * Property attributes
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type NamedNodeMap
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
- * @see NamedNodeMap
- */ 
-Node.prototype.attributes=new NamedNodeMap();
-/**
- * Property ownerDocument  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *  
- * @type Document
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Document    
- */ 
-Node.prototype.ownerDocument = new HTMLDocument(); 
+ * @see NamedNodeMap
+ */
+Node.prototype.attributes = new NamedNodeMap();
 /**
- * Property namespaceURI 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html  
- * 
- * @type String
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.   
- */ 
-Node.prototype.namespaceURI=""; 
-/**
- * Property prefix 
+ * Property ownerDocument
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
+ * @type Document
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ * @see Document
+ */
+Node.prototype.ownerDocument = new HTMLDocument();
+/**
+ * Property namespaceURI
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
+ * @type String
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Node.prototype.namespaceURI = "";
+/**
+ * Property prefix
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type String
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.     
- */ 
-Node.prototype.prefix = ""; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Node.prototype.prefix = "";
 /**
- * Property localName   
+ * Property localName
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
  * @type String
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.     
- */ 
-Node.prototype.localName= "";
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Node.prototype.localName = "";
 /**
- * function insertBefore(newChild, refChild) 
+ * function insertBefore(newChild, refChild)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
  * @param {Node} newChild
  * @param {Node} refChild
  * @returns {Node}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node  
- */  
-Node.prototype.insertBefore = function(newChild, refChild){return new Node();}; 
+ * @see Node
+ */
+Node.prototype.insertBefore = function (newChild, refChild) {
+    return new Node();
+};
 /**
- * function replaceChild(newChild, oldChild) 
+ * function replaceChild(newChild, oldChild)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
  * @param {Node} newChild
  * @param {Node} oldChild
  * @returns {Node}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node  
- */ 
-Node.prototype.replaceChild = function(newChild, oldChild){return new Node();}; 
+ * @see Node
+ */
+Node.prototype.replaceChild = function (newChild, oldChild) {
+    return new Node();
+};
 /**
- * function removeChild(oldChild) 
+ * function removeChild(oldChild)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
  * @param {Node} oldChild
  * @returns {Node}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node  
- */ 
-Node.prototype.removeChild = function(oldChild){return new Node();}; 
+ * @see Node
+ */
+Node.prototype.removeChild = function (oldChild) {
+    return new Node();
+};
 /**
- * function appendChild(newChild) 
+ * function appendChild(newChild)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
  * @param {Node} newChild
  * @returns {Node}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node  
- */  
-Node.prototype.appendChild = function(newChild){return new Node();}; 
+ * @see Node
+ */
+Node.prototype.appendChild = function (newChild) {
+    return new Node();
+};
 /**
- * function hasChildNodes() 
+ * function hasChildNodes()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @returns {Boolean}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.  
- */ 
-Node.prototype.hasChildNodes=function(){return false;}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Node.prototype.hasChildNodes = function () {
+    return false;
+};
 /**
- * function cloneNode(deep) 
+ * function cloneNode(deep)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
  * @param {Boolean} deep
  * @returns {Node}
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node  
- */ 
-Node.prototype.cloneNode=function(deep){return new Node();}; 
+ * @see Node
+ */
+Node.prototype.cloneNode = function (deep) {
+    return new Node();
+};
 /**
- * function normalize() 
+ * function normalize()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
- * @since Standard ECMA-262 3rd. Edition 
+ *
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- */ 
-Node.prototype.normalize = function(){}; 
+ */
+Node.prototype.normalize = function () {
+};
 /**
- * function isSupported(feature, version)  
+ * function isSupported(feature, version)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
  * @param {String} feature
  * @param {String} version
  * @returns {Boolean}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition. 
- */ 
-Node.prototype.isSupported=function(feature, version){return false;}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Node.prototype.isSupported = function (feature, version) {
+    return false;
+};
 /**
- * function hasAttributes()   
+ * function hasAttributes()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- *   
+ *
  * @returns {Boolean}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition. 
- */ 
-Node.prototype.hasAttributes=function(){return false;};
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Node.prototype.hasAttributes = function () {
+    return false;
+};
 
 /**
  * Object NodeList()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Object
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Object
  */
-function NodeList(){};
+function NodeList() {
+};
 NodeList.prototype = new Object();
 /**
- * Property length   
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * Property length
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type Number
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.  
- */ 
-NodeList.prototype.length=0; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+NodeList.prototype.length = 0;
 /**
- * function item(index) 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *     Note: This object can also be dereferenced using square bracket notation (e.g. obj[1]). Dereferencing with an integer index is equivalent to invoking the item method with that index 
- * 
+ * function item(index)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *     Note: This object can also be dereferenced using square bracket notation (e.g. obj[1]). Dereferencing with an integer index is equivalent to invoking the item method with that index
+ *
  * @param {Number} index
  * @returns {Node}
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node     
-*/ 
-NodeList.prototype.item = function(index){return new Node();}; 
+ * @see Node
+ */
+NodeList.prototype.item = function (index) {
+    return new Node();
+};
 
 /**
  * Object NamedNodeMap()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Object
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Object
  */
-function NamedNodeMap(){};
+function NamedNodeMap() {
+};
 NamedNodeMap.prototype = new Object();
 /**
- * Property length 
+ * Property length
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type   Number
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.   
+ * @since Level 2 Document Object Model Core Definition.
  */
-NamedNodeMap.prototype.length=0; 
+NamedNodeMap.prototype.length = 0;
 /**
- * function getNamedItem(name) 
+ * function getNamedItem(name)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} name
  * @returns {Node}
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */  
-NamedNodeMap.prototype.getNamedItem=function(name){return new Node();}; 
+ * @see Node
+ */
+NamedNodeMap.prototype.getNamedItem = function (name) {
+    return new Node();
+};
 /**
- * function setNamedItem(arg) 
+ * function setNamedItem(arg)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {Node} arg
  * @returns {Node}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */ 
-NamedNodeMap.prototype.setNamedItem=function(arg){return new Node();}; 
+ * @see Node
+ */
+NamedNodeMap.prototype.setNamedItem = function (arg) {
+    return new Node();
+};
 /**
- * function removeNamedItem(name)  
+ * function removeNamedItem(name)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} name
  * @returns {Node}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */ 
-NamedNodeMap.prototype.removeNamedItem=function(name){return new Node();}; 
+ * @see Node
+ */
+NamedNodeMap.prototype.removeNamedItem = function (name) {
+    return new Node();
+};
 /**
  * function item(index)
  * Note: This object can also be dereferenced using square bracket notation (e.g. obj[1]). Dereferencing with an integer index is equivalent to invoking the item method with that index.
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {Number} index
  * @returns {Node}
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */ 
-NamedNodeMap.prototype.item=function(index){return new Node();}; 
+ * @see Node
+ */
+NamedNodeMap.prototype.item = function (index) {
+    return new Node();
+};
 /**
- * function getNamedItemNS(namespaceURI, localName) 
+ * function getNamedItemNS(namespaceURI, localName)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} namespaceURI
  * @param {String} localName
  * @returns {Node}
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */ 
-NamedNodeMap.prototype.getNamedItemNS=function(namespaceURI, localName){return new Node();}; 
+ * @see Node
+ */
+NamedNodeMap.prototype.getNamedItemNS = function (namespaceURI, localName) {
+    return new Node();
+};
 /**
- * function setNamedItemNS(arg) 
+ * function setNamedItemNS(arg)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {Node} arg
  * @returns {Node}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */ 
-NamedNodeMap.prototype.setNamedItemNS=function(arg){return new Node();}; 
+ * @see Node
+ */
+NamedNodeMap.prototype.setNamedItemNS = function (arg) {
+    return new Node();
+};
 /**
- * function removeNamedItemNS(namespaceURI, localName)  
+ * function removeNamedItemNS(namespaceURI, localName)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {String} namespaceURI
  * @param {String} localName
  * @returns {Node}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
+ * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Node    
- */ 
-NamedNodeMap.prototype.removeNamedItemNS=function(namespaceURI, localName){return new Node();}; 
+ * @see Node
+ */
+NamedNodeMap.prototype.removeNamedItemNS = function (namespaceURI, localName) {
+    return new Node();
+};
 
 /**
  * Object CharacterData()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Node
- */ 
-function CharacterData(){};
-CharacterData.prototype=new Node();
+ */
+function CharacterData() {
+};
+CharacterData.prototype = new Node();
 /**
  * Property data
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type   String
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Level 2 Document Object Model Core Definition.
  */
-CharacterData.prototype.data=""; 
+CharacterData.prototype.data = "";
 /**
  * Property length
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type   Number
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Level 2 Document Object Model Core Definition.
  */
-CharacterData.prototype.length=0; 
+CharacterData.prototype.length = 0;
 /**
- * function substringData(offset, count)  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html  
- *  
+ * function substringData(offset, count)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {Number} offset
  * @param {Number} count
  * @returns {String}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-CharacterData.prototype.substringData=function(offset, count){return "";}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+CharacterData.prototype.substringData = function (offset, count) {
+    return "";
+};
 /**
- * function appendData(arg)    
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html  
- *  
+ * function appendData(arg)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} arg
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */  
-CharacterData.prototype.appendData=function(arg){}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+CharacterData.prototype.appendData = function (arg) {
+};
 /**
- * function insertData(offset, arg)  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html  
- *  
+ * function insertData(offset, arg)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {Number} offset
  * @param {String} arg
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-CharacterData.prototype.insertData=function(offset, arg){};  
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+CharacterData.prototype.insertData = function (offset, arg) {
+};
 /**
- * function deleteData(offset, count)  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html  
- *  
+ * function deleteData(offset, count)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {Number} offset
  * @param {Number} count
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-CharacterData.prototype.deleteData=function(offset, count){}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+CharacterData.prototype.deleteData = function (offset, count) {
+};
 /**
  * function replaceData(offset, count, arg)
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html  
- *  
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {Number} offset
  * @param {Number} count
  * @param {String} arg
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-CharacterData.prototype.replaceData=function(offset, count, arg){}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+CharacterData.prototype.replaceData = function (offset, count, arg) {
+};
 
 /**
  * Object Attr()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Node
  */
-function Attr(){};
+function Attr() {
+};
 Attr.prototype = new Node();
 /**
  * Property name
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type   String
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-Attr.prototype.name = ""; 
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Attr.prototype.name = "";
 /**
  * Property specified
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type   Boolean
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-Attr.prototype.specified = false; 
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Attr.prototype.specified = false;
 /**
- * Property value 
+ * Property value
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type   String
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.    
- */ 
+ * @since Level 2 Document Object Model Core Definition.
+ */
 Attr.prototype.value = "";
 /**
- * Property ownerElement 
+ * Property ownerElement
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @type   Element
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
- * @see Element  
- */ 
+ * @see Element
+ */
 Attr.prototype.ownerElement = new Element();
 
 /**
  * Object Element()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Node
  */
-function Element(){};
-Element.prototype=new Node(); 
+function Element() {
+};
+Element.prototype = new Node();
 /**
- * Property tagName  
+ * Property tagName
  * @type   String
  * @since Standard ECMA-262 3rd. Edition
- * @since Level 2 Document Object Model Core Definition.     
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.tagName="";
+Element.prototype.tagName = "";
 /**
- * function addEventListener(Stirng type, Function listener, Boolean useCapture) 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * function addEventListener(Stirng type, Function listener, Boolean useCapture)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} type
  * @param {Function} listener
  * @param {Boolean} useCapture
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.addEventListener=function(type, listener, useCapture){}; 
+Element.prototype.addEventListener = function (type, listener, useCapture) {
+};
 /**
- * function attachEvent(String type, Function listener) 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * function attachEvent(String type, Function listener)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} type
  * @param {Function} listener
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.attachEvent=function(type, listener){}; 
+Element.prototype.attachEvent = function (type, listener) {
+};
 /**
- * function detachEvent(String type, Function listener) 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * function detachEvent(String type, Function listener)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} type
  * @param {Function} listener
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.detachEvent=function(type, listener){}; 
+Element.prototype.detachEvent = function (type, listener) {
+};
 /**
- * function dispatchEvent(Object event) 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * function dispatchEvent(Object event)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {Object} event
  * @returns {Boolean}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.dispatchEvent=function(event){return false;}; 
+Element.prototype.dispatchEvent = function (event) {
+    return false;
+};
 /**
- * function getAttribute(name) 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function getAttribute(name)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} name
  * @returns {String}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.getAttribute=function(name){return "";}; 
+Element.prototype.getAttribute = function (name) {
+    return "";
+};
 /**
- * function setAttribute(name, value) 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function setAttribute(name, value)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} name
  * @param {String} value
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.setAttribute=function(name, value){}; 
+Element.prototype.setAttribute = function (name, value) {
+};
 /**
  * function removeAttribute(name)
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} name
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.removeAttribute=function(name){}; 
+Element.prototype.removeAttribute = function (name) {
+};
 /**
  * function getAttributeNode(name)
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} name
  * @returns {Attr}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.getAttributeNode=function(name){return new Attr();}; 
+Element.prototype.getAttributeNode = function (name) {
+    return new Attr();
+};
 /**
  * function setAttributeNode(newAttr)
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {Attr} newAttr
  * @returns {Attr}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.setAttributeNode=function(newAttr){return new Attr();}; 
+Element.prototype.setAttributeNode = function (newAttr) {
+    return new Attr();
+};
 /**
- * function removeAttributeNode(oldAttr) 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function removeAttributeNode(oldAttr)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {Attr} oldAttr
  * @returns {Attr}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-Element.prototype.removeAttributeNode=function(oldAttr){return new Attr();}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Element.prototype.removeAttributeNode = function (oldAttr) {
+    return new Attr();
+};
 /**
  * function getElementsByTagName(name)
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} name
  * @returns {NodeList}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.getElementsByTagName=function(name){return new NodeList();}; 
+Element.prototype.getElementsByTagName = function (name) {
+    return new NodeList();
+};
 /**
- * function getAttributeNS(namespaceURI, localName) 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function getAttributeNS(namespaceURI, localName)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} namespaceURI
  * @param {String} localName
  * @returns {String}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.getAttributeNS=function(namespaceURI, localName){return "";}; 
+Element.prototype.getAttributeNS = function (namespaceURI, localName) {
+    return "";
+};
 /**
- * function setAttributeNS(namespaceURI, qualifiedName, value)  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function setAttributeNS(namespaceURI, qualifiedName, value)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} namespaceURI
  * @param {String} qualifiedName
  * @param {String} value
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.setAttributeNS=function(namespaceURI, qualifiedName, value){}; 
+Element.prototype.setAttributeNS = function (namespaceURI, qualifiedName, value) {
+};
 /**
- * function removeAttributeNS(namespaceURI, localName)  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function removeAttributeNS(namespaceURI, localName)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} namespaceURI
  * @param {String} localName
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-Element.prototype.removeAttributeNS=function(namespaceURI, localName){}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Element.prototype.removeAttributeNS = function (namespaceURI, localName) {
+};
 /**
- * function getAttributeNodeNS(namespaceURI, localName)   
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function getAttributeNodeNS(namespaceURI, localName)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} namespaceURI
  * @param {String} localName
  * @returns {Attr}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.getAttributeNodeNS=function(namespaceURI, localName){return new Attr();}; 
+Element.prototype.getAttributeNodeNS = function (namespaceURI, localName) {
+    return new Attr();
+};
 /**
- * function setAttributeNodeNS(newAttr)    
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function setAttributeNodeNS(newAttr)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {Attr} newAttr
  * @returns {Attr}
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.setAttributeNodeNS=function(newAttr){return new Attr();}; 
+Element.prototype.setAttributeNodeNS = function (newAttr) {
+    return new Attr();
+};
 /**
- * function getElementsByTagNameNS(namespaceURI, localName)   
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function getElementsByTagNameNS(namespaceURI, localName)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} namespaceURI
  * @param {String} localName
  * @returns {NodeList}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.getElementsByTagNameNS=function(namespaceURI, localName){return new NodeList();}; 
+Element.prototype.getElementsByTagNameNS = function (namespaceURI, localName) {
+    return new NodeList();
+};
 /**
- * function hasAttribute(name)   
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function hasAttribute(name)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} name
  * @returns {Boolean}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
- */ 
-Element.prototype.hasAttribute=function(name){return false;}; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Element.prototype.hasAttribute = function (name) {
+    return false;
+};
 /**
- * function hasAttributeNS(namespaceURI, localName)    
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- *  
+ * function hasAttributeNS(namespaceURI, localName)
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @param {String} namespaceURI
  * @param {String} localName
  * @returns {Boolean}
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-Element.prototype.hasAttributeNS=function(namespaceURI, localName){return false;}; 
+Element.prototype.hasAttributeNS = function (namespaceURI, localName) {
+    return false;
+};
 
 /**
  * Object Text()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments CharacterData
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see CharacterData
  */
-function Text(){};
+function Text() {
+};
 Text.prototype = new CharacterData();
 /**
  * function splitText(offset)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @param {Number} offset
  * @returns {Text}
  * @throws DOMException
@@ -1381,216 +1497,225 @@ Text.prototype = new CharacterData();
  * @since Level 2 Document Object Model Core Definition.
  * @see Text
  */
-Text.prototype.splitText = function(offset) {return new Text();};
+Text.prototype.splitText = function (offset) {
+    return new Text();
+};
 
 /**
  * Object Comment()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments CharacterData
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see CharacterData
  */
-function Comment(){};
+function Comment() {
+};
 Comment.prototype = new CharacterData();
 
 /**
  * Object CDATASection()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Text
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Text
  */
-function CDATASection(){};
+function CDATASection() {
+};
 CDATASection.prototype = new Text();
 
 /**
  * Object DocumentType()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Node
  */
-function DocumentType(){};
+function DocumentType() {
+};
 DocumentType.prototype = new Node();
 /**
  * Property name
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
- * @type String 
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ *
+ * @type String
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DocumentType.prototype.name=""; 
+DocumentType.prototype.name = "";
 /**
  * Property entities
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
- * @type NamedNodeMap 
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ *
+ * @type NamedNodeMap
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
 DocumentType.prototype.entities = new NamedNodeMap();
 /**
- * Property notations 
+ * Property notations
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
- * @type NamedNodeMap 
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ *
+ * @type NamedNodeMap
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DocumentType.prototype.notations=new NamedNodeMap(); 
+DocumentType.prototype.notations = new NamedNodeMap();
 /**
- * Property publicId 
+ * Property publicId
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
- * @type String 
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ *
+ * @type String
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DocumentType.prototype.publicId=""; 
+DocumentType.prototype.publicId = "";
 /**
- * Property systemId  
+ * Property systemId
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
- * @type String 
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ *
+ * @type String
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DocumentType.prototype.systemId=""; 
+DocumentType.prototype.systemId = "";
 /**
- * Property internalSubset 
+ * Property internalSubset
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
- * @type String 
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.    
+ *
+ * @type String
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
  */
-DocumentType.prototype.internalSubset="";
+DocumentType.prototype.internalSubset = "";
 
 /**
  * Object Notation()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Node
  */
-function Notation(){};
-Notation.prototype=new Node(); 
+function Notation() {
+};
+Notation.prototype = new Node();
 /**
- * Property publicId 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * Property publicId
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type String
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.     
- */  
-Notation.prototype.publicId=""; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Notation.prototype.publicId = "";
 /**
- * Property systemId 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * Property systemId
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type String
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.     
- */ 
-Notation.prototype.systemId="";
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Notation.prototype.systemId = "";
 
 /**
  * Object Entity()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Node
- */ 
-function Entity(){}; 
-Entity.prototype=new Node();
+ */
+function Entity() {
+};
+Entity.prototype = new Node();
 /**
- * Property publicId 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * Property publicId
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type String
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.     
- */  
-Entity.prototype.publicId="";
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Entity.prototype.publicId = "";
 /**
- * Property systemId 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * Property systemId
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type String
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.     
- */  
-Entity.prototype.systemId=""; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Entity.prototype.systemId = "";
 /**
- * Property notationName 
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * Property notationName
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type String
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.     
- */  
-Entity.prototype.notationName=""; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+Entity.prototype.notationName = "";
 
 /**
  * Object EntityReference()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Node
- */ 
-function EntityReference(){};
-EntityReference.prototype=new Node();
+ */
+function EntityReference() {
+};
+EntityReference.prototype = new Node();
 
 /**
  * Object ProcessingInstruction()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Node
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  * @see Node
- */ 
-function ProcessingInstruction(){}; 
-ProcessingInstruction.prototype=new Node();
+ */
+function ProcessingInstruction() {
+};
+ProcessingInstruction.prototype = new Node();
 /**
- * Property target  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * Property target
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type String
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.     
- */ 
-ProcessingInstruction.prototype.target="";
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+ProcessingInstruction.prototype.target = "";
 /**
- * Property target  
- * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html 
- * 
+ * Property target
+ * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
+ *
  * @type String
  * @throws DOMException
- * @since Standard ECMA-262 3rd. Edition 
- * @since Level 2 Document Object Model Core Definition.     
- */ 
-ProcessingInstruction.prototype.data=""; 
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+ */
+ProcessingInstruction.prototype.data = "";
 
 
 /*HTML DOM Below this line*/
@@ -1598,372 +1723,390 @@ ProcessingInstruction.prototype.data="";
 /**
  * Object HTMLCollection()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments Object
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
- */ 
-function HTMLCollection(){};
+ */
+function HTMLCollection() {
+};
 HTMLCollection.prototype = new Object();
 /**
  * Property length
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLCollection.prototype.length=0;
+HTMLCollection.prototype.length = 0;
 /**
  * function item(index)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {Number} index
  * @returns {Node}
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLCollection.prototype.item = function(index){return new Node();};
+HTMLCollection.prototype.item = function (index) {
+    return new Node();
+};
 /**
  * function namedItem(name)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {String} name
  * @returns {Node}
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLCollection.prototype.namedItem = function(index){return new Node();};
+HTMLCollection.prototype.namedItem = function (index) {
+    return new Node();
+};
 
 /**
  * Object HTMLOptionsCollection()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments Object
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
- */ 
-function HTMLOptionsCollection(){};
+ */
+function HTMLOptionsCollection() {
+};
 HTMLOptionsCollection.prototype = new Object();
 /**
  * Property length
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionsCollection.prototype.length=0;
+HTMLOptionsCollection.prototype.length = 0;
 /**
  * function item(index)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {Number} index
  * @returns {Node}
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionsCollection.prototype.item = function(index){return new Node();};
+HTMLOptionsCollection.prototype.item = function (index) {
+    return new Node();
+};
 /**
  * function namedItem(name)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {String} name
  * @returns {Node}
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionsCollection.prototype.namedItem = function(index){return new Node();};
+HTMLOptionsCollection.prototype.namedItem = function (index) {
+    return new Node();
+};
 
 /**
  * Object HTMLDocument()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments Document
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see Document
- */ 
-function HTMLDocument(){};
+ */
+function HTMLDocument() {
+};
 HTMLDocument.prototype = new Document();
 /**
  * Property title
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.title="";
+HTMLDocument.prototype.title = "";
 /**
  * Property referrer
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.referrer="";
+HTMLDocument.prototype.referrer = "";
 /**
  * Property domain
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.domain="";
+HTMLDocument.prototype.domain = "";
 /**
  * Property URL
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.URL="";
+HTMLDocument.prototype.URL = "";
 /**
  * Property body
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.body=new HTMLElement();
+HTMLDocument.prototype.body = new HTMLElement();
 /**
  * Property images
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.images=new HTMLCollection();
+HTMLDocument.prototype.images = new HTMLCollection();
 /**
  * Property applets
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.applets=new HTMLCollection();
+HTMLDocument.prototype.applets = new HTMLCollection();
 /**
  * Property links
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.links=new HTMLCollection();
+HTMLDocument.prototype.links = new HTMLCollection();
 /**
  * Property forms
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.forms=new HTMLCollection();
+HTMLDocument.prototype.forms = new HTMLCollection();
 /**
  * Property anchors
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.anchors=new HTMLCollection();
+HTMLDocument.prototype.anchors = new HTMLCollection();
 /**
  * Property cookie
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.cookie="";
+HTMLDocument.prototype.cookie = "";
 /**
  * Property lastModified
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.lastModified="";
+HTMLDocument.prototype.lastModified = "";
 /**
  * function open()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.open = function(){};
+HTMLDocument.prototype.open = function () {
+};
 /**
  * function close()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.close = function(){};
+HTMLDocument.prototype.close = function () {
+};
 /**
  * function write(text)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {String} text
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.write = function(text){};
+HTMLDocument.prototype.write = function (text) {
+};
 /**
  * function writeln(text)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {String} text
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.writeln = function(text){};
+HTMLDocument.prototype.writeln = function (text) {
+};
 /**
  * function getElementsByName(elementName)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {String} elementName
  * @returns {NodeList}
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDocument.prototype.getElementsByName = function(elementName){return new NodeList();};
+HTMLDocument.prototype.getElementsByName = function (elementName) {
+    return new NodeList();
+};
 
 /**
  * Object HTMLElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments Element
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see Element
- */ 
-function HTMLElement(){};
+ */
+function HTMLElement() {
+};
 HTMLElement.prototype = new Element();
 /**
  * Property id
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLElement.prototype.id="";
+HTMLElement.prototype.id = "";
 /**
  * Property title
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLElement.prototype.title="";
+HTMLElement.prototype.title = "";
 /**
  * Property lang
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLElement.prototype.lang="";
+HTMLElement.prototype.lang = "";
 /**
  * Property dir
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLElement.prototype.dir="";
+HTMLElement.prototype.dir = "";
 /**
  * Property className
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLElement.prototype.className="";
+HTMLElement.prototype.className = "";
 /**
  * Property innerHTML
- * 
+ *
  * @type String
  */
-HTMLElement.prototype.innerHTML="";
+HTMLElement.prototype.innerHTML = "";
 /**
  * Property offsetHeight
- * 
+ *
  * @type Number
  */
-HTMLElement.prototype.offsetHeight=0;
+HTMLElement.prototype.offsetHeight = 0;
 /**
  * Property offsetWidth
- * 
+ *
  * @type Number
  */
-HTMLElement.prototype.offsetWidth=0;
+HTMLElement.prototype.offsetWidth = 0;
 /**
  * Property offsetLeft
- * 
+ *
  * @type Number
  */
-HTMLElement.prototype.offsetLeft=0;
+HTMLElement.prototype.offsetLeft = 0;
 /**
  * Property offsetTop
- * 
+ *
  * @type Number
  */
-HTMLElement.prototype.offsetTop=0;
+HTMLElement.prototype.offsetTop = 0;
 /**
  * Property offsetParent
- * 
+ *
  * @type HTMLElement
  */
 HTMLElement.prototype.offsetParent = new HTMLElement();
 /**
  * Property scrollHeight
- * 
+ *
  * @type Number
  */
-HTMLElement.prototype.scrollHeight=0;
+HTMLElement.prototype.scrollHeight = 0;
 /**
  * Property scrollWidth
- * 
+ *
  * @type Number
  */
-HTMLElement.prototype.scrollWidth=0;
+HTMLElement.prototype.scrollWidth = 0;
 /**
  * Property scrollLeft
- * 
+ *
  * @type Number
  */
-HTMLElement.prototype.scrollLeft=0;
+HTMLElement.prototype.scrollLeft = 0;
 /**
  * Property scrollTop
- * 
+ *
  * @type Number
  */
-HTMLElement.prototype.scrollTop=0;
+HTMLElement.prototype.scrollTop = 0;
 /**
  * Property style
- * 
+ *
  * @type CSS2Properties
  */
 HTMLElement.prototype.style = new CSS2Properties();
@@ -1971,535 +2114,548 @@ HTMLElement.prototype.style = new CSS2Properties();
 /**
  * Object HTMLHtmlElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLHtmlElement(){};
+function HTMLHtmlElement() {
+};
 HTMLHtmlElement.prototype = new HTMLElement();
 /**
  * Property version
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLHtmlElement.prototype.version="";
+HTMLHtmlElement.prototype.version = "";
 
 /**
  * Object HTMLHeadElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLHeadElement(){};
+function HTMLHeadElement() {
+};
 HTMLHeadElement.prototype = new HTMLElement();
 /**
  * Property profile
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLHeadElement.prototype.profile="";
+HTMLHeadElement.prototype.profile = "";
 
 /**
  * Object HTMLLinkElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLLinkElement(){};
+function HTMLLinkElement() {
+};
 HTMLLinkElement.prototype = new HTMLElement();
 /**
  * Property disabled
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLinkElement.prototype.disabled=false;
+HTMLLinkElement.prototype.disabled = false;
 /**
  * Property charset
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLinkElement.prototype.charset="";
+HTMLLinkElement.prototype.charset = "";
 /**
  * Property href
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLinkElement.prototype.href="";
+HTMLLinkElement.prototype.href = "";
 /**
  * Property hreflang
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLinkElement.prototype.hreflang="";
+HTMLLinkElement.prototype.hreflang = "";
 /**
  * Property media
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLinkElement.prototype.media="";
+HTMLLinkElement.prototype.media = "";
 /**
  * Property rel
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLinkElement.prototype.rel="";
+HTMLLinkElement.prototype.rel = "";
 /**
  * Property rev
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLinkElement.prototype.rev="";
+HTMLLinkElement.prototype.rev = "";
 /**
  * Property target
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLinkElement.prototype.target="";
+HTMLLinkElement.prototype.target = "";
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLinkElement.prototype.type="";
+HTMLLinkElement.prototype.type = "";
 
 /**
  * Object HTMLTitleElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLTitleElement(){};
+function HTMLTitleElement() {
+};
 HTMLTitleElement.prototype = new HTMLElement();
 /**
  * Property text
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTitleElement.prototype.text="";
+HTMLTitleElement.prototype.text = "";
 
 /**
  * Object HTMLMetaElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLMetaElement(){};
+function HTMLMetaElement() {
+};
 HTMLMetaElement.prototype = new HTMLElement();
 /**
  * Property content
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLMetaElement.prototype.content="";
+HTMLMetaElement.prototype.content = "";
 /**
  * Property httpEquiv
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLMetaElement.prototype.httpEquiv="";
+HTMLMetaElement.prototype.httpEquiv = "";
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLMetaElement.prototype.name="";
+HTMLMetaElement.prototype.name = "";
 /**
  * Property scheme
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLMetaElement.prototype.scheme="";
+HTMLMetaElement.prototype.scheme = "";
 
 /**
  * Object HTMLBaseElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLBaseElement(){};
+function HTMLBaseElement() {
+};
 HTMLBaseElement.prototype = new HTMLElement();
 /**
  * Property href
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBaseElement.prototype.href="";
+HTMLBaseElement.prototype.href = "";
 /**
  * Property target
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBaseElement.prototype.target="";
+HTMLBaseElement.prototype.target = "";
 
 /**
  * Object HTMLIsIndexElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLIsIndexElement(){};
+function HTMLIsIndexElement() {
+};
 HTMLIsIndexElement.prototype = new HTMLElement();
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIsIndexElement.prototype.form=new HTMLFormElement();
+HTMLIsIndexElement.prototype.form = new HTMLFormElement();
 /**
  * Property prompt
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIsIndexElement.prototype.prompt="";
+HTMLIsIndexElement.prototype.prompt = "";
 
 /**
  * Object HTMLStyleElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLStyleElement(){};
+function HTMLStyleElement() {
+};
 HTMLStyleElement.prototype = new HTMLElement();
 /**
  * Property disabled
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLStyleElement.prototype.disabled=false;
+HTMLStyleElement.prototype.disabled = false;
 /**
  * Property media
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLStyleElement.prototype.media="";
+HTMLStyleElement.prototype.media = "";
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLStyleElement.prototype.type="";
+HTMLStyleElement.prototype.type = "";
 
 /**
  * Object HTMLBodyElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLBodyElement(){};
+function HTMLBodyElement() {
+};
 HTMLBodyElement.prototype = new HTMLElement();
 /**
  * Property aLink
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBodyElement.prototype.aLink="";
+HTMLBodyElement.prototype.aLink = "";
 /**
  * Property background
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBodyElement.prototype.background="";
+HTMLBodyElement.prototype.background = "";
 /**
  * Property bgColor
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBodyElement.prototype.bgColor="";
+HTMLBodyElement.prototype.bgColor = "";
 /**
  * Property link
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBodyElement.prototype.link="";
+HTMLBodyElement.prototype.link = "";
 /**
  * Property text
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBodyElement.prototype.text="";
+HTMLBodyElement.prototype.text = "";
 /**
  * Property vLink
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBodyElement.prototype.vLink="";
+HTMLBodyElement.prototype.vLink = "";
 
 /**
  * Object HTMLFormElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLFormElement(){};
+function HTMLFormElement() {
+};
 HTMLFormElement.prototype = new HTMLElement();
 /**
  * Property elements
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.elements=new HTMLCollection();
+HTMLFormElement.prototype.elements = new HTMLCollection();
 /**
  * Property length
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.length=0;
+HTMLFormElement.prototype.length = 0;
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.name="";
+HTMLFormElement.prototype.name = "";
 /**
  * Property acceptCharset
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.acceptCharset="";
+HTMLFormElement.prototype.acceptCharset = "";
 /**
  * Property action
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.action="";
+HTMLFormElement.prototype.action = "";
 /**
  * Property enctype
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.enctype="";
+HTMLFormElement.prototype.enctype = "";
 /**
  * Property method
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.method="";
+HTMLFormElement.prototype.method = "";
 /**
  * Property target
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.target="";
+HTMLFormElement.prototype.target = "";
 /**
  * function submit()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.submit = function(){};
+HTMLFormElement.prototype.submit = function () {
+};
 /**
  * function reset()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFormElement.prototype.reset = function(){};
+HTMLFormElement.prototype.reset = function () {
+};
 
 /**
  * Object HTMLSelectElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLSelectElement(){};
+function HTMLSelectElement() {
+};
 HTMLSelectElement.prototype = new HTMLElement();
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.type="";
+HTMLSelectElement.prototype.type = "";
 /**
  * Property selectedIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.selectedIndex=0;
+HTMLSelectElement.prototype.selectedIndex = 0;
 /**
  * Property value
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.value="";
+HTMLSelectElement.prototype.value = "";
 /**
  * Property length
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.length=0;
+HTMLSelectElement.prototype.length = 0;
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -2508,124 +2664,129 @@ HTMLSelectElement.prototype.form = new HTMLFormElement();
 /**
  * Property options
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLOptionsCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.options= new HTMLOptionsCollection();
+HTMLSelectElement.prototype.options = new HTMLOptionsCollection();
 /**
  * Property disabled
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.disabled=false;
+HTMLSelectElement.prototype.disabled = false;
 /**
  * Property multiple
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.multiple=false;
+HTMLSelectElement.prototype.multiple = false;
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.name="";
+HTMLSelectElement.prototype.name = "";
 /**
  * Property size
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.size=0;
+HTMLSelectElement.prototype.size = 0;
 /**
  * Property tabIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.tabIndex=0;
+HTMLSelectElement.prototype.tabIndex = 0;
 /**
  * function add(element, before)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {HTMLElement} element
  * @param {HTMLElement} before
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.add = function(element, before){};
+HTMLSelectElement.prototype.add = function (element, before) {
+};
 /**
  * function remove(index)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {Number} index
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.remove = function(index){};
+HTMLSelectElement.prototype.remove = function (index) {
+};
 /**
  * function blur()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.blur = function(){};
+HTMLSelectElement.prototype.blur = function () {
+};
 /**
  * function focus()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLSelectElement.prototype.focus = function(){};
+HTMLSelectElement.prototype.focus = function () {
+};
 
 /**
  * Object HTMLOptGroupElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLOptGroupElement(){};
+function HTMLOptGroupElement() {
+};
 HTMLOptGroupElement.prototype = new HTMLElement();
 /**
  * Property disabled
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptGroupElement.prototype.disabled=false;
+HTMLOptGroupElement.prototype.disabled = false;
 /**
  * Property label
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptGroupElement.prototype.label="";
+HTMLOptGroupElement.prototype.label = "";
 
 /**
  * Object Option()
@@ -2635,24 +2796,27 @@ HTMLOptGroupElement.prototype.label="";
  * @param {Boolean} defaultSelected
  * @param {Boolean} selected
  */
-function Option(text, value, defaultSelected, selected){};
+function Option(text, value, defaultSelected, selected) {
+};
 Option.prototype = new HTMLOptionElement();
+
 /**
  * Object HTMLOptionElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLOptionElement(){};
+function HTMLOptionElement() {
+};
 HTMLOptionElement.prototype = new HTMLElement();
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -2661,101 +2825,102 @@ HTMLOptionElement.prototype.form = new HTMLFormElement();
 /**
  * Property defaultSelected
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionElement.prototype.defaultSelected=false;
+HTMLOptionElement.prototype.defaultSelected = false;
 /**
  * Property text
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionElement.prototype.text="";
+HTMLOptionElement.prototype.text = "";
 /**
  * Property index
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionElement.prototype.index=0;
+HTMLOptionElement.prototype.index = 0;
 /**
  * Property disabled
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionElement.prototype.disabled=false;
+HTMLOptionElement.prototype.disabled = false;
 /**
  * Property label
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionElement.prototype.label="";
+HTMLOptionElement.prototype.label = "";
 /**
  * Property selected
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionElement.prototype.selected=false;
+HTMLOptionElement.prototype.selected = false;
 /**
  * Property value
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOptionElement.prototype.value="";
+HTMLOptionElement.prototype.value = "";
 
 /**
  * Object HTMLInputElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLInputElement(){};
+function HTMLInputElement() {
+};
 HTMLInputElement.prototype = new HTMLElement();
 /**
  * Property defaultValue
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.defaultValue="";
+HTMLInputElement.prototype.defaultValue = "";
 /**
  * Property defaultChecked
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.defaultChecked=false;
+HTMLInputElement.prototype.defaultChecked = false;
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -2764,323 +2929,332 @@ HTMLInputElement.prototype.form = new HTMLFormElement();
 /**
  * Property accept
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.accept="";
+HTMLInputElement.prototype.accept = "";
 /**
  * Property accessKey
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.accessKey="";
+HTMLInputElement.prototype.accessKey = "";
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.align="";
+HTMLInputElement.prototype.align = "";
 /**
  * Property alt
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.alt="";
+HTMLInputElement.prototype.alt = "";
 /**
  * Property checked
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.checked=false;
+HTMLInputElement.prototype.checked = false;
 /**
  * Property disabled
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.disabled=false;
+HTMLInputElement.prototype.disabled = false;
 /**
  * Property masLength
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.maxLenght=0;
+HTMLInputElement.prototype.maxLenght = 0;
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.name="";
+HTMLInputElement.prototype.name = "";
 /**
  * Property readOnly
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.readOnly=false;
+HTMLInputElement.prototype.readOnly = false;
 /**
  * Property size
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.size=0;
+HTMLInputElement.prototype.size = 0;
 /**
  * Property src
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.src="";
+HTMLInputElement.prototype.src = "";
 /**
  * Property tabIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.tabIndex=0;
+HTMLInputElement.prototype.tabIndex = 0;
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.type="";
+HTMLInputElement.prototype.type = "";
 /**
  * Property useMap
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.useMap="";
+HTMLInputElement.prototype.useMap = "";
 /**
  * Property value
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.value="";
+HTMLInputElement.prototype.value = "";
 /**
  * function blur()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.blur = function(){};
+HTMLInputElement.prototype.blur = function () {
+};
 /**
  * function focus()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.focus = function(){};
+HTMLInputElement.prototype.focus = function () {
+};
 /**
  * function select()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.select = function(){};
+HTMLInputElement.prototype.select = function () {
+};
 /**
  * function click()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLInputElement.prototype.click = function(){};
+HTMLInputElement.prototype.click = function () {
+};
 
 /**
  * Object HTMLTextAreaElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLTextAreaElement(){};
+function HTMLTextAreaElement() {
+};
 HTMLTextAreaElement.prototype = new HTMLElement();
 /**
  * Property defaultValue
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.defaultValue="";
+HTMLTextAreaElement.prototype.defaultValue = "";
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.form= new HTMLFormElement();
+HTMLTextAreaElement.prototype.form = new HTMLFormElement();
 /**
  * Property accessKey
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.accessKey="";
+HTMLTextAreaElement.prototype.accessKey = "";
 /**
  * Property cols
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.cols=0;
+HTMLTextAreaElement.prototype.cols = 0;
 /**
  * Property disabled
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.disabled=false;
+HTMLTextAreaElement.prototype.disabled = false;
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.name="";
+HTMLTextAreaElement.prototype.name = "";
 /**
  * Property readOnly
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.readOnly=false;
+HTMLTextAreaElement.prototype.readOnly = false;
 /**
  * Property rows
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.rows=0;
+HTMLTextAreaElement.prototype.rows = 0;
 /**
  * Property tabIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.tabIndex=0;
+HTMLTextAreaElement.prototype.tabIndex = 0;
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.type="";
+HTMLTextAreaElement.prototype.type = "";
 /**
  * Property value
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.value="";
+HTMLTextAreaElement.prototype.value = "";
 /**
  * function blur()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.blur = function(){};
+HTMLTextAreaElement.prototype.blur = function () {
+};
 /**
  * function focus()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.focus = function(){};
+HTMLTextAreaElement.prototype.focus = function () {
+};
 /**
  * function select()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTextAreaElement.prototype.select = function(){};
+HTMLTextAreaElement.prototype.select = function () {
+};
 
 /**
  * Object HTMLButtonElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLButtonElement(){};
+function HTMLButtonElement() {
+};
 HTMLButtonElement.prototype = new HTMLElement();
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -3089,7 +3263,7 @@ HTMLButtonElement.prototype.form = new HTMLFormElement();
 /**
  * Property accessKey
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -3098,65 +3272,66 @@ HTMLButtonElement.prototype.accessKey = "";
 /**
  * Property disabled
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLButtonElement.prototype.disabled=false;
+HTMLButtonElement.prototype.disabled = false;
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLButtonElement.prototype.name="";
+HTMLButtonElement.prototype.name = "";
 /**
  * Property tabIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLButtonElement.prototype.tabIndex=0;
+HTMLButtonElement.prototype.tabIndex = 0;
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLButtonElement.prototype.type="";
+HTMLButtonElement.prototype.type = "";
 /**
  * Property value
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLButtonElement.prototype.value="";
+HTMLButtonElement.prototype.value = "";
 
 /**
  * Object HTMLLabelElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLLabelElement(){};
+function HTMLLabelElement() {
+};
 HTMLLabelElement.prototype = new HTMLElement();
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -3165,38 +3340,39 @@ HTMLLabelElement.prototype.form = new HTMLFormElement();
 /**
  * Property accessKey
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLabelElement.prototype.accessKey="";
+HTMLLabelElement.prototype.accessKey = "";
 /**
  * Property htmlFor
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLabelElement.prototype.htmlFor="";
+HTMLLabelElement.prototype.htmlFor = "";
 
 /**
  * Object HTMLFieldSetElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLFieldSetElement(){};
+function HTMLFieldSetElement() {
+};
 HTMLFieldSetElement.prototype = new HTMLElement();
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -3206,19 +3382,20 @@ HTMLFieldSetElement.prototype.form = new HTMLFormElement();
 /**
  * Object HTMLLegendElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLLegendElement(){};
+function HTMLLegendElement() {
+};
 HTMLLegendElement.prototype = new HTMLElement();
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -3227,618 +3404,637 @@ HTMLLegendElement.prototype.form = new HTMLFormElement();
 /**
  * Property accessKey
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLegendElement.prototype.accessKey="";
+HTMLLegendElement.prototype.accessKey = "";
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLegendElement.prototype.align="";
+HTMLLegendElement.prototype.align = "";
 
 /**
  * Object HTMLUListElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLUListElement(){};
+function HTMLUListElement() {
+};
 HTMLUListElement.prototype = new HTMLElement();
 /**
  * Property compact
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLUListElement.prototype.compact=false;
+HTMLUListElement.prototype.compact = false;
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLUListElement.prototype.type="";
+HTMLUListElement.prototype.type = "";
 
 /**
  * Object HTMLOListElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLOListElement(){};
+function HTMLOListElement() {
+};
 HTMLOListElement.prototype = new HTMLElement();
 /**
  * Property compact
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOListElement.prototype.compact=false;
+HTMLOListElement.prototype.compact = false;
 /**
  * Property start
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOListElement.prototype.start=0;
+HTMLOListElement.prototype.start = 0;
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLOListElement.prototype.type="";
+HTMLOListElement.prototype.type = "";
 
 /**
  * Object HTMLDListElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLDListElement(){};
+function HTMLDListElement() {
+};
 HTMLDListElement.prototype = new HTMLElement();
 /**
  * Property compact
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDListElement.prototype.compact=false;
+HTMLDListElement.prototype.compact = false;
 
 /**
  * Object HTMLDirectoryElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLDirectoryElement(){};
+function HTMLDirectoryElement() {
+};
 HTMLDirectoryElement.prototype = new HTMLElement();
 /**
  * Property compact
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDirectoryElement.prototype.compact=false;
+HTMLDirectoryElement.prototype.compact = false;
 
 /**
  * Object HTMLMenuElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLMenuElement(){};
+function HTMLMenuElement() {
+};
 HTMLMenuElement.prototype = new HTMLElement();
 /**
  * Property compact
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLMenuElement.prototype.compact=false;
+HTMLMenuElement.prototype.compact = false;
 
 /**
  * Object HTMLLIElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLLIElement(){};
+function HTMLLIElement() {
+};
 HTMLLIElement.prototype = new HTMLElement();
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLIElement.prototype.type="";
+HTMLLIElement.prototype.type = "";
 /**
  * Property value
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLLIElement.prototype.value=0;
+HTMLLIElement.prototype.value = 0;
 
 /**
  * Object HTMLDivElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLDivElement(){};
+function HTMLDivElement() {
+};
 HTMLDivElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLDivElement.prototype.align="";
+HTMLDivElement.prototype.align = "";
 
 /**
  * Object HTMLParagraphElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLParagraphElement(){};
+function HTMLParagraphElement() {
+};
 HTMLParagraphElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLParagraphElement.prototype.align="";
+HTMLParagraphElement.prototype.align = "";
 
 /**
  * Object HTMLHeadingElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLHeadingElement(){};
+function HTMLHeadingElement() {
+};
 HTMLHeadingElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLHeadingElement.prototype.align="";
+HTMLHeadingElement.prototype.align = "";
 
 /**
  * Object HTMLQuoteElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLQuoteElement(){};
+function HTMLQuoteElement() {
+};
 HTMLQuoteElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLQuoteElement.prototype.align="";
+HTMLQuoteElement.prototype.align = "";
 
 /**
  * Object HTMLPreElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLPreElement(){};
+function HTMLPreElement() {
+};
 HTMLPreElement.prototype = new HTMLElement();
 /**
  * Property width
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLPreElement.prototype.width=0;
+HTMLPreElement.prototype.width = 0;
 
 /**
  * Object HTMLBRElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLBRElement(){};
+function HTMLBRElement() {
+};
 HTMLBRElement.prototype = new HTMLElement();
 /**
  * Property clear
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBRElement.prototype.clear="";
+HTMLBRElement.prototype.clear = "";
 
 /**
  * Object HTMLBaseFontElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLBaseFontElement(){};
+function HTMLBaseFontElement() {
+};
 HTMLBaseFontElement.prototype = new HTMLElement();
 /**
  * Property color
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBaseFontElement.prototype.color="";
+HTMLBaseFontElement.prototype.color = "";
 /**
  * Property face
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBaseFontElement.prototype.face="";
+HTMLBaseFontElement.prototype.face = "";
 /**
  * Property size
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLBaseFontElement.prototype.size=0;
+HTMLBaseFontElement.prototype.size = 0;
 
 /**
  * Object HTMLBaseFontElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLFontElement(){};
+function HTMLFontElement() {
+};
 HTMLFontElement.prototype = new HTMLElement();
 /**
  * Property color
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFontElement.prototype.color="";
+HTMLFontElement.prototype.color = "";
 /**
  * Property face
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFontElement.prototype.face="";
+HTMLFontElement.prototype.face = "";
 /**
  * Property size
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFontElement.prototype.size=0;
+HTMLFontElement.prototype.size = 0;
 
 /**
  * Object HTMLHRElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLHRElement(){};
+function HTMLHRElement() {
+};
 HTMLHRElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLHRElement.prototype.align="";
+HTMLHRElement.prototype.align = "";
 /**
  * Property noShade
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLHRElement.prototype.noShade=false;
+HTMLHRElement.prototype.noShade = false;
 /**
  * Property size
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLHRElement.prototype.size="";
+HTMLHRElement.prototype.size = "";
 /**
  * Property width
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLHRElement.prototype.width="";
+HTMLHRElement.prototype.width = "";
 
 /**
  * Object HTMLModElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLModElement(){};
+function HTMLModElement() {
+};
 HTMLModElement.prototype = new HTMLElement();
 /**
  * Property cite
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLModElement.prototype.cite="";
+HTMLModElement.prototype.cite = "";
 /**
  * Property dateTime
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLModElement.prototype.dateTime="";
+HTMLModElement.prototype.dateTime = "";
 
 /**
  * Object HTMLAnchorElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLAnchorElement(){};
+function HTMLAnchorElement() {
+};
 HTMLAnchorElement.prototype = new HTMLElement();
 /**
  * Property accessKey
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.accessKey="";
+HTMLAnchorElement.prototype.accessKey = "";
 /**
  * Property charset
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.charset="";
+HTMLAnchorElement.prototype.charset = "";
 /**
  * Property coords
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.coords="";
+HTMLAnchorElement.prototype.coords = "";
 /**
  * Property href
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.href="";
+HTMLAnchorElement.prototype.href = "";
 /**
  * Property hreflang
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.hreflang="";
+HTMLAnchorElement.prototype.hreflang = "";
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.name="";
+HTMLAnchorElement.prototype.name = "";
 /**
  * Property rel
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.rel="";
+HTMLAnchorElement.prototype.rel = "";
 /**
  * Property rev
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.rev="";
+HTMLAnchorElement.prototype.rev = "";
 /**
  * Property shape
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.shape="";
+HTMLAnchorElement.prototype.shape = "";
 /**
  * Property tabIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.tabIndex=0;
+HTMLAnchorElement.prototype.tabIndex = 0;
 /**
  * Property target
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.target="";
+HTMLAnchorElement.prototype.target = "";
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.type="";
+HTMLAnchorElement.prototype.type = "";
 /**
  * function blur()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.blur = function(){};
+HTMLAnchorElement.prototype.blur = function () {
+};
 /**
  * function focus()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAnchorElement.prototype.focus = function(){};
+HTMLAnchorElement.prototype.focus = function () {
+};
 
 /**
  * Object Image()
@@ -3846,145 +4042,149 @@ HTMLAnchorElement.prototype.focus = function(){};
  * @param {Number} width
  * @param {Number} height
  */
-function Image(width, height){};
+function Image(width, height) {
+};
 Image.prototype = new HTMLImageElement();
+
 /**
  * Object HTMLImageElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLImageElement(){};
+function HTMLImageElement() {
+};
 HTMLImageElement.prototype = new HTMLElement();
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.name="";
+HTMLImageElement.prototype.name = "";
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.align="";
+HTMLImageElement.prototype.align = "";
 /**
  * Property alt
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.alt="";
+HTMLImageElement.prototype.alt = "";
 /**
  * Property border
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.border="";
+HTMLImageElement.prototype.border = "";
 /**
  * Property height
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.height=0;
+HTMLImageElement.prototype.height = 0;
 /**
  * Property hspace
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.hspace=0;
+HTMLImageElement.prototype.hspace = 0;
 /**
  * Property isMap
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.isMap=false;
+HTMLImageElement.prototype.isMap = false;
 /**
  * Property longDesc
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.longDesc="";
+HTMLImageElement.prototype.longDesc = "";
 /**
  * Property src
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.src="";
+HTMLImageElement.prototype.src = "";
 /**
  * Property useMap
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.useMap="";
+HTMLImageElement.prototype.useMap = "";
 /**
  * Property vspace
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.vspace=0;
+HTMLImageElement.prototype.vspace = 0;
 /**
  * Property width
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLImageElement.prototype.width=0;
+HTMLImageElement.prototype.width = 0;
 
 /**
  * Object HTMLObjectElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLObjectElement(){};
+function HTMLObjectElement() {
+};
 HTMLObjectElement.prototype = new HTMLElement();
 /**
  * Property form
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLFormElement
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -3993,343 +4193,346 @@ HTMLObjectElement.prototype.form = new HTMLFormElement();
 /**
  * Property code
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.code="";
+HTMLObjectElement.prototype.code = "";
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.align="";
+HTMLObjectElement.prototype.align = "";
 /**
  * Property archive
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.archive="";
+HTMLObjectElement.prototype.archive = "";
 /**
  * Property border
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.border="";
+HTMLObjectElement.prototype.border = "";
 /**
  * Property codeBase
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.codeBase="";
+HTMLObjectElement.prototype.codeBase = "";
 /**
  * Property codeType
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.codeType="";
+HTMLObjectElement.prototype.codeType = "";
 /**
  * Property data
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.data="";
+HTMLObjectElement.prototype.data = "";
 /**
  * Property declare
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.declare=false;
+HTMLObjectElement.prototype.declare = false;
 /**
  * Property height
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.height="";
+HTMLObjectElement.prototype.height = "";
 /**
  * Property hspace
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.hspace=0;
+HTMLObjectElement.prototype.hspace = 0;
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.name="";
+HTMLObjectElement.prototype.name = "";
 /**
  * Property standby
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.standby="";
+HTMLObjectElement.prototype.standby = "";
 /**
  * Property tabIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.tabIndex=0;
+HTMLObjectElement.prototype.tabIndex = 0;
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.type="";
+HTMLObjectElement.prototype.type = "";
 /**
  * Property useMap
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.useMap="";
+HTMLObjectElement.prototype.useMap = "";
 /**
  * Property vspace
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.vspace=0;
+HTMLObjectElement.prototype.vspace = 0;
 /**
  * Property width
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.width="";
+HTMLObjectElement.prototype.width = "";
 /**
  * Property contentDocument
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Document
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLObjectElement.prototype.contentDocument= new HTMLDocument();
+HTMLObjectElement.prototype.contentDocument = new HTMLDocument();
 
 /**
  * Object HTMLParamElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLParamElement(){};
+function HTMLParamElement() {
+};
 HTMLParamElement.prototype = new HTMLElement();
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLParamElement.prototype.name="";
+HTMLParamElement.prototype.name = "";
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLParamElement.prototype.type="";
+HTMLParamElement.prototype.type = "";
 /**
  * Property value
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLParamElement.prototype.value="";
+HTMLParamElement.prototype.value = "";
 /**
  * Property valueType
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLParamElement.prototype.valueType="";
+HTMLParamElement.prototype.valueType = "";
 
 /**
  * Object HTMLAppletElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLAppletElement(){};
+function HTMLAppletElement() {
+};
 HTMLAppletElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.align="";
+HTMLAppletElement.prototype.align = "";
 /**
  * Property alt
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.alt="";
+HTMLAppletElement.prototype.alt = "";
 /**
  * Property archive
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.archive="";
+HTMLAppletElement.prototype.archive = "";
 /**
  * Property code
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.code="";
+HTMLAppletElement.prototype.code = "";
 /**
  * Property codeBase
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.codeBase="";
+HTMLAppletElement.prototype.codeBase = "";
 /**
  * Property height
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.hight="";
+HTMLAppletElement.prototype.hight = "";
 /**
  * Property hspace
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.hspace=0;
+HTMLAppletElement.prototype.hspace = 0;
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.name="";
+HTMLAppletElement.prototype.name = "";
 /**
  * Property object
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.object="";
+HTMLAppletElement.prototype.object = "";
 /**
  * Property vspace
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.vspace=0;
+HTMLAppletElement.prototype.vspace = 0;
 /**
  * Property width
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAppletElement.prototype.width="";
+HTMLAppletElement.prototype.width = "";
 
 /**
  * Object HTMLMapElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLMapElement(){};
+function HTMLMapElement() {
+};
 HTMLMapElement.prototype = new HTMLElement();
 /**
  * Property areas
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -4338,190 +4541,193 @@ HTMLMapElement.prototype.areas = new HTMLCollection();
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLMapElement.prototype.name="";
+HTMLMapElement.prototype.name = "";
 
 /**
  * Object HTMLAreaElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLAreaElement(){};
+function HTMLAreaElement() {
+};
 HTMLAreaElement.prototype = new HTMLElement();
 /**
  * Property accessKey
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAreaElement.prototype.accessKey="";
+HTMLAreaElement.prototype.accessKey = "";
 /**
  * Property alt
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAreaElement.prototype.alt="";
+HTMLAreaElement.prototype.alt = "";
 /**
  * Property coords
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAreaElement.prototype.coords="";
+HTMLAreaElement.prototype.coords = "";
 /**
  * Property href
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAreaElement.prototype.href="";
+HTMLAreaElement.prototype.href = "";
 /**
  * Property noHref
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAreaElement.prototype.noHref=false;
+HTMLAreaElement.prototype.noHref = false;
 /**
  * Property shape
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAreaElement.prototype.shape="";
+HTMLAreaElement.prototype.shape = "";
 /**
  * Property tabIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAreaElement.prototype.tabIndex=0;
+HTMLAreaElement.prototype.tabIndex = 0;
 /**
  * Property target
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLAreaElement.prototype.target="";
+HTMLAreaElement.prototype.target = "";
 
 /**
  * Object HTMLScriptElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLScriptElement(){};
+function HTMLScriptElement() {
+};
 HTMLScriptElement.prototype = new HTMLElement();
 /**
  * Property text
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLScriptElement.prototype.text="";
+HTMLScriptElement.prototype.text = "";
 /**
  * Property htmlFor
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLScriptElement.prototype.htmlFor="";
+HTMLScriptElement.prototype.htmlFor = "";
 /**
  * Property event
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLScriptElement.prototype.event="";
+HTMLScriptElement.prototype.event = "";
 /**
  * Property charset
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLScriptElement.prototype.charset="";
+HTMLScriptElement.prototype.charset = "";
 /**
  * Property defer
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLScriptElement.prototype.defer="";
+HTMLScriptElement.prototype.defer = "";
 /**
  * Property src
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLScriptElement.prototype.src="";
+HTMLScriptElement.prototype.src = "";
 /**
  * Property type
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLScriptElement.prototype.type="";
+HTMLScriptElement.prototype.type = "";
 
 /**
  * Object HTMLTableElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLTableElement(){};
+function HTMLTableElement() {
+};
 HTMLTableElement.prototype = new HTMLElement();
 /**
  * Property caption
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLTableCaptionElement
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
@@ -4531,7 +4737,7 @@ HTMLTableElement.prototype.caption = new HTMLTableCaptionElement();
 /**
  * Property tHead
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLTableSectionElement
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
@@ -4541,7 +4747,7 @@ HTMLTableElement.prototype.tHead = new HTMLTableSelectionElement();
 /**
  * Property tFoot
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLTableSectionElement
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
@@ -4551,7 +4757,7 @@ HTMLTableElement.prototype.tFoot = new HTMLTableSelectionElement();
 /**
  * Property rows
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -4560,7 +4766,7 @@ HTMLTableElement.prototype.rows = new HTMLCollection();
 /**
  * Property tBodies
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -4569,359 +4775,378 @@ HTMLTableElement.prototype.tBodies = new HTMLCollection();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.align="";
+HTMLTableElement.prototype.align = "";
 /**
  * Property bgColor
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.bgColor="";
+HTMLTableElement.prototype.bgColor = "";
 /**
  * Property border
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.border="";
+HTMLTableElement.prototype.border = "";
 /**
  * Property cellPadding
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.cellPadding="";
+HTMLTableElement.prototype.cellPadding = "";
 /**
  * Property cellSpacing
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.cellSpacing="";
+HTMLTableElement.prototype.cellSpacing = "";
 /**
  * Property frame
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.frame="";
+HTMLTableElement.prototype.frame = "";
 /**
  * Property rules
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.rules="";
+HTMLTableElement.prototype.rules = "";
 /**
  * Property summary
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.summary="";
+HTMLTableElement.prototype.summary = "";
 /**
  * Property width
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.width="";
+HTMLTableElement.prototype.width = "";
 /**
  * function createTHead();
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @returns {HTMLElement}
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.createTHead = function(){return new HTMLElement();};
+HTMLTableElement.prototype.createTHead = function () {
+    return new HTMLElement();
+};
 /**
  * function deleteTHead();
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.deleteTHead = function(){};
+HTMLTableElement.prototype.deleteTHead = function () {
+};
 /**
  * function createTFoot();
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @returns {HTMLElement}
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.createTFoot = function(){return new HTMLElement();};
+HTMLTableElement.prototype.createTFoot = function () {
+    return new HTMLElement();
+};
 /**
  * function deleteTFoot();
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.deleteTFoot = function(){};
+HTMLTableElement.prototype.deleteTFoot = function () {
+};
 /**
  * function createCaption();
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @returns {HTMLElement}
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.createCaption = function(){return new HTMLElement();};
+HTMLTableElement.prototype.createCaption = function () {
+    return new HTMLElement();
+};
 /**
  * function deleteCaption();
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.deleteCaption = function(){};
+HTMLTableElement.prototype.deleteCaption = function () {
+};
 /**
  * function insertRow(index)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {Number} index
  * @returns {HTMLElement}
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.insertRow = function(index){return new HTMLElement();};
+HTMLTableElement.prototype.insertRow = function (index) {
+    return new HTMLElement();
+};
 /**
  * function deleteRow(index)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {Number} index
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableElement.prototype.deleteRow = function(index){};
+HTMLTableElement.prototype.deleteRow = function (index) {
+};
 
 /**
  * Object HTMLTableCaptionElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLTableCaptionElement(){};
+function HTMLTableCaptionElement() {
+};
 HTMLTableCaptionElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCaptionElement.prototype.align="";
+HTMLTableCaptionElement.prototype.align = "";
 
 /**
  * Object HTMLTableColElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLTableColElement(){};
+function HTMLTableColElement() {
+};
 HTMLTableColElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableColElement.prototype.align="";
+HTMLTableColElement.prototype.align = "";
 /**
  * Property ch
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableColElement.prototype.ch="";
+HTMLTableColElement.prototype.ch = "";
 /**
  * Property chOff
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableColElement.prototype.chOff="";
+HTMLTableColElement.prototype.chOff = "";
 /**
  * Property span
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableColElement.prototype.span=0;
+HTMLTableColElement.prototype.span = 0;
 /**
  * Property vAlign
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableColElement.prototype.vAlign="";
+HTMLTableColElement.prototype.vAlign = "";
 /**
  * Property width
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableColElement.prototype.width="";
+HTMLTableColElement.prototype.width = "";
 
 /**
  * Object HTMLTableSelectionElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLTableSelectionElement(){};
+function HTMLTableSelectionElement() {
+};
 HTMLTableSelectionElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableSelectionElement.prototype.align="";
+HTMLTableSelectionElement.prototype.align = "";
 /**
  * Property ch
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableSelectionElement.prototype.ch="";
+HTMLTableSelectionElement.prototype.ch = "";
 /**
  * Property chOff
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableSelectionElement.prototype.chOff="";
+HTMLTableSelectionElement.prototype.chOff = "";
 /**
  * Property vAlign
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableSelectionElement.prototype.vAlign="";
+HTMLTableSelectionElement.prototype.vAlign = "";
 /**
  * Property rows
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableSelectionElement.prototype.rows="";
+HTMLTableSelectionElement.prototype.rows = "";
 /**
  * function insertRow(index)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {Number} index
  * @returns {HTMLElement}
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableSelectionElement.prototype.insertRow = function(index){return new HTMLElement();};
+HTMLTableSelectionElement.prototype.insertRow = function (index) {
+    return new HTMLElement();
+};
 /**
  * function deleteRow(index)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {Number} index
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableSelectionElement.prototype.deleteRow = function(index){};
+HTMLTableSelectionElement.prototype.deleteRow = function (index) {
+};
 
 /**
  * Object HTMLTableRowElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLTableRowElement(){};
+function HTMLTableRowElement() {
+};
 HTMLTableRowElement.prototype = new HTMLElement();
 /**
  * Property rowIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableRowElement.prototype.rowIndex=0;
+HTMLTableRowElement.prototype.rowIndex = 0;
 /**
  * Property sectionRowIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableRowElement.prototype.sectionRowIndex=0;
+HTMLTableRowElement.prototype.sectionRowIndex = 0;
 /**
  * Property cells
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type HTMLCollection
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
@@ -4930,464 +5155,472 @@ HTMLTableRowElement.prototype.cells = new HTMLCollection();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableRowElement.prototype.align="";
+HTMLTableRowElement.prototype.align = "";
 /**
  * Property bgColor
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableRowElement.prototype.bgColor="";
+HTMLTableRowElement.prototype.bgColor = "";
 /**
  * Property ch
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableRowElement.prototype.ch="";
+HTMLTableRowElement.prototype.ch = "";
 /**
  * Property chOff
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableRowElement.prototype.chOff="";
+HTMLTableRowElement.prototype.chOff = "";
 /**
  * Property vAlign
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableRowElement.prototype.vAlign="";
+HTMLTableRowElement.prototype.vAlign = "";
 /**
  * function insertCell(index)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {Number} index
  * @returns {HTMLElement}
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableRowElement.prototype.insertCell = function(index){return new HTMLElement();};
+HTMLTableRowElement.prototype.insertCell = function (index) {
+    return new HTMLElement();
+};
 /**
  * function insertCell(index)
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @param {Number} index
  * @throws DOMException
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableRowElement.prototype.deleteCell = function(index){};
+HTMLTableRowElement.prototype.deleteCell = function (index) {
+};
 
 /**
  * Object HTMLTableRowElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLTableCellElement(){};
+function HTMLTableCellElement() {
+};
 HTMLTableCellElement.prototype = new HTMLElement();
 /**
  * Property cellIndex
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.cellIndex=0;
+HTMLTableCellElement.prototype.cellIndex = 0;
 /**
  * Property abbr
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.abbr="";
+HTMLTableCellElement.prototype.abbr = "";
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.align="";
+HTMLTableCellElement.prototype.align = "";
 /**
  * Property axis
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.axis="";
+HTMLTableCellElement.prototype.axis = "";
 /**
  * Property bgColor
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.bgColor="";
+HTMLTableCellElement.prototype.bgColor = "";
 /**
  * Property ch
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.ch="";
+HTMLTableCellElement.prototype.ch = "";
 /**
  * Property chOff
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.chOff="";
+HTMLTableCellElement.prototype.chOff = "";
 /**
  * Property colSpan
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.colSpan=0;
+HTMLTableCellElement.prototype.colSpan = 0;
 /**
  * Property headers
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.headers="";
+HTMLTableCellElement.prototype.headers = "";
 /**
  * Property height
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.height="";
+HTMLTableCellElement.prototype.height = "";
 /**
  * Property noWrap
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.noWrap=false;
+HTMLTableCellElement.prototype.noWrap = false;
 /**
  * Property rowSpan
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Number
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.rowSpan=0;
+HTMLTableCellElement.prototype.rowSpan = 0;
 /**
  * Property scope
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.scope="";
+HTMLTableCellElement.prototype.scope = "";
 /**
  * Property vAlign
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.vAlign="";
+HTMLTableCellElement.prototype.vAlign = "";
 /**
  * Property width
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLTableCellElement.prototype.width="";
+HTMLTableCellElement.prototype.width = "";
 
 /**
  * Object HTMLFrameSetElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLFrameSetElement(){};
+function HTMLFrameSetElement() {
+};
 HTMLFrameSetElement.prototype = new HTMLElement();
 /**
  * Property cols
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameSetElement.prototype.cols="";
+HTMLFrameSetElement.prototype.cols = "";
 /**
  * Property rows
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameSetElement.prototype.rows="";
+HTMLFrameSetElement.prototype.rows = "";
 
 /**
  * Object HTMLFrameElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLFrameElement(){};
+function HTMLFrameElement() {
+};
 HTMLFrameElement.prototype = new HTMLElement();
 /**
  * Property frameBorder
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameElement.prototype.frameBorder="";
+HTMLFrameElement.prototype.frameBorder = "";
 /**
  * Property longDesc
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameElement.prototype.longDesc="";
+HTMLFrameElement.prototype.longDesc = "";
 /**
  * Property marginHeight
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameElement.prototype.marginHeight="";
+HTMLFrameElement.prototype.marginHeight = "";
 /**
  * Property marginWidth
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameElement.prototype.marginWidth="";
+HTMLFrameElement.prototype.marginWidth = "";
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameElement.prototype.name="";
+HTMLFrameElement.prototype.name = "";
 /**
  * Property noResize
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Boolean
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameElement.prototype.noResize=false;
+HTMLFrameElement.prototype.noResize = false;
 /**
  * Property scrolling
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameElement.prototype.scrolling="";
+HTMLFrameElement.prototype.scrolling = "";
 /**
  * Property src
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameElement.prototype.src="";
+HTMLFrameElement.prototype.src = "";
 /**
  * Property contentDocument
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Document
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLFrameElement.prototype.contentDocument= new HTMLDocument();
+HTMLFrameElement.prototype.contentDocument = new HTMLDocument();
 
 /**
  * Object HTMLIFrameElement()
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @augments HTMLElement
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  * @see HTMLElement
  */
-function HTMLIFrameElement(){};
+function HTMLIFrameElement() {
+};
 HTMLIFrameElement.prototype = new HTMLElement();
 /**
  * Property align
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.align="";
+HTMLIFrameElement.prototype.align = "";
 /**
  * Property frameBorder
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.frameBorder="";
+HTMLIFrameElement.prototype.frameBorder = "";
 /**
  * Property height
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.height="";
+HTMLIFrameElement.prototype.height = "";
 /**
  * Property longDesc
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.longDesc="";
+HTMLIFrameElement.prototype.longDesc = "";
 /**
  * Property marginHeight
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.marginHeight="";
+HTMLIFrameElement.prototype.marginHeight = "";
 /**
  * Property marginWidth
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.marginWidth="";
+HTMLIFrameElement.prototype.marginWidth = "";
 /**
  * Property name
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.name="";
+HTMLIFrameElement.prototype.name = "";
 /**
  * Property scrolling
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.scrolling="";
+HTMLIFrameElement.prototype.scrolling = "";
 /**
  * Property src
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.src="";
+HTMLIFrameElement.prototype.src = "";
 /**
  * Property width
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type String
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.width="";
+HTMLIFrameElement.prototype.width = "";
 /**
  * Property contentDocument
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
- * 
+ *
  * @type Document
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model HTML Specification.
  */
-HTMLIFrameElement.prototype.contentDocument= new HTMLDocument();
+HTMLIFrameElement.prototype.contentDocument = new HTMLDocument();
 
 /* Stylesheets */
 /**
  * Object CSS2Properties()
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/ecma-script-binding.html
- * 
+ *
  * @augments Object
  * @constructor
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Style Specification.
  */
-function CSS2Properties(){};
+function CSS2Properties() {
+};
 CSS2Properties.prototype = new Object();

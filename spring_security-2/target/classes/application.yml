@@ -1,12 +1,12 @@
 server:
   port: 8081
 
-  
+
 spring:
   devtools:
     restart:
       enabled: true
-      
+
   thymeleaf:
     cache: false
     check-template-location: true

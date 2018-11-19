@@ -1,8 +1,0 @@
-package com.person.springboot.services;
-
-public class GirlException extends RuntimeException {
-
-	private Integer code;
-	
-	
-}

@@ -11,6 +11,7 @@ public class SellerServiceImpl implements SellerService {
 
     @Autowired
     private SellerInfoRepository sellerInfoRepository;
+
     @Override
     public SellerInfo findByOpenid(String openid) {
         return sellerInfoRepository.findByOpenid(openid);

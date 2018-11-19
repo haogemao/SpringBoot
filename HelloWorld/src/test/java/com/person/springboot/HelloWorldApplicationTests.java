@@ -23,30 +23,30 @@ import com.person.springboot.controller.TestController;
 @SpringBootTest
 public class HelloWorldApplicationTests {
 
-	private MockMvc mvc;
-	
-	@Autowired
-	private SpringBootProperties springBootProperties;
+    private MockMvc mvc;
 
-	@Before
-	public void setUp() throws Exception {
-		mvc = MockMvcBuilders.standaloneSetup(new TestController()).build();
-	}
+    @Autowired
+    private SpringBootProperties springBootProperties;
 
-	@Test
-	public void getTest() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.get("/HelloWorld").accept(MediaType.APPLICATION_JSON))
-				.andExpect(status().isOk()).andExpect(content().string(equalTo("HelloWorld")));
-	}
-	
-	@Test
-	public void testProperties() throws Exception {
-		Assert.assertEquals(springBootProperties.getName(), "苦逼的程序猿");
-		Assert.assertEquals(springBootProperties.getTitle(), "Spring Boot Demo");
-	}
+    @Before
+    public void setUp() throws Exception {
+        mvc = MockMvcBuilders.standaloneSetup(new TestController()).build();
+    }
 
-	@Test
-	public void contextLoads() {
-	}
+    @Test
+    public void getTest() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/HelloWorld").accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk()).andExpect(content().string(equalTo("HelloWorld")));
+    }
+
+    @Test
+    public void testProperties() throws Exception {
+        Assert.assertEquals(springBootProperties.getName(), "苦逼的程序猿");
+        Assert.assertEquals(springBootProperties.getTitle(), "Spring Boot Demo");
+    }
+
+    @Test
+    public void contextLoads() {
+    }
 
 }

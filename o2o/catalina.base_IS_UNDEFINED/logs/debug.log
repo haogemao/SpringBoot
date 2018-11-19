@@ -1,0 +1,12 @@
+2018-10-06 16:52:30.575 [main] DEBUG com.person.ssm.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id, shop_name,shop_desc,shop_addr,phone,shop_img, create_time,last_edit_time, enable_status,advice) VALUES (?,?,?, ?,?,?,?,?, ?,?, ?,?) 
+2018-10-06 16:52:30.647 [main] DEBUG com.person.ssm.dao.ShopDao.insertShop - ==> Parameters: 8(Long), 3(Integer), 12(Long), mytest1(String), mytest1(String), testaddr1(String), 13810524526(String), test1(String), 2018-10-06 16:52:29.954(Timestamp), 2018-10-06 16:52:29.954(Timestamp), 0(Integer), 审核中(String)
+2018-10-06 16:52:30.742 [main] DEBUG com.person.ssm.dao.ShopDao.insertShop - <==    Updates: 1
+2018-10-06 16:59:57.368 [main] DEBUG com.person.ssm.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id, shop_name,shop_desc,shop_addr,phone,shop_img, create_time,last_edit_time, enable_status,advice) VALUES (?,?,?, ?,?,?,?,?, ?,?, ?,?) 
+2018-10-06 16:59:57.450 [main] DEBUG com.person.ssm.dao.ShopDao.insertShop - ==> Parameters: 8(Long), 3(Integer), 12(Long), mytest1(String), mytest1(String), testaddr1(String), 13810524526(String), test1(String), 2018-10-06 16:59:56.425(Timestamp), 2018-10-06 16:59:56.425(Timestamp), 0(Integer), 审核中(String)
+2018-10-06 16:59:57.489 [main] DEBUG com.person.ssm.dao.ShopDao.insertShop - <==    Updates: 1
+2018-10-06 17:01:51.542 [main] DEBUG com.person.ssm.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, area_id=?, shop_category_id=? where shop_id=? 
+2018-10-06 17:01:51.628 [main] DEBUG com.person.ssm.dao.ShopDao.updateShop - ==> Parameters: 四季花(String), 4(Integer), 1(Long), null
+2018-10-06 17:01:51.656 [main] DEBUG com.person.ssm.dao.ShopDao.updateShop - <==    Updates: 0
+2018-10-06 17:03:27.176 [main] DEBUG com.person.ssm.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, area_id=?, shop_category_id=? where shop_id=? 
+2018-10-06 17:03:27.245 [main] DEBUG com.person.ssm.dao.ShopDao.updateShop - ==> Parameters: 四季花(String), 4(Integer), 13(Long), 29(Long)
+2018-10-06 17:03:27.278 [main] DEBUG com.person.ssm.dao.ShopDao.updateShop - <==    Updates: 1

@@ -1,9 +1,0 @@
-package com.person.springboot.dao;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.person.springboot.entities.Category;
-
-public interface CategoryDAO extends JpaRepository<Category, ID> {
-
-}

@@ -29,7 +29,7 @@ public class BuyerProductController {
     private ProductInfoServiceImpl productInfoServiceImpl;
 
     @GetMapping("/list")
-    private ResultVO list(){
+    private ResultVO list() {
         //查询所有上架商品
         List<ProductInfo> productInfoList = productInfoServiceImpl.findUpAll();
         //查询类目(一次性查询)lamba表达式
@@ -43,8 +43,8 @@ public class BuyerProductController {
             productVO.setCategoryType(productCategoryList.get(i).getCategoryType());
 
             List<ProductInfoVO> productInfoVOList = new ArrayList<ProductInfoVO>();
-            for (ProductInfo productInfo: productInfoList) {
-                if (productInfo.getCategoryType().equals(productCategoryList.get(i).getCategoryType())){
+            for (ProductInfo productInfo : productInfoList) {
+                if (productInfo.getCategoryType().equals(productCategoryList.get(i).getCategoryType())) {
                     ProductInfoVO productInfoVO = new ProductInfoVO();
                     BeanUtils.copyProperties(productInfo, productInfoVO);
                     productInfoVOList.add(productInfoVO);

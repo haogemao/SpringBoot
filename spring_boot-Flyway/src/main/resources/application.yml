@@ -1,13 +1,13 @@
 server:
   port: 8081
-  
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/flyway?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: root
-  
-  #flyway:
+
+    #flyway:
     #locations: classpath:\db
     #baseline-on-migrate: true

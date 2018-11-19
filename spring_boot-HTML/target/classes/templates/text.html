@@ -1,76 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <title>跨域测试</title>
-   <script>
-       function showData (data) {
-           console.info("调用showData");
+    <script>
+        function showData(data) {
+            console.info("调用showData");
 
-           var result = JSON.stringify(data);
-           $("#text").val(result);
-       }
+            var result = JSON.stringify(data);
+            $("#text").val(result);
+        }
 
-       /* $(document).ready(function () {
+        /* $(document).ready(function () {
 
-           $("#btn").click(function () {
-               $.ajax({
-                   //url: "http://127.0.0.1:8080/cjkq/broadcastPublicNoMsg?userIds=FH000131&title=你有一条新的消息已到达，请注意查阅&packageName=BPMTest&environmental=dev",
-                   //url: "http://vadmin.test.o-home.cc/bgyvapp/broadcastPublicNoMsg?userIds=FH000131&title=你有一条新的消息已到达，请注意查阅&packageName=BPMTest&environmental=dev",
-                   url: "http://vadmin.test.o-home.cc/bgyvapp/Student?userIds=FH000131&title=你有一条新的消息已到达，请注意查阅&packageName=BPMTest&environmental=dev",
-                   type: "GET",
-                   dataType: "jsonp",  //指定服务器返回的数据类型
-                   jsonp: "theFunction",   //指定参数名称
-                   jsonpCallback: "showData",  //指定回调函数名称
-                   success: function (data) {
-                       console.info("调用success");
-                       //$("#text").val(data[0].content);
-                       alert(data.errCode);
-                   }
-               });
-           });
-         }); */
-         
-         $(document).ready(function(){
-         	$("#btn").click(function(){
-         		$.ajax({
-			         url: "http://vadmin.test.o-home.cc/bgyvapp/broadcastPublicNoMsg",
-			         //url: "http://127.0.0.1:8080/cjkq/broadcastPublicNoMsg",
-			         type: "post",
-			         async: false,
-			         data:{
-			         	"accounts" : "FH00013",
-			         	"title" : "你有一条新的消息已到达，请注意查阅",
-			         	"packageName" : "BPMTest",
-			         	"type" : "dev"
-			         },
-			         dataType:"json",
-			         withCredentials:true,
-			         success: function(data){
-			         	$("#text").val(JSON.stringify(data));
-			            alert(data.errCode);
-			            // alert(data.code);
-			         },
-			         error: function(){
-			             alert('fail');
-			         }
-    			});
-         	});
-         });
+            $("#btn").click(function () {
+                $.ajax({
+                    //url: "http://127.0.0.1:8080/cjkq/broadcastPublicNoMsg?userIds=FH000131&title=你有一条新的消息已到达，请注意查阅&packageName=BPMTest&environmental=dev",
+                    //url: "http://vadmin.test.o-home.cc/bgyvapp/broadcastPublicNoMsg?userIds=FH000131&title=你有一条新的消息已到达，请注意查阅&packageName=BPMTest&environmental=dev",
+                    url: "http://vadmin.test.o-home.cc/bgyvapp/Student?userIds=FH000131&title=你有一条新的消息已到达，请注意查阅&packageName=BPMTest&environmental=dev",
+                    type: "GET",
+                    dataType: "jsonp",  //指定服务器返回的数据类型
+                    jsonp: "theFunction",   //指定参数名称
+                    jsonpCallback: "showData",  //指定回调函数名称
+                    success: function (data) {
+                        console.info("调用success");
+                        //$("#text").val(data[0].content);
+                        alert(data.errCode);
+                    }
+                });
+            });
+          }); */
 
-     </script>    
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $.ajax({
+                    url: "http://vadmin.test.o-home.cc/bgyvapp/broadcastPublicNoMsg",
+                    //url: "http://127.0.0.1:8080/cjkq/broadcastPublicNoMsg",
+                    type: "post",
+                    async: false,
+                    data: {
+                        "accounts": "FH00013",
+                        "title": "你有一条新的消息已到达，请注意查阅",
+                        "packageName": "BPMTest",
+                        "type": "dev"
+                    },
+                    dataType: "json",
+                    withCredentials: true,
+                    success: function (data) {
+                        $("#text").val(JSON.stringify(data));
+                        alert(data.errCode);
+                        // alert(data.code);
+                    },
+                    error: function () {
+                        alert('fail');
+                    }
+                });
+            });
+        });
+
+    </script>
 </head>
 <body>
-	<input id="btn" type="button" value="跨域获取数据" />
-     <textarea id="text" style="width: 400px; height: 100px;"></textarea>
-	
+<input id="btn" type="button" value="跨域获取数据"/>
+<textarea id="text" style="width: 400px; height: 100px;"></textarea>
 
 
-	<script type="text/javascript">
-    </script>
-	
+<script type="text/javascript">
+</script>
+
 </body>
 </html>

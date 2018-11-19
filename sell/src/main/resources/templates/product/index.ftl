@@ -13,21 +13,30 @@
                 <div class="col-md-12 column">
                     <form role="form" method="post" action="/sell/seller/product/save">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">名称</label><input name="productName" type="text" class="form-control" value="${(productInfo.productName)!""}" />
+                            <label for="exampleInputEmail1">名称</label><input name="productName" type="text"
+                                                                             class="form-control"
+                                                                             value="${(productInfo.productName)!""}"/>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">价格</label><input name="productPrice" type="text" class="form-control" value="${(productInfo.productPrice)!""}" />
+                            <label for="exampleInputPassword1">价格</label><input name="productPrice" type="text"
+                                                                                class="form-control"
+                                                                                value="${(productInfo.productPrice)!""}"/>
                         </div>
                         <div class="form-group">
-                        <label for="exampleInputEmail1">库存</label><input name="productStock" type="number" class="form-control" value="${(productInfo.productStock)!""}" />
-                    </div>
+                            <label for="exampleInputEmail1">库存</label><input name="productStock" type="number"
+                                                                             class="form-control"
+                                                                             value="${(productInfo.productStock)!""}"/>
+                        </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">描述</label><input name="productDescription" type="text" class="form-control" value="${(productInfo.productDescription)!""}" />
+                            <label for="exampleInputPassword1">描述</label><input name="productDescription" type="text"
+                                                                                class="form-control"
+                                                                                value="${(productInfo.productDescription)!""}"/>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">图片</label>
                             <img src="${(productInfo.productIcon)!""}" height="100" width="100">
-                            <input name="productIcon" type="text" class="form-control" value="${(productInfo.productIcon)!""}" />
+                            <input name="productIcon" type="text" class="form-control"
+                                   value="${(productInfo.productIcon)!""}"/>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">类目</label>

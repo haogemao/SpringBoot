@@ -1,0 +1,20 @@
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: spring-cloud-eureka-sercutrity
+    
+#  security:
+#    user:
+#      name: HS
+#      password: 123456
+      
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://HS:123456@localhost:8081/eureka

@@ -10,7 +10,7 @@ import javax.websocket.server.ServerEndpointConfig;
 public class WebSocketConfig {
 
     @Bean
-    public ServerEndpointExporter serverEndpointExporter(){
+    public ServerEndpointExporter serverEndpointExporter() {
         return new ServerEndpointExporter();
     }
 }

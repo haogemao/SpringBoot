@@ -6,11 +6,11 @@ import com.person.springboot.entity.User;
 
 public interface UserService {
 
-	List<User> getUser();
-	
-	void addUser(User user);
-	
-	void updateUser(User user);
-	
-	int delUser(Integer id);
+    List<User> getUser();
+
+    void addUser(User user);
+
+    void updateUser(User user);
+
+    int delUser(Integer id);
 }

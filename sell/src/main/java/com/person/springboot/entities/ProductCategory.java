@@ -27,7 +27,7 @@ public class ProductCategory {
     private String categoryName;
 
     //类目编号
-    private  Integer categoryType;
+    private Integer categoryType;
 
     private Date updateTime;
 

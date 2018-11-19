@@ -11,19 +11,19 @@ import com.peron.springboot.service.UserService;
 @Controller
 public class UserController {
 
-	@Autowired
-	private UserService userService;
-	
-	@RequestMapping("/save")
-	@ResponseBody
-	public void saveUser(Users user) {
+    @Autowired
+    private UserService userService;
+
+    @RequestMapping("/save")
+    @ResponseBody
+    public void saveUser(Users user) {
 //		Users user = new Users("张三", "123456");
-		userService.saveUser(user);
-	}
-	
-	@RequestMapping("/index")
-	@ResponseBody
-	public String index() {
-		return "index";
-	}
+        userService.saveUser(user);
+    }
+
+    @RequestMapping("/index")
+    @ResponseBody
+    public String index() {
+        return "index";
+    }
 }

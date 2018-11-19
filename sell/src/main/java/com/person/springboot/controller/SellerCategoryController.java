@@ -26,42 +26,42 @@ public class SellerCategoryController {
     private ProductCategoryServiceImpl productCategoryService;
 
     @GetMapping("/list")
-    public ModelAndView list(Map<String,Object> map){
+    public ModelAndView list(Map<String, Object> map) {
         List<ProductCategory> productCategoryList = productCategoryService.findAll();
-        map.put("productCategoryList",productCategoryList);
-        return new ModelAndView("category/list",map);
+        map.put("productCategoryList", productCategoryList);
+        return new ModelAndView("category/list", map);
     }
 
     @GetMapping("/index")
     public ModelAndView index(@RequestParam(value = "categoryId", required = false) Integer categoryId,
-                              Map<String,Object> map){
-        if (categoryId != null && categoryId > 0){
+                              Map<String, Object> map) {
+        if (categoryId != null && categoryId > 0) {
             ProductCategory productCategory = productCategoryService.findOne(categoryId);
             map.put("productCategory", productCategory);
         }
-        return new ModelAndView("category/index",map);
+        return new ModelAndView("category/index", map);
     }
 
     @PostMapping("/save")
-    public ModelAndView save(@Valid ProductCategoryForm productCategoryForm, BindingResult bindingResult,Map<String, Object> map){
-        if (bindingResult.hasErrors()){
-            map.put("msg",bindingResult.getFieldError().getDefaultMessage());
-            map.put("url","/sell/seller/category/index");
-            return new ModelAndView("common/error",map);
+    public ModelAndView save(@Valid ProductCategoryForm productCategoryForm, BindingResult bindingResult, Map<String, Object> map) {
+        if (bindingResult.hasErrors()) {
+            map.put("msg", bindingResult.getFieldError().getDefaultMessage());
+            map.put("url", "/sell/seller/category/index");
+            return new ModelAndView("common/error", map);
         }
         ProductCategory productCategory = new ProductCategory();
-        try{
-            if (productCategoryForm.getCategoryId() != null && productCategoryForm.getCategoryId() > 0){
+        try {
+            if (productCategoryForm.getCategoryId() != null && productCategoryForm.getCategoryId() > 0) {
                 productCategory = productCategoryService.findOne(productCategoryForm.getCategoryId());
             }
-            BeanUtils.copyProperties(productCategoryForm,productCategory);
+            BeanUtils.copyProperties(productCategoryForm, productCategory);
             productCategoryService.save(productCategory);
-        }catch (SellException e){
-            map.put("msg",e.getMessage());
-            map.put("url","/sell/seller/category/index");
-            return new ModelAndView("common/error",map);
+        } catch (SellException e) {
+            map.put("msg", e.getMessage());
+            map.put("url", "/sell/seller/category/index");
+            return new ModelAndView("common/error", map);
         }
-        map.put("url","/sell/seller/category/list");
-        return new ModelAndView("common/success",map);
+        map.put("url", "/sell/seller/category/list");
+        return new ModelAndView("common/success", map);
     }
 }

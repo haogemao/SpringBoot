@@ -17,6 +17,7 @@ public interface ProductInfoService {
 
     /**
      * 分页查询所有商品列表
+     *
      * @param pageable
      * @return
      */
@@ -24,6 +25,7 @@ public interface ProductInfoService {
 
     /**
      * 更新和新增
+     *
      * @param productInfo
      * @return
      */
@@ -31,6 +33,7 @@ public interface ProductInfoService {
 
     /**
      * 查询一个商品
+     *
      * @param id
      * @return
      */

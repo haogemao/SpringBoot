@@ -10,7 +10,7 @@ import javax.servlet.Filter;
 public class FilterConfig {
 
     @Bean
-    public Filter sessionFilter(){
+    public Filter sessionFilter() {
         return new SessionFilter();
     }
 }

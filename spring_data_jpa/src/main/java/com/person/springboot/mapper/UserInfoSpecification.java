@@ -8,5 +8,5 @@ import com.person.springboot.pojo.UserInfo;
 
 public interface UserInfoSpecification extends Specification<UserInfo> {
 
-	public List<UserInfo> findByName(String userName);
+    public List<UserInfo> findByName(String userName);
 }

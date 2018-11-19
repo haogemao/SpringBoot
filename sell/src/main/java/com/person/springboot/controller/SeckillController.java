@@ -18,23 +18,25 @@ public class SeckillController {
 
     /**
      * 查询秒杀活动特价商品的信息
+     *
      * @param productId
      * @return
      */
     @GetMapping("/query/{productId}")//PathVariable注解,设置路径中的值到变量
-    public String query(@PathVariable String productId) throws Exception{
+    public String query(@PathVariable String productId) throws Exception {
         return seckillService.querySecKillProductInfo(productId);
     }
 
     /**
      * 秒杀，没有抢到返回"很抱歉,****",抢到了会返回剩余的库存量
+     *
      * @param productId
      * @return
      * @throws Exception
      */
     @GetMapping("/order/{productId}")//PathVariable注解,设置路径中的值到变量
-    public String skill(@PathVariable String productId) throws Exception{
-        log.info("@skill request,productId={}",productId);
+    public String skill(@PathVariable String productId) throws Exception {
+        log.info("@skill request,productId={}", productId);
         seckillService.orderProductMocckDiffUser(productId);
         return seckillService.querySecKillProductInfo(productId);
     }

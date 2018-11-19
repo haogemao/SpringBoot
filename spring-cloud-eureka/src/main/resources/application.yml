@@ -1,0 +1,18 @@
+#server:
+#  port: 8081
+
+spring:
+  profiles:
+    active: peer1
+
+#  security:
+#    user:
+#      name: hs
+#      password: 123456
+#
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://hs:123456@localhost:8081/eureka  # 安全的注册地址

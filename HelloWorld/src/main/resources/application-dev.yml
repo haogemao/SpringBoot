@@ -32,27 +32,27 @@ spring:
       #打开PSCache，并指定每个连接上PSCache的大小。oracle设为true，mysql设为false。分库分表较多推荐设置为false
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: 20
-      
+
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
-    
+
     #driver-class-name: com.mysql.jdbc.Driver
     #url: jdbc:mysql://localhost:3306/springboot
     #username: root
     #password: root
-    
+
   ## 该配置节点为独立的节点
   mybatis:
     mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
     type-aliases-package: com.person.springboot.model  # 注意：对应实体类的路径
- 
- #pagehelper
+
+  #pagehelper
 pagehelper:
-    helperDialect: mysql
-    reasonable: true
-    supportMethodsArguments: true
-    params: count=countSql
-    returnPageInfo: check
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+  returnPageInfo: check
  

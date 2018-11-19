@@ -2,46 +2,46 @@ package com.person.springboot.entities;
 
 public class UserInfo {
 
-	private Integer id;
-	
-	private String username;
-	
-	private String password;
+    private Integer id;
 
-	public UserInfo() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    private String username;
 
-	public UserInfo(Integer id, String username, String password) {
-		super();
-		this.id = id;
-		this.username = username;
-		this.password = password;
-	}
+    private String password;
 
-	public Integer getId() {
-		return id;
-	}
+    public UserInfo() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public UserInfo(Integer id, String username, String password) {
+        super();
+        this.id = id;
+        this.username = username;
+        this.password = password;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 }

@@ -6,26 +6,26 @@ import org.springframework.stereotype.Component;
 @Component
 public class SpringBootProperties {
 
-	@Value("${com.person.springboot.name}")
-	private String name;
-	
-	@Value("${com.person.springboot.title}")
-	private String title;
+    @Value("${com.person.springboot.name}")
+    private String name;
 
-	public String getName() {
-		return name;
-	}
+    @Value("${com.person.springboot.title}")
+    private String title;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String getTitle() {
-		return title;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
 }

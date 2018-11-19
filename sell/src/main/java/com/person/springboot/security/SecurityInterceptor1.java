@@ -22,7 +22,7 @@ public class SecurityInterceptor1 extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         Cookie cookie = CookieUtil.get(request, CookieConstant.TOKEN);
-        if (cookie == null){
+        if (cookie == null) {
             //跳转登录
             String url = "/sell/seller/";
             response.sendRedirect(url);

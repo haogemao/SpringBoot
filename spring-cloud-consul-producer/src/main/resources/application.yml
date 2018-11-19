@@ -1,0 +1,14 @@
+server:
+  port: 8090
+  
+spring:
+  application:
+    name: spring-cloud-consul-producer
+  
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      #注册到consul的服务名称
+      discovery:
+        service-name: service-producer

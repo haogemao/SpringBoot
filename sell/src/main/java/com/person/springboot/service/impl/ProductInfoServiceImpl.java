@@ -60,13 +60,13 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     @Override
     @Transactional
     public void decreaseStock(List<CartDTO> cartDTOList) {
-        for (CartDTO cartDTO:cartDTOList) {
+        for (CartDTO cartDTO : cartDTOList) {
             ProductInfo productInfo = productInfoRepository.getOne(cartDTO.getProductId());
-            if (productInfo == null){
+            if (productInfo == null) {
                 throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
             }
             Integer result = productInfo.getProductStock() - cartDTO.getProductQuantity();
-            if (result < 0){
+            if (result < 0) {
                 throw new SellException(ResultEnum.PRODUCT_STOCK_ERROR);
             }
             productInfo.setProductStock(result);
@@ -84,13 +84,13 @@ public class ProductInfoServiceImpl implements ProductInfoService {
         Optional<ProductInfo> productInfoOptional = productInfoRepository.findById(productId);
         try {
             productInfoOptional.get();
-        }catch (NoSuchElementException e){
-            log.error("【查询商品】 错误信息={}",e.getMessage());
+        } catch (NoSuchElementException e) {
+            log.error("【查询商品】 错误信息={}", e.getMessage());
             throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
         }
 
-        if (productInfoOptional.get().getProductStatus() == ProductInfoStatusEnum.UP.getCode()){
-            log.error("【商品上架】 错误信息={}","商品状态不正确");
+        if (productInfoOptional.get().getProductStatus() == ProductInfoStatusEnum.UP.getCode()) {
+            log.error("【商品上架】 错误信息={}", "商品状态不正确");
             throw new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
         }
         productInfoOptional.get().setProductStatus(ProductInfoStatusEnum.UP.getCode());
@@ -107,13 +107,13 @@ public class ProductInfoServiceImpl implements ProductInfoService {
         Optional<ProductInfo> productInfoOptional = productInfoRepository.findById(productId);
         try {
             productInfoOptional.get();
-        }catch (NoSuchElementException e){
-            log.error("【查询商品】 错误信息={}",e.getMessage());
+        } catch (NoSuchElementException e) {
+            log.error("【查询商品】 错误信息={}", e.getMessage());
             throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
         }
 
-        if (productInfoOptional.get().getProductStatus() == ProductInfoStatusEnum.DOWN.getCode()){
-            log.error("【商品上架】 错误信息={}","商品状态不正确");
+        if (productInfoOptional.get().getProductStatus() == ProductInfoStatusEnum.DOWN.getCode()) {
+            log.error("【商品上架】 错误信息={}", "商品状态不正确");
             throw new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
         }
         productInfoOptional.get().setProductStatus(ProductInfoStatusEnum.DOWN.getCode());

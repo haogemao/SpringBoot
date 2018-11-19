@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  
+
+spring:
+  application:
+    name: spring-cloud-hystrix
+  devtools:
+    restart:
+      enabled: true
+
+    
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8081/eureka
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+    instance-id: ${spring.application.name}:${server.port}

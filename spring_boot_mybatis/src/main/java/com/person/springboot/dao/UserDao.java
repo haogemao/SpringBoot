@@ -6,11 +6,11 @@ import com.person.springboot.entity.User;
 
 public interface UserDao {
 
-	List<User> findAll();
+    List<User> findAll();
 
-	void addUser(User user);
+    void addUser(User user);
 
-	void updUser(User user);
+    void updUser(User user);
 
-	int delUser(Integer id);
+    int delUser(Integer id);
 }

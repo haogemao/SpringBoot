@@ -46,61 +46,61 @@ public class SellerUserController {
 //    public  ModelAndView index(){
 //        return new ModelAndView("login/login");
 //    }
-    public String index(){
+    public String index() {
         return "login/login";
     }
 
     @PostMapping("/login")
     public ModelAndView login(@Valid LoginForm loginForm, BindingResult bindingResult,
                               HttpServletResponse httpServletResponse,
-                              Map<String, Object> map){
-        if (bindingResult.hasErrors()){
-            log.error("登录，发生错误 = {}",bindingResult.getFieldError().getDefaultMessage());
+                              Map<String, Object> map) {
+        if (bindingResult.hasErrors()) {
+            log.error("登录，发生错误 = {}", bindingResult.getFieldError().getDefaultMessage());
             map.put("msg", bindingResult.getFieldError().getDefaultMessage());
-            map.put("url","/sell/seller/");
-            return new ModelAndView("common/error",map);
+            map.put("url", "/sell/seller/");
+            return new ModelAndView("common/error", map);
         }
         //1.openid去和数据库里的数据匹配
         SellerInfo sellerInfo = sellerService.findByOpenid(loginForm.getOpenid());
-        if (sellerInfo == null){
+        if (sellerInfo == null) {
             map.put("msg", ResultEnum.LOGIN_FAIL.getMessage());
-            map.put("url","/sell/seller/");
-            return new ModelAndView("common/error",map);
+            map.put("url", "/sell/seller/");
+            return new ModelAndView("common/error", map);
         }
 
-        if (!loginForm.getPassword().equals(sellerInfo.getPassword())){
+        if (!loginForm.getPassword().equals(sellerInfo.getPassword())) {
             map.put("msg", ResultEnum.LOGIN_FAIL.getMessage());
-            map.put("url","/sell/seller/");
-            return new ModelAndView("common/error",map);
+            map.put("url", "/sell/seller/");
+            return new ModelAndView("common/error", map);
         }
 
         //2.设置token至Redis
         //stringRedisTemplate.opsForValue().set("abc","122");//操作某些value 写入key-value
         String token = UUID.randomUUID().toString();
         log.info(loginForm.getOpenid());
-        redisTemplate.opsForValue().set(String.format(RedisConstans.TOKEN_PREFIX,token),loginForm.getOpenid(),RedisConstans.EXPIPE, TimeUnit.SECONDS);
+        redisTemplate.opsForValue().set(String.format(RedisConstans.TOKEN_PREFIX, token), loginForm.getOpenid(), RedisConstans.EXPIPE, TimeUnit.SECONDS);
         //key,value,过期时间,时间单位 s
 
         //3.设置token至cookie
-        CookieUtil.set(httpServletResponse,CookieConstant.TOKEN,token,CookieConstant.EXPIPE);
+        CookieUtil.set(httpServletResponse, CookieConstant.TOKEN, token, CookieConstant.EXPIPE);
 
         //做一个跳转获取订单列表后再跳转 重定向不要带项目名 - 最好带绝对地址 也就是带http://的绝对地址
         return new ModelAndView("redirect:" + projectUrlConfig.getProject() + "/sell/seller/order/list");
     }
 
     @GetMapping("/logout")
-    public ModelAndView logout(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,Map<String, Object> map){
+    public ModelAndView logout(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Map<String, Object> map) {
         //1.从Cookie查询
-        Cookie cookie = CookieUtil.get(httpServletRequest,CookieConstant.TOKEN);
+        Cookie cookie = CookieUtil.get(httpServletRequest, CookieConstant.TOKEN);
 
-        if (cookie != null){
+        if (cookie != null) {
             //2.清除redis
-            redisTemplate.opsForValue().getOperations().delete(String.format(RedisConstans.TOKEN_PREFIX,cookie.getValue()));
+            redisTemplate.opsForValue().getOperations().delete(String.format(RedisConstans.TOKEN_PREFIX, cookie.getValue()));
             //3.清除cookie
-            CookieUtil.del(httpServletResponse,CookieConstant.TOKEN);
+            CookieUtil.del(httpServletResponse, CookieConstant.TOKEN);
         }
-        map.put("msg",ResultEnum.LOGOUT_SUCCESS.getMessage());
-        map.put("url","/sell/seller/");
-        return new ModelAndView("common/success",map);
+        map.put("msg", ResultEnum.LOGOUT_SUCCESS.getMessage());
+        map.put("url", "/sell/seller/");
+        return new ModelAndView("common/success", map);
     }
 }

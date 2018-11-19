@@ -1,6 +1,6 @@
 server:
   port: 8081
-  
+
 spring:
   output:
     ansi:
@@ -8,7 +8,7 @@ spring:
 
 #日志级别
 logging:
-  level: 
+  level:
     root: DEBUG
   file: log.log
   path: /

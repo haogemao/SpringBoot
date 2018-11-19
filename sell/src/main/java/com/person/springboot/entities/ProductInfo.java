@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- *商品表
+ * 商品表
  */
 @Entity
 @Data
@@ -76,10 +76,11 @@ public class ProductInfo implements Serializable {
     /**
      * 上架下架
      * 注意是公开方法
+     *
      * @return
      */
     @JsonIgnore
-    public ProductInfoStatusEnum getProductInfoStatusEnum(){
-        return EnumUtil.getByCode(productStatus,ProductInfoStatusEnum.class);
+    public ProductInfoStatusEnum getProductInfoStatusEnum() {
+        return EnumUtil.getByCode(productStatus, ProductInfoStatusEnum.class);
     }
 }

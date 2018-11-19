@@ -17,42 +17,42 @@ import com.person.springboot.mapper.UserInfoRepository;
 @RestController
 public class UserInfoController {
 
-	@Autowired
-	private UserInfoRepository userInfoRepository;
-	
+    @Autowired
+    private UserInfoRepository userInfoRepository;
 
-	@GetMapping("/UserlistByUserName")
-	public List<UserInfo> getUserByUserName(@RequestParam(value="username") String username) {
-		return userInfoRepository.findByUsername(username);
+
+    @GetMapping("/UserlistByUserName")
+    public List<UserInfo> getUserByUserName(@RequestParam(value = "username") String username) {
+        return userInfoRepository.findByUsername(username);
 //		return userInfoRepository.findByUsername(username);
-	}
-	
-	@GetMapping("/Userlist")
-	public List<UserInfo> getUserList() {
-		return userInfoRepository.findAll();
-	}
-	
-	@PostMapping("/addUser")
-	public UserInfo addUser(@RequestParam(value="username") String username, @RequestParam(value="password") String password) {
-		UserInfo userInfo = new UserInfo();
-		userInfo.setUsername(username);
-		userInfo.setPassword(password);
-		return userInfoRepository.save(userInfo);
-	}
-	
-	@PutMapping("/updUser/{id}")
-	public UserInfo updateUser(@PathVariable(value="id") Integer id, @RequestParam(value="username") String username, @RequestParam(value="password") String password) {
-		UserInfo userInfo = new UserInfo();
-		userInfo.setId(id);
-		userInfo.setUsername(username);
-		userInfo.setPassword(password);
-		return userInfoRepository.save(userInfo);
-	}
-	
-	@DeleteMapping("delUser/{id}")
-	public void delUser(@PathVariable(value="id") Integer id){
-		UserInfo userInfo = new UserInfo();
-		userInfo.setId(id);
-		userInfoRepository.delete(userInfo);
-	}
+    }
+
+    @GetMapping("/Userlist")
+    public List<UserInfo> getUserList() {
+        return userInfoRepository.findAll();
+    }
+
+    @PostMapping("/addUser")
+    public UserInfo addUser(@RequestParam(value = "username") String username, @RequestParam(value = "password") String password) {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUsername(username);
+        userInfo.setPassword(password);
+        return userInfoRepository.save(userInfo);
+    }
+
+    @PutMapping("/updUser/{id}")
+    public UserInfo updateUser(@PathVariable(value = "id") Integer id, @RequestParam(value = "username") String username, @RequestParam(value = "password") String password) {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setId(id);
+        userInfo.setUsername(username);
+        userInfo.setPassword(password);
+        return userInfoRepository.save(userInfo);
+    }
+
+    @DeleteMapping("delUser/{id}")
+    public void delUser(@PathVariable(value = "id") Integer id) {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setId(id);
+        userInfoRepository.delete(userInfo);
+    }
 }

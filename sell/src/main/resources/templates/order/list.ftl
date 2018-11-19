@@ -1,74 +1,74 @@
 <html>
     <#include "../common/header.ftl">
 
-    <body>
-        <div id="wrapper" class="toggled">
+<body>
+<div id="wrapper" class="toggled">
 
-            <#--边栏sidebar-->
+<#--边栏sidebar-->
             <#include "../common/nav.ftl">
 
-            <#--主体内容-->
-            <div id="page-content-wrapper">
-                <div class="container-fluid">
-                    <div class="row clearfix">
-                        <div class="col-md-12 column">
-                            <table class="table table-bordered table-hover">
-                                <thead>
-                                <tr>
-                                    <th>订单id</th>
-                                    <th>姓名</th>
-                                    <th>手机号</th>
-                                    <th>地址</th>
-                                    <th>金额</th>
-                                    <th>订单状态</th>
-                                    <th>支付状态</th>
-                                    <th>创建时间</th>
-                                    <th colspan="2">操作</th>
-                                </tr>
-                                </thead>
-                                <tbody>
+<#--主体内容-->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>订单id</th>
+                            <th>姓名</th>
+                            <th>手机号</th>
+                            <th>地址</th>
+                            <th>金额</th>
+                            <th>订单状态</th>
+                            <th>支付状态</th>
+                            <th>创建时间</th>
+                            <th colspan="2">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
                                 <#list orderDTOPage.content as order>
-                                    <tr>
-                                        <td>
-                                            ${order.orderId}
-                                        </td>
-                                        <td>
-                                            ${order.buyerName}
-                                        </td>
-                                        <td>
-                                            ${order.buyerPhone}
-                                        </td>
-                                        <td>
-                                            ${order.buyerAddress}
-                                        </td>
-                                        <td>
-                                            ${order.orderAmount}
-                                        </td>
-                                        <td>
-                                            ${order.getOrderStatusEnum().message}
-                                        </td>
-                                        <#--<td>-->
-                                            <#--${order.payStatus}-->
-                                        <#--</td>-->
-                                        <td>
-                                            ${order.getPayStatusEnum().message}
-                                        </td>
-                                        <td>
-                                            ${order.createTime}
-                                        </td>
-                                        <td>
-                                            <a href="/sell/seller/order/detail?orderId=${order.orderId}">详情</a>
-                                        </td>
-                                        <td>
+                                <tr>
+                                    <td>
+                                        ${order.orderId}
+                                    </td>
+                                    <td>
+                                        ${order.buyerName}
+                                    </td>
+                                    <td>
+                                        ${order.buyerPhone}
+                                    </td>
+                                    <td>
+                                        ${order.buyerAddress}
+                                    </td>
+                                    <td>
+                                        ${order.orderAmount}
+                                    </td>
+                                    <td>
+                                        ${order.getOrderStatusEnum().message}
+                                    </td>
+                                <#--<td>-->
+                                <#--${order.payStatus}-->
+                                <#--</td>-->
+                                    <td>
+                                        ${order.getPayStatusEnum().message}
+                                    </td>
+                                    <td>
+                                        ${order.createTime}
+                                    </td>
+                                    <td>
+                                        <a href="/sell/seller/order/detail?orderId=${order.orderId}">详情</a>
+                                    </td>
+                                <td>
                                             <#if order.getOrderStatusEnum().message == "新订单">
                                                 <a href="/sell/seller/order/cancel?orderId=${order.orderId}">取消</a></td>
                                             </#if>
 
-                                    </tr>
+                                </tr>
                                 </#list>
-                                </tbody>
-                            </table>
-                            <ul class="pagination pull-right">
+                        </tbody>
+                    </table>
+                    <ul class="pagination pull-right">
                                 <#if currentPage lte 1>
                                     <li class="disabled">
                                         <a href="/sell/seller/order/list?page=1&size=${size}">首页</a>
@@ -88,7 +88,7 @@
                                     </li>
                                 </#if>
                                 <#list 1..orderDTOPage.getTotalPages() as index>
-                                    <#--${orderDTOPage.getTotalPages()}-->
+                                <#--${orderDTOPage.getTotalPages()}-->
                                     <#if currentPage == index>
                                         <li class="disabled">
                                             <a href="/sell/seller/order/list?page=${index}&size=${size}">${index}</a>
@@ -117,84 +117,84 @@
                                         <a href="/sell/seller/order/list?page=${orderDTOPage.getTotalPages()}&size=${size}">尾页</a>
                                     </li>
                                 </#if>
-                            </ul>
-                        </div>
-                    </div>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <#--提示框-->
-        <div class="modal fade" id="modal-container-811865" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            提示
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        你有新的订单
-                    </div>
-                    <div class="modal-footer">
-                        <button onclick="cancel()" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                        <button onclick="detail()" type="button" class="btn btn-primary">查看订单</button>
-                    </div>
-                </div>
-
+<#--提示框-->
+<div class="modal fade" id="modal-container-811865" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    提示
+                </h4>
             </div>
-
+            <div class="modal-body">
+                你有新的订单
+            </div>
+            <div class="modal-footer">
+                <button onclick="cancel()" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button onclick="detail()" type="button" class="btn btn-primary">查看订单</button>
+            </div>
         </div>
 
-        <#--播放音乐-->
-        <audio id="notice" loop="loop">
-            <source src="/sell/mp3/清明上河图.mp3" type="audio/mpeg"  />
-            <#--<source src="/sell/mp3/song.mp3" type="audio/mpeg"  />-->
-        </audio>
+    </div>
 
-        <script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
-        <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script>
-            var websocket = null;
-            if ('WebSocket' in window){
-                websocket = new WebSocket("ws://127.0.0.1:8082/sell/webSocket");
-            }
-            else{
-                console.log('该浏览器不支持websocket');
-                alert('该浏览器不支持websocket');
-            }
+</div>
 
-            websocket.onopen = function (event) {
-                console.log("建立连接");
-            }
-            websocket.onclose = function (eevent) {
-                console.log("连接关闭");
-            }
+<#--播放音乐-->
+<audio id="notice" loop="loop">
+    <source src="/sell/mp3/清明上河图.mp3" type="audio/mpeg"/>
+<#--<source src="/sell/mp3/song.mp3" type="audio/mpeg"  />-->
+</audio>
 
-            websocket.onmessage = function (event) {
-                console.log("收到消息:" + event.data);
-                orderId = event.data;
-                //弹窗提醒，播放音乐
-                $("#modal-container-811865").modal("show");
+<script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    var websocket = null;
+    if ('WebSocket' in window) {
+        websocket = new WebSocket("ws://127.0.0.1:8082/sell/webSocket");
+    }
+    else {
+        console.log('该浏览器不支持websocket');
+        alert('该浏览器不支持websocket');
+    }
 
-                document.getElementById("notice").play();
-            }
+    websocket.onopen = function (event) {
+        console.log("建立连接");
+    }
+    websocket.onclose = function (eevent) {
+        console.log("连接关闭");
+    }
 
-            websocket.beforeunload = function (event) {
-                websocket.close();
-            }
+    websocket.onmessage = function (event) {
+        console.log("收到消息:" + event.data);
+        orderId = event.data;
+        //弹窗提醒，播放音乐
+        $("#modal-container-811865").modal("show");
 
-            //跳转到订单详情页面
-            function detail() {
-                window.location.href="/sell/seller/order/detail?orderId=" + orderId;
-            }
+        document.getElementById("notice").play();
+    }
 
-            //取消按钮，停止音乐并刷新页面
-            function cancel() {
-                document.getElementById('notice').pause();
-                location.reload();
-            }
-        </script>
-    </body>
+    websocket.beforeunload = function (event) {
+        websocket.close();
+    }
+
+    //跳转到订单详情页面
+    function detail() {
+        window.location.href = "/sell/seller/order/detail?orderId=" + orderId;
+    }
+
+    //取消按钮，停止音乐并刷新页面
+    function cancel() {
+        document.getElementById('notice').pause();
+        location.reload();
+    }
+</script>
+</body>
 </html>

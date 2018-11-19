@@ -27,23 +27,24 @@ public class SellerAuthorizeAspect {
     private RedisTemplate redisTemplate;
 
     @Pointcut("execution(public * com.person.springboot.controller.*.*(..))" + "&& !execution(public * com.person.springboot.controller.SellerUserController.*(..))")
-    public void verify(){}
+    public void verify() {
+    }
 
     @Before("verify()")
-    public void doVerify(){
+    public void doVerify() {
         ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest httpServletRequest = servletRequestAttributes.getRequest();
         Cookie cookie = CookieUtil.get(httpServletRequest, CookieConstant.TOKEN);
-        if (cookie == null){
+        if (cookie == null) {
             log.warn("[登录校验] Cookie中查不到token");
 //            return new ModelAndView("redirect:" + "/seller/");
-            throw new SellAuthorizeException("session已过期",1001);
+            throw new SellAuthorizeException("session已过期", 1001);
         }
 
-        String tokenValue = String.valueOf(redisTemplate.opsForValue().get(String.format(RedisConstans.TOKEN_PREFIX,cookie.getValue())));
-        if (StringUtils.isEmpty(tokenValue)){
+        String tokenValue = String.valueOf(redisTemplate.opsForValue().get(String.format(RedisConstans.TOKEN_PREFIX, cookie.getValue())));
+        if (StringUtils.isEmpty(tokenValue)) {
             log.warn("[登录校验] Redis中查不到token");
-            throw new SellAuthorizeException("session已过期",1001);
+            throw new SellAuthorizeException("session已过期", 1001);
 //            return new ModelAndView("/sell/seller/");
         }
 //        return new ModelAndView("/sell/seller/order/list");

@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestCotroller {
 
-	@RequestMapping("/")
-	public String index() {
-		return "Hello Security";
-	}
+    @RequestMapping("/")
+    public String index() {
+        return "Hello Security";
+    }
 }
